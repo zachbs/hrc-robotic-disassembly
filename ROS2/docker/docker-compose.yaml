@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  ros2_dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: gearbox-pipeline:l4t-36.5.0
+    container_name: ros2_dev_container
+    network_mode: "host" 
+    ipc: host
+    privileged: true 
+    environment:
+      - ROS_DOMAIN_ID=0 
+      - PYTHONUNBUFFERED=1
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - ../ros2_ws:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    stdin_open: true
+    tty: true
