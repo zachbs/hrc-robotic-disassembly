@@ -10,6 +10,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', ['launch/perception_pipeline.launch.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,6 +25,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'camera_bridge = gearbox_perception.camera_bridge_node:main',
+            'gearbox_registration = gearbox_perception.gearbox_registration_node:main',
         ],
     },
 )
