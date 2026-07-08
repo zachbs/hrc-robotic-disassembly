@@ -39,8 +39,9 @@ def save_processed_scan(pcd, output_dir="captured_scans", filename=None):
 # CONFIGURATION & HYPERPARAMETERS
 # ==============================================================================
 STL_FILE_PATH = "nonScaledFullGearboxInsideRemoved-Fusion.stl"
+PCD_FILE_PATH = "captured_scans/optimized_cad_target.pcd"
 YOLO_MODEL_PATH = "06-09-2026.pt"
-VOXEL_SIZE = 0.001
+VOXEL_SIZE = 0.0025
 PADDING = 20  # YOLO bounding box 2D padding
 FRAMES_TO_CAPTURE = 25
 
@@ -70,25 +71,44 @@ def draw_registration_step(source, target, transformation, window_name):
 
 def extract_fpfh_features(pcd, voxel_size, is_source=False):
     """Computes geometric surface normals consistently and extracts FPFH descriptors."""
-    # 1. Only estimate normals if they aren't already present (preserves pristine CAD mesh normals)
-    if not pcd.has_normals():
-        if is_source:
-            radius_normal = 0.004  
-        else:
-            radius_normal = 0.002
-        pcd.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=radius_normal, max_nn=30))
     
-    # 2. CRITICAL: Force all normal arrows on the visible surface to point directly at the camera lens
-    # Since your RealSense camera is the origin of the coordinate system, the lens position is [0, 0, 0]
     if is_source:
+        # Source (Camera Scan): Always compute fresh normals matching camera perspective
+        # Uses voxel_size * 2 so it is guaranteed to find enough neighbors regardless of downsampling size
+        pcd.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=voxel_size * 2, max_nn=30))
         pcd.orient_normals_towards_camera_location(camera_location=np.array([0.0, 0.0, 0.0]))
     else:
-        pcd.orient_normals_consistent_tangent_plane(k=15)
-    # 3. Compute FPFH now that vectors are perfectly aligned
-    radius_feature = voxel_size * 12
+        # Target (CAD Mesh): Protect pristine normals if they are already baked into the .pcd file.
+        # If they are missing, re-estimate safely using a dynamically scaled radius.
+        if not pcd.has_normals():
+            print("[*] CAD Target missing normals. Computing dynamically scaled vectors...")
+            pcd.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=voxel_size * 2, max_nn=30))
+            # REMOVED: orient_normals_consistent_tangent_plane has been deleted to prevent inverted lip profiles.
+    
+    # 3. Compute FPFH using a proportional feature scale
+    o3d.visualization.draw_geometries([pcd], window_name="FPFH Normal Verification", point_show_normal=True)
+    radius_feature = voxel_size * 5
     fpfh = o3d.pipelines.registration.compute_fpfh_feature(
         pcd, o3d.geometry.KDTreeSearchParamHybrid(radius=radius_feature, max_nn=100))
     return fpfh
+
+
+def save_verified_cad(pcd, filename="optimized_cad_target.pcd"):
+    """Saves the sampled CAD point cloud along with its verified, pristine normals."""
+    output_dir = "captured_scans"
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    filepath = os.path.join(output_dir, filename)
+    print(f"[*] Archiving pristine CAD target with normal vectors...")
+    
+    # Open3D automatically writes normal vectors when saving to .pcd or .ply
+    success = o3d.io.write_point_cloud(filepath, pcd)
+    if success:
+        print(f"[+] Pristine CAD target safely saved to: {filepath}")
+    else:
+        print(f"[-] ERROR: Failed to write CAD reference to {filepath}")
+    return filepath
 
 
 # ==============================================================================
@@ -108,12 +128,13 @@ def main():
     
 
     print("[*] Preparing CAD Target...")
-    mesh = o3d.io.read_triangle_mesh(STL_FILE_PATH)
-    mesh.compute_vertex_normals()  # Generates uniform outward-facing vectors
-    pristine_target = mesh.sample_points_uniformly(number_of_points=30000)
-    pristine_target.scale(0.00168095, center=pristine_target.get_center())
+    # mesh = o3d.io.read_triangle_mesh(STL_FILE_PATH)
+    # mesh.compute_vertex_normals()  # Generates uniform outward-facing vectors
+    # pristine_target = mesh.sample_points_uniformly(number_of_points=30000)
+    # pristine_target.scale(0.00168095, center=pristine_target.get_center())
    
-    pristine_target = pristine_target.voxel_down_sample(voxel_size=VOXEL_SIZE)
+    # pristine_target = pristine_target.voxel_down_sample(voxel_size=VOXEL_SIZE)
+    pristine_target = o3d.io.read_point_cloud(PCD_FILE_PATH)
     
     # --------------------------------------------------------------------------
     # DATA GATHERING LOOP
@@ -218,7 +239,7 @@ def main():
     
     print(f"-> Raw projected point cloud contains {len(pcd.points)} points.")
     pcd.paint_uniform_color([0.5, 0.5, 0.5])
-    o3d.visualization.draw_geometries([pcd], window_name="Step 4: Raw 3D ROI Point Cloud")
+    #o3d.visualization.draw_geometries([pcd], window_name="Step 4: Raw 3D ROI Point Cloud")
 
     # --------------------------------------------------------------------------
     # STEP 5: VOXEL DOWNSAMPLING
@@ -226,7 +247,7 @@ def main():
     print("\n[STEP 5] Voxel Downsampling...")
     pcd = pcd.voxel_down_sample(voxel_size=VOXEL_SIZE)
     print(f"-> Downsampled to {len(pcd.points)} points.")
-    o3d.visualization.draw_geometries([pcd], window_name="Step 5: Voxel Downsampled Cloud")
+    #o3d.visualization.draw_geometries([pcd], window_name="Step 5: Voxel Downsampled Cloud")
 
     # --------------------------------------------------------------------------
     # STEP 6: TABLE PLANE SEGMENTATION
@@ -236,7 +257,7 @@ def main():
         plane_model, inliers = pcd.segment_plane(distance_threshold=0.01, ransac_n=3, num_iterations=200)
         pcd = pcd.select_by_index(inliers, invert=True)
         print(f"-> After table removal, cloud has {len(pcd.points)} points.")
-        o3d.visualization.draw_geometries([pcd], window_name="Step 6: Table Plane Removed")
+        #o3d.visualization.draw_geometries([pcd], window_name="Step 6: Table Plane Removed")
     except Exception as e:
         print(f"-> Plane segmentation failed: {e}")
 
@@ -244,7 +265,7 @@ def main():
     # STEP 7: STATISTICAL & RADIUS OUTLIER REMOVAL (Flying Pixel Cleanup)
     # --------------------------------------------------------------------------
     print("\n[STEP 7] Removing Statistical & Radius Outliers...")
-    pcd, _ = pcd.remove_statistical_outlier(nb_neighbors=25, std_ratio=1.0)
+    pcd, _ = pcd.remove_statistical_outlier(nb_neighbors=15, std_ratio=1.5)
     # # Pass 1: Remove "Deep Space" outliers (Very far, very sparse noise)
     # # This clears out things floating far from the gearbox without touching the model
     # pcd, _ = pcd.remove_radius_outlier(nb_points=15, radius=0.03) 
@@ -256,17 +277,17 @@ def main():
     
     source = pcd
     source.paint_uniform_color([1, 0.706, 0]) # Yellow
-    o3d.visualization.draw_geometries([source], window_name="Step 7: Cleaned Object (Post-Outlier Removal)")
+    #o3d.visualization.draw_geometries([source], window_name="Step 7: Cleaned Object (Post-Outlier Removal)")
 
     # --------------------------------------------------------------------------
     # STEP 8: CAMERA-ORIENTED NORMAL ESTIMATION
     # --------------------------------------------------------------------------
     print("\n[STEP 8] Estimating and Orienting Surface Normals...")
-    source.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=0.004, max_nn=30))
+    source.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=0.003, max_nn=30))
     source.orient_normals_towards_camera_location(camera_location=np.array([0.0, 0.0, 0.0]))
     
     print("-> ACTION: Close window to extract geometric features.")
-    o3d.visualization.draw_geometries([source], window_name="Step 8: Oriented Surface Normals", point_show_normal=True)
+    #o3d.visualization.draw_geometries([source], window_name="Step 8: Oriented Surface Normals", point_show_normal=True)
 
     #save_processed_scan(source)
     # --------------------------------------------------------------------------
@@ -291,8 +312,8 @@ def main():
     
     # Physically translate the CAD model into the scan's neighborhood
     pristine_target.translate(translation_vec)
-    distance_threshold = 0.005  # 5mm
-    normal_cos_threshold = np.cos(np.radians(15.0))
+    distance_threshold = VOXEL_SIZE * 1.5  # 1.5x voxel size for RANSAC correspondence search
+    normal_cos_threshold = np.cos(np.radians(45.0))
     start_time = time.time()
     
     ransac_result = o3d.pipelines.registration.registration_ransac_based_on_feature_matching(
@@ -301,7 +322,7 @@ def main():
         estimation_method=o3d.pipelines.registration.TransformationEstimationPointToPoint(),
         ransac_n=3,
         checkers=[
-            o3d.pipelines.registration.CorrespondenceCheckerBasedOnEdgeLength(0.95),
+            o3d.pipelines.registration.CorrespondenceCheckerBasedOnEdgeLength(0.88),
             o3d.pipelines.registration.CorrespondenceCheckerBasedOnDistance(distance_threshold),
             o3d.pipelines.registration.CorrespondenceCheckerBasedOnNormal(normal_cos_threshold)
         ],
@@ -336,143 +357,143 @@ def main():
 
     print("[+] Baseline Pose Decoded. Starting Real-Time Visual Tracking Loop...")
 
-   # --------------------------------------------------------------------------
-    # STEP 12: ANCHORED REAL-TIME 6DOF POSE TRACKING LOOP
-    # --------------------------------------------------------------------------
-    print("\n[+] Baseline Pose Decoded. Starting Anchored Real-Time Tracking Loop...")
-    print("[*] Tracking Loop Engaged. Move the gearbox slowly. Close the window or press ESC to exit.")
+#    # --------------------------------------------------------------------------
+#     # STEP 12: ANCHORED REAL-TIME 6DOF POSE TRACKING LOOP
+#     # --------------------------------------------------------------------------
+#     print("\n[+] Baseline Pose Decoded. Starting Anchored Real-Time Tracking Loop...")
+#     print("[*] Tracking Loop Engaged. Move the gearbox slowly. Close the window or press ESC to exit.")
     
-    # Waken the camera hardware back up cleanly for the tracking phase
-    pipeline.start(config)
+#     # Waken the camera hardware back up cleanly for the tracking phase
+#     pipeline.start(config)
     
-    # Initialize the Open3D Active Rendering Window
-    vis = o3d.visualization.Visualizer()
-    vis.create_window(window_name="Anchored Real-Time 6DOF Gearbox Tracker", width=1024, height=768)
+#     # Initialize the Open3D Active Rendering Window
+#     vis = o3d.visualization.Visualizer()
+#     vis.create_window(window_name="Anchored Real-Time 6DOF Gearbox Tracker", width=1024, height=768)
     
-    # Create an empty placeholder point cloud for the incoming live streaming frames
-    live_source = o3d.geometry.PointCloud()
-    vis.add_geometry(live_source)
+#     # Create an empty placeholder point cloud for the incoming live streaming frames
+#     live_source = o3d.geometry.PointCloud()
+#     vis.add_geometry(live_source)
 
     
     
-    # # CRITICAL FIX: Create a pristine tracking anchor that NEVER gets mutated by .transform()
-    tracking_anchor = copy.deepcopy(pristine_target.voxel_down_sample(voxel_size=VOXEL_SIZE * 3))
+#     # # CRITICAL FIX: Create a pristine tracking anchor that NEVER gets mutated by .transform()
+#     tracking_anchor = copy.deepcopy(pristine_target.voxel_down_sample(voxel_size=VOXEL_SIZE * 3))
    
-    # Initialize our absolute tracking matrix relative to the anchor position
-    T_anchor_to_camera = np.linalg.inv(T_current)
+#     # Initialize our absolute tracking matrix relative to the anchor position
+#     T_anchor_to_camera = np.linalg.inv(T_current)
     
-    # Create the visualization container that will be passed to the UI renderer
-    tracked_target = copy.deepcopy(tracking_anchor)
-    tracked_target.paint_uniform_color([0, 0.651, 0.929])  # Cyan CAD Model
-    vis.add_geometry(tracked_target)
-    framesCount = 0
-    timeStart = time.time()
-    timeTester = 0
+#     # Create the visualization container that will be passed to the UI renderer
+#     tracked_target = copy.deepcopy(tracking_anchor)
+#     tracked_target.paint_uniform_color([0, 0.651, 0.929])  # Cyan CAD Model
+#     vis.add_geometry(tracked_target)
+#     framesCount = 0
+#     timeStart = time.time()
+#     timeTester = 0
     
     
-    try:
-        while True:
-            # 1. Pull continuous real-time frames from the active camera pipeline
-            timeElapsed = time.time() - timeStart
-            if timeElapsed > 5.0:
-                fps = framesCount / timeElapsed
-                print(f"-> Real-Time Tracking FPS: {fps:.2f}")
-                timeStart = time.time()
-                framesCount = 0
-            framesCount += 1
-            timeTester = time.time()
-            frames = pipeline.wait_for_frames()
-            aligned_frames = align.process(frames)
-            depth_frame = aligned_frames.get_depth_frame()
+#     try:
+#         while True:
+#             # 1. Pull continuous real-time frames from the active camera pipeline
+#             timeElapsed = time.time() - timeStart
+#             if timeElapsed > 5.0:
+#                 fps = framesCount / timeElapsed
+#                 print(f"-> Real-Time Tracking FPS: {fps:.2f}")
+#                 timeStart = time.time()
+#                 framesCount = 0
+#             framesCount += 1
+#             timeTester = time.time()
+#             frames = pipeline.wait_for_frames()
+#             aligned_frames = align.process(frames)
+#             depth_frame = aligned_frames.get_depth_frame()
             
             
-            if not depth_frame:
-                continue
+#             if not depth_frame:
+#                 continue
                 
-            depth_image = np.asanyarray(depth_frame.get_data())
-            print(f"-> Frame Capture Time: {time.time() - timeTester:.4f}s")
+#             depth_image = np.asanyarray(depth_frame.get_data())
+#             print(f"-> Frame Capture Time: {time.time() - timeTester:.4f}s")
             
-            # 2. Transform the active depth matrix into an Open3D point cloud structure
-            timeTester = time.time()
-            depth_img_o3d = o3d.geometry.Image(depth_image)
-            new_pcd = o3d.geometry.PointCloud.create_from_depth_image(
-                depth=depth_img_o3d, intrinsic=INTRINSICS, depth_scale=1000.0, depth_trunc=0.8 # changing depth_trunc from 2.0 to 0.8 for closer range tracking
-            )
-            print(f"-> Point Cloud Projection Time: {time.time() - timeTester:.4f}s")
+#             # 2. Transform the active depth matrix into an Open3D point cloud structure
+#             timeTester = time.time()
+#             depth_img_o3d = o3d.geometry.Image(depth_image)
+#             new_pcd = o3d.geometry.PointCloud.create_from_depth_image(
+#                 depth=depth_img_o3d, intrinsic=INTRINSICS, depth_scale=1000.0, depth_trunc=0.8 # changing depth_trunc from 2.0 to 0.8 for closer range tracking
+#             )
+#             print(f"-> Point Cloud Projection Time: {time.time() - timeTester:.4f}s")
             
-            # 3. High-speed spatial preprocessing to preserve frame rate
-            timeTester = time.time()
-            new_pcd = new_pcd.voxel_down_sample(voxel_size=VOXEL_SIZE * 3)  # Slightly larger voxel for speed
-            print(f"-> Voxel Downsampling Time: {time.time() - timeTester:.4f}s")
+#             # 3. High-speed spatial preprocessing to preserve frame rate
+#             timeTester = time.time()
+#             new_pcd = new_pcd.voxel_down_sample(voxel_size=VOXEL_SIZE * 3)  # Slightly larger voxel for speed
+#             print(f"-> Voxel Downsampling Time: {time.time() - timeTester:.4f}s")
 
-            timeTester = time.time()
-            try:
-                # Fast RANSAC table strip to isolate the moving target object
-                _, inliers = new_pcd.segment_plane(distance_threshold=0.01, ransac_n=3, num_iterations=20) # dropped from 50 to 20 for performance
-                new_pcd = new_pcd.select_by_index(inliers, invert=True)
-            except:
-                pass
+#             timeTester = time.time()
+#             try:
+#                 # Fast RANSAC table strip to isolate the moving target object
+#                 _, inliers = new_pcd.segment_plane(distance_threshold=0.01, ransac_n=3, num_iterations=20) # dropped from 50 to 20 for performance
+#                 new_pcd = new_pcd.select_by_index(inliers, invert=True)
+#             except:
+#                 pass
 
-            print(f"-> Table Plane Segmentation Time: {time.time() - timeTester:.4f}s")
-            timeTester = time.time()
+#             print(f"-> Table Plane Segmentation Time: {time.time() - timeTester:.4f}s")
+#             timeTester = time.time()
                 
-            # new_pcd, _ = new_pcd.remove_statistical_outlier(nb_neighbors=20, std_ratio=1.5) #removed this for performance
-            new_pcd.paint_uniform_color([1, 0.706, 0])  # Yellow Scan Data
+#             # new_pcd, _ = new_pcd.remove_statistical_outlier(nb_neighbors=20, std_ratio=1.5) #removed this for performance
+#             new_pcd.paint_uniform_color([1, 0.706, 0])  # Yellow Scan Data
             
-            # Swap data vectors out inside the visualizer thread
-            live_source.points = new_pcd.points
-            vis.update_geometry(live_source)
-            print(f"-> Update UI Geometry Time: {time.time() - timeTester:.4f}s")
+#             # Swap data vectors out inside the visualizer thread
+#             live_source.points = new_pcd.points
+#             vis.update_geometry(live_source)
+#             print(f"-> Update UI Geometry Time: {time.time() - timeTester:.4f}s")
             
-            # 4. Run Anchored Model-to-Frame ICP tracking against the live stream
-            if len(live_source.points) > 100:
-                # Generate high-speed temporary normals for the point-to-plane calculations
-                timeTester = time.time()
-                live_source.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=0.012, max_nn=12)) # increased radius from 0.006 to 0.012 and decreased max_nn from 20 to 12 for speed
-                print(f"-> Normal Estimation Time: {time.time() - timeTester:.4f}s")
-                timeTester = time.time()
+#             # 4. Run Anchored Model-to-Frame ICP tracking against the live stream
+#             if len(live_source.points) > 100:
+#                 # Generate high-speed temporary normals for the point-to-plane calculations
+#                 timeTester = time.time()
+#                 live_source.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=0.012, max_nn=12)) # increased radius from 0.006 to 0.012 and decreased max_nn from 20 to 12 for speed
+#                 print(f"-> Normal Estimation Time: {time.time() - timeTester:.4f}s")
+#                 timeTester = time.time()
 
-                # We track the unmutated ANCHOR directly to the new frame, 
-                # seeding it with the previous frame's successful pose matrix.
-                track_result = o3d.pipelines.registration.registration_icp(
-                    tracking_anchor, live_source, 0.008,  # Slightly opened to 8mm for dynamic motion
-                    init=T_anchor_to_camera,
-                    estimation_method=o3d.pipelines.registration.TransformationEstimationPointToPlane(),
-                    criteria=o3d.pipelines.registration.ICPConvergenceCriteria(max_iteration=15)
-                )
-                print(f"-> ICP Tracking Time: {time.time() - timeTester:.4f}s (Fitness: {track_result.fitness:.4f})")
-                timeTester = time.time()
+#                 # We track the unmutated ANCHOR directly to the new frame, 
+#                 # seeding it with the previous frame's successful pose matrix.
+#                 track_result = o3d.pipelines.registration.registration_icp(
+#                     tracking_anchor, live_source, 0.008,  # Slightly opened to 8mm for dynamic motion
+#                     init=T_anchor_to_camera,
+#                     estimation_method=o3d.pipelines.registration.TransformationEstimationPointToPlane(),
+#                     criteria=o3d.pipelines.registration.ICPConvergenceCriteria(max_iteration=15)
+#                 )
+#                 print(f"-> ICP Tracking Time: {time.time() - timeTester:.4f}s (Fitness: {track_result.fitness:.4f})")
+#                 timeTester = time.time()
                 
-                # Overwrite the absolute tracking matrix directly (No delta compounding multiplication needed!)
-                T_anchor_to_camera = track_result.transformation
+#                 # Overwrite the absolute tracking matrix directly (No delta compounding multiplication needed!)
+#                 T_anchor_to_camera = track_result.transformation
                 
-                # Safe Reset: Overwrite visualizer coordinates from the anchor to prevent memory leaking drift
-                tracked_target.points = o3d.utility.Vector3dVector(np.array(tracking_anchor.points))
-                if tracking_anchor.has_normals():
-                    tracked_target.normals = o3d.utility.Vector3dVector(np.array(tracking_anchor.normals))
+#                 # Safe Reset: Overwrite visualizer coordinates from the anchor to prevent memory leaking drift
+#                 tracked_target.points = o3d.utility.Vector3dVector(np.array(tracking_anchor.points))
+#                 if tracking_anchor.has_normals():
+#                     tracked_target.normals = o3d.utility.Vector3dVector(np.array(tracking_anchor.normals))
                 
-                # Snap the visualizer instantly to the absolute position calculated
-                tracked_target.transform(T_anchor_to_camera)
-                vis.update_geometry(tracked_target)
+#                 # Snap the visualizer instantly to the absolute position calculated
+#                 tracked_target.transform(T_anchor_to_camera)
+#                 vis.update_geometry(tracked_target)
                 
-                # Calculate absolute CAD space (origin) to the live camera frame matrix
-                T_cad_to_camera = T_anchor_to_camera @ T_init
-                # print("\n-> Absolute 6DOF Pose Matrix (CAD to Camera):\n", T_cad_to_camera)
+#                 # Calculate absolute CAD space (origin) to the live camera frame matrix
+#                 T_cad_to_camera = T_anchor_to_camera @ T_init
+#                 # print("\n-> Absolute 6DOF Pose Matrix (CAD to Camera):\n", T_cad_to_camera)
                 
-            # 5. Flush frame events to UI layer and poll for manual exit sequences
-            if not vis.poll_events():
-                break
-            vis.update_renderer()
+#             # 5. Flush frame events to UI layer and poll for manual exit sequences
+#             if not vis.poll_events():
+#                 break
+#             vis.update_renderer()
 
-            print(f"-> Updating UI and Updating Matrix Time: {time.time() - timeTester:.4f}s")
+#             print(f"-> Updating UI and Updating Matrix Time: {time.time() - timeTester:.4f}s")
             
-            # Prevent operational CPU thread lock-ups
-            time.sleep(0.01)
+#             # Prevent operational CPU thread lock-ups
+#             time.sleep(0.01)
             
-    finally:
-        print("\n[*] Exiting tracking loop. Cleaning up...")
-        pipeline.stop()
-        vis.destroy_window()
-        print("[*] Tracking pipeline terminated cleanly.")
+#     finally:
+#         print("\n[*] Exiting tracking loop. Cleaning up...")
+#         pipeline.stop()
+#         vis.destroy_window()
+#         print("[*] Tracking pipeline terminated cleanly.")
 if __name__ == "__main__":
     main()
