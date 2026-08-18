@@ -1,0 +1,11 @@
+# Goal: Sent by state_machine_node to robot_control_node
+string task_type                  # Task identifier (e.g., "ORBIT_45", "PICK_AND_FLAT", "REMOVE_LID")
+geometry_msgs/Pose target_pose    # Target waypoint or pick coordinates
+---
+# Result: Returned when the motion sequence finishes or aborts
+bool success                      # True if trajectory executed without errors or emergency halts
+string message                    # Status summary or detailed error message
+---
+# Feedback: Streamed continuously while the arm is in motion
+string current_phase              # Current sub-step (e.g., "APPROACHING", "GRASPING", "RETRACTING")
+float32 progress_percent          # Execution progress from 0.0 to 100.0

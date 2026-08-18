@@ -1,7 +1,7 @@
 # ROS2 build artifacts
-ros2_ws/install/
-ros2_ws/build/
-ros2_ws/log/
+ROS2/ros2_ws/install/
+ROS2/ros2_ws/build/
+ROS2/ros2_ws/log/
 
 # Python caching
 __pycache__/

@@ -1,0 +1,8 @@
+# Request: Sent by state_machine_node to perception_node
+string object_target       # Target identifier (e.g., "gearbox_lid", "gear_1")
+int32 burst_count          # Number of depth/point cloud frames to average (e.g., 10)
+---
+# Response: Returned by perception_node after TEASER++/ICP registration completes
+bool success               # True if 3D pose was calculated successfully
+geometry_msgs/Pose pose    # Estimated 6D pose relative to camera or robot base
+float32 fitness_score      # Alignment quality metric (0.0 to 1.0)

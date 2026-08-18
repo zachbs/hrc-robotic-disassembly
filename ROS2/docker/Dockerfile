@@ -24,12 +24,20 @@ RUN apt-get update && apt-get install -y \
     libxcb-xinerama0 \
     && rm -rf /var/lib/apt/lists/*
 
+RUN pip install "setuptools==70.3.0"
+
 # Install ROS 2 Humble Base System Components using modern signed-by keyrings
 RUN mkdir -p /usr/share/keyrings && \
     curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | gpg --dearmor -o /usr/share/keyrings/ros-archive-keyring.gpg && \
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
     apt-get update && apt-get install -y \
     ros-humble-ros-base \
+    ros-humble-ament-cmake \
+    ros-humble-ament-cmake-core \
+    ros-humble-ament-cmake-python \
+    ros-humble-cv-bridge \
+    ros-humble-realsense2-camera\
+    ros-humble-foxglove-bridge\
     python3-colcon-common-extensions \
     && rm -rf /var/lib/apt/lists/*
 
@@ -46,14 +54,26 @@ RUN pip3 install --no-cache-dir \
     PyYAML==6.0.2 \
     ultralytics==8.3.169 \
     open3d-unofficial-arm==0.19.0.post9 \
-    pyrealsense2-beta==2.57.6.10172
+    pyrealsense2-beta==2.57.6.10172\
+    setuptools==69.5.1
 
 # Set up reliable runtime sourcing via an entrypoint script
 # This script ensures that the ROS 2 environment is properly sourced before executing any command passed to the container. This 
 # means that when you run the container, it will automatically set up the ROS 2 environment, allowing you to use ROS 2 commands 
 # and tools without needing to manually source the setup script each time.
-RUN echo '#!/bin/bash\nset -e\nsource /opt/ros/humble/setup.bash\nexec "$@"' > /ros_entrypoint.sh && \
-    chmod +x /ros_entrypoint.sh
+# 1. Create a smart entrypoint script that sources ROS 2 AND your built workspace (if it exists)
+RUN echo '#!/bin/bash\n\
+set -e\n\
+source /opt/ros/humble/setup.bash\n\
+if [ -f /workspace/install/setup.bash ]; then\n\
+  source /workspace/install/setup.bash\n\
+fi\n\
+exec "$@"' > /ros_entrypoint.sh && \
+chmod +x /ros_entrypoint.sh
+
+# 2. Also append these to ~/.bashrc so 'docker exec -it ... bash' sessions automatically source them too!
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && \
+    echo "if [ -f /workspace/install/setup.bash ]; then source /workspace/install/setup.bash; fi" >> ~/.bashrc
 
 #this is where the workspace will be mounted in the container, and where the user will be dropped into when the container is run
 WORKDIR /workspace

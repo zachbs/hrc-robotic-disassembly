@@ -279,7 +279,7 @@ def main():
     print("\n[STEP 10] Running RANSAC Global Alignment...")
      # This calculates the center of mass of both files and jumps the CAD model
     # straight onto the scan so RANSAC doesn't have to search across empty space.
-    pristine_target.translate(source.get_center() - pristine_target.get_center() + 0.2)
+    pristine_target.translate(source.get_center() - pristine_target.get_center())
     distance_threshold = 0.005  # 5mm
     normal_cos_threshold = np.cos(np.radians(15.0))
     start_time = time.time()

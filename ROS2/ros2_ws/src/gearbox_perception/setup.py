@@ -1,4 +1,8 @@
+from glob import glob
+import os
+
 from setuptools import find_packages, setup
+
 
 package_name = 'gearbox_perception'
 
@@ -11,6 +15,9 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/perception_pipeline.launch.py']),
+        (os.path.join('share', package_name, 'resources'),
+            [f for f in glob('resource/*') if f != 'resource/gearbox_perception']),
+        (os.path.join('share', package_name, 'utils'), glob('gearbox_perception/utils/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,8 +32,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'camera_bridge = gearbox_perception.camera_bridge_node:main',
-            'gearbox_registration = gearbox_perception.gearbox_registration_node:main',
+            'camera_bridge = gearbox_perception.nodes.camera_bridge_node:main',
+            'gearbox_registration = gearbox_perception.nodes.gearbox_registration_node:main',
         ],
     },
 )

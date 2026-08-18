@@ -357,143 +357,143 @@ def main():
 
     print("[+] Baseline Pose Decoded. Starting Real-Time Visual Tracking Loop...")
 
-#    # --------------------------------------------------------------------------
-#     # STEP 12: ANCHORED REAL-TIME 6DOF POSE TRACKING LOOP
-#     # --------------------------------------------------------------------------
-#     print("\n[+] Baseline Pose Decoded. Starting Anchored Real-Time Tracking Loop...")
-#     print("[*] Tracking Loop Engaged. Move the gearbox slowly. Close the window or press ESC to exit.")
+   # --------------------------------------------------------------------------
+    # STEP 12: ANCHORED REAL-TIME 6DOF POSE TRACKING LOOP
+    # --------------------------------------------------------------------------
+    print("\n[+] Baseline Pose Decoded. Starting Anchored Real-Time Tracking Loop...")
+    print("[*] Tracking Loop Engaged. Move the gearbox slowly. Close the window or press ESC to exit.")
     
-#     # Waken the camera hardware back up cleanly for the tracking phase
-#     pipeline.start(config)
+    # Waken the camera hardware back up cleanly for the tracking phase
+    pipeline.start(config)
     
-#     # Initialize the Open3D Active Rendering Window
-#     vis = o3d.visualization.Visualizer()
-#     vis.create_window(window_name="Anchored Real-Time 6DOF Gearbox Tracker", width=1024, height=768)
+    # Initialize the Open3D Active Rendering Window
+    vis = o3d.visualization.Visualizer()
+    vis.create_window(window_name="Anchored Real-Time 6DOF Gearbox Tracker", width=1024, height=768)
     
-#     # Create an empty placeholder point cloud for the incoming live streaming frames
-#     live_source = o3d.geometry.PointCloud()
-#     vis.add_geometry(live_source)
+    # Create an empty placeholder point cloud for the incoming live streaming frames
+    live_source = o3d.geometry.PointCloud()
+    vis.add_geometry(live_source)
 
     
     
-#     # # CRITICAL FIX: Create a pristine tracking anchor that NEVER gets mutated by .transform()
-#     tracking_anchor = copy.deepcopy(pristine_target.voxel_down_sample(voxel_size=VOXEL_SIZE * 3))
+    # # CRITICAL FIX: Create a pristine tracking anchor that NEVER gets mutated by .transform()
+    tracking_anchor = copy.deepcopy(pristine_target.voxel_down_sample(voxel_size=VOXEL_SIZE * 3))
    
-#     # Initialize our absolute tracking matrix relative to the anchor position
-#     T_anchor_to_camera = np.linalg.inv(T_current)
+    # Initialize our absolute tracking matrix relative to the anchor position
+    T_anchor_to_camera = np.linalg.inv(T_current)
     
-#     # Create the visualization container that will be passed to the UI renderer
-#     tracked_target = copy.deepcopy(tracking_anchor)
-#     tracked_target.paint_uniform_color([0, 0.651, 0.929])  # Cyan CAD Model
-#     vis.add_geometry(tracked_target)
-#     framesCount = 0
-#     timeStart = time.time()
-#     timeTester = 0
+    # Create the visualization container that will be passed to the UI renderer
+    tracked_target = copy.deepcopy(tracking_anchor)
+    tracked_target.paint_uniform_color([0, 0.651, 0.929])  # Cyan CAD Model
+    vis.add_geometry(tracked_target)
+    framesCount = 0
+    timeStart = time.time()
+    timeTester = 0
     
     
-#     try:
-#         while True:
-#             # 1. Pull continuous real-time frames from the active camera pipeline
-#             timeElapsed = time.time() - timeStart
-#             if timeElapsed > 5.0:
-#                 fps = framesCount / timeElapsed
-#                 print(f"-> Real-Time Tracking FPS: {fps:.2f}")
-#                 timeStart = time.time()
-#                 framesCount = 0
-#             framesCount += 1
-#             timeTester = time.time()
-#             frames = pipeline.wait_for_frames()
-#             aligned_frames = align.process(frames)
-#             depth_frame = aligned_frames.get_depth_frame()
+    try:
+        while True:
+            # 1. Pull continuous real-time frames from the active camera pipeline
+            timeElapsed = time.time() - timeStart
+            if timeElapsed > 5.0:
+                fps = framesCount / timeElapsed
+                print(f"-> Real-Time Tracking FPS: {fps:.2f}")
+                timeStart = time.time()
+                framesCount = 0
+            framesCount += 1
+            timeTester = time.time()
+            frames = pipeline.wait_for_frames()
+            aligned_frames = align.process(frames)
+            depth_frame = aligned_frames.get_depth_frame()
             
             
-#             if not depth_frame:
-#                 continue
+            if not depth_frame:
+                continue
                 
-#             depth_image = np.asanyarray(depth_frame.get_data())
-#             print(f"-> Frame Capture Time: {time.time() - timeTester:.4f}s")
+            depth_image = np.asanyarray(depth_frame.get_data())
+            print(f"-> Frame Capture Time: {time.time() - timeTester:.4f}s")
             
-#             # 2. Transform the active depth matrix into an Open3D point cloud structure
-#             timeTester = time.time()
-#             depth_img_o3d = o3d.geometry.Image(depth_image)
-#             new_pcd = o3d.geometry.PointCloud.create_from_depth_image(
-#                 depth=depth_img_o3d, intrinsic=INTRINSICS, depth_scale=1000.0, depth_trunc=0.8 # changing depth_trunc from 2.0 to 0.8 for closer range tracking
-#             )
-#             print(f"-> Point Cloud Projection Time: {time.time() - timeTester:.4f}s")
+            # 2. Transform the active depth matrix into an Open3D point cloud structure
+            timeTester = time.time()
+            depth_img_o3d = o3d.geometry.Image(depth_image)
+            new_pcd = o3d.geometry.PointCloud.create_from_depth_image(
+                depth=depth_img_o3d, intrinsic=INTRINSICS, depth_scale=1000.0, depth_trunc=0.8 # changing depth_trunc from 2.0 to 0.8 for closer range tracking
+            )
+            print(f"-> Point Cloud Projection Time: {time.time() - timeTester:.4f}s")
             
-#             # 3. High-speed spatial preprocessing to preserve frame rate
-#             timeTester = time.time()
-#             new_pcd = new_pcd.voxel_down_sample(voxel_size=VOXEL_SIZE * 3)  # Slightly larger voxel for speed
-#             print(f"-> Voxel Downsampling Time: {time.time() - timeTester:.4f}s")
+            # 3. High-speed spatial preprocessing to preserve frame rate
+            timeTester = time.time()
+            new_pcd = new_pcd.voxel_down_sample(voxel_size=VOXEL_SIZE * 3)  # Slightly larger voxel for speed
+            print(f"-> Voxel Downsampling Time: {time.time() - timeTester:.4f}s")
 
-#             timeTester = time.time()
-#             try:
-#                 # Fast RANSAC table strip to isolate the moving target object
-#                 _, inliers = new_pcd.segment_plane(distance_threshold=0.01, ransac_n=3, num_iterations=20) # dropped from 50 to 20 for performance
-#                 new_pcd = new_pcd.select_by_index(inliers, invert=True)
-#             except:
-#                 pass
+            timeTester = time.time()
+            try:
+                # Fast RANSAC table strip to isolate the moving target object
+                _, inliers = new_pcd.segment_plane(distance_threshold=0.01, ransac_n=3, num_iterations=20) # dropped from 50 to 20 for performance
+                new_pcd = new_pcd.select_by_index(inliers, invert=True)
+            except:
+                pass
 
-#             print(f"-> Table Plane Segmentation Time: {time.time() - timeTester:.4f}s")
-#             timeTester = time.time()
+            print(f"-> Table Plane Segmentation Time: {time.time() - timeTester:.4f}s")
+            timeTester = time.time()
                 
-#             # new_pcd, _ = new_pcd.remove_statistical_outlier(nb_neighbors=20, std_ratio=1.5) #removed this for performance
-#             new_pcd.paint_uniform_color([1, 0.706, 0])  # Yellow Scan Data
+            # new_pcd, _ = new_pcd.remove_statistical_outlier(nb_neighbors=20, std_ratio=1.5) #removed this for performance
+            new_pcd.paint_uniform_color([1, 0.706, 0])  # Yellow Scan Data
             
-#             # Swap data vectors out inside the visualizer thread
-#             live_source.points = new_pcd.points
-#             vis.update_geometry(live_source)
-#             print(f"-> Update UI Geometry Time: {time.time() - timeTester:.4f}s")
+            # Swap data vectors out inside the visualizer thread
+            live_source.points = new_pcd.points
+            vis.update_geometry(live_source)
+            print(f"-> Update UI Geometry Time: {time.time() - timeTester:.4f}s")
             
-#             # 4. Run Anchored Model-to-Frame ICP tracking against the live stream
-#             if len(live_source.points) > 100:
-#                 # Generate high-speed temporary normals for the point-to-plane calculations
-#                 timeTester = time.time()
-#                 live_source.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=0.012, max_nn=12)) # increased radius from 0.006 to 0.012 and decreased max_nn from 20 to 12 for speed
-#                 print(f"-> Normal Estimation Time: {time.time() - timeTester:.4f}s")
-#                 timeTester = time.time()
+            # 4. Run Anchored Model-to-Frame ICP tracking against the live stream
+            if len(live_source.points) > 100:
+                # Generate high-speed temporary normals for the point-to-plane calculations
+                timeTester = time.time()
+                live_source.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(radius=0.012, max_nn=12)) # increased radius from 0.006 to 0.012 and decreased max_nn from 20 to 12 for speed
+                print(f"-> Normal Estimation Time: {time.time() - timeTester:.4f}s")
+                timeTester = time.time()
 
-#                 # We track the unmutated ANCHOR directly to the new frame, 
-#                 # seeding it with the previous frame's successful pose matrix.
-#                 track_result = o3d.pipelines.registration.registration_icp(
-#                     tracking_anchor, live_source, 0.008,  # Slightly opened to 8mm for dynamic motion
-#                     init=T_anchor_to_camera,
-#                     estimation_method=o3d.pipelines.registration.TransformationEstimationPointToPlane(),
-#                     criteria=o3d.pipelines.registration.ICPConvergenceCriteria(max_iteration=15)
-#                 )
-#                 print(f"-> ICP Tracking Time: {time.time() - timeTester:.4f}s (Fitness: {track_result.fitness:.4f})")
-#                 timeTester = time.time()
+                # We track the unmutated ANCHOR directly to the new frame, 
+                # seeding it with the previous frame's successful pose matrix.
+                track_result = o3d.pipelines.registration.registration_icp(
+                    tracking_anchor, live_source, 0.008,  # Slightly opened to 8mm for dynamic motion
+                    init=T_anchor_to_camera,
+                    estimation_method=o3d.pipelines.registration.TransformationEstimationPointToPlane(),
+                    criteria=o3d.pipelines.registration.ICPConvergenceCriteria(max_iteration=15)
+                )
+                print(f"-> ICP Tracking Time: {time.time() - timeTester:.4f}s (Fitness: {track_result.fitness:.4f})")
+                timeTester = time.time()
                 
-#                 # Overwrite the absolute tracking matrix directly (No delta compounding multiplication needed!)
-#                 T_anchor_to_camera = track_result.transformation
+                # Overwrite the absolute tracking matrix directly (No delta compounding multiplication needed!)
+                T_anchor_to_camera = track_result.transformation
                 
-#                 # Safe Reset: Overwrite visualizer coordinates from the anchor to prevent memory leaking drift
-#                 tracked_target.points = o3d.utility.Vector3dVector(np.array(tracking_anchor.points))
-#                 if tracking_anchor.has_normals():
-#                     tracked_target.normals = o3d.utility.Vector3dVector(np.array(tracking_anchor.normals))
+                # Safe Reset: Overwrite visualizer coordinates from the anchor to prevent memory leaking drift
+                tracked_target.points = o3d.utility.Vector3dVector(np.array(tracking_anchor.points))
+                if tracking_anchor.has_normals():
+                    tracked_target.normals = o3d.utility.Vector3dVector(np.array(tracking_anchor.normals))
                 
-#                 # Snap the visualizer instantly to the absolute position calculated
-#                 tracked_target.transform(T_anchor_to_camera)
-#                 vis.update_geometry(tracked_target)
+                # Snap the visualizer instantly to the absolute position calculated
+                tracked_target.transform(T_anchor_to_camera)
+                vis.update_geometry(tracked_target)
                 
-#                 # Calculate absolute CAD space (origin) to the live camera frame matrix
-#                 T_cad_to_camera = T_anchor_to_camera @ T_init
-#                 # print("\n-> Absolute 6DOF Pose Matrix (CAD to Camera):\n", T_cad_to_camera)
+                # Calculate absolute CAD space (origin) to the live camera frame matrix
+                T_cad_to_camera = T_anchor_to_camera @ T_init
+                print("\n-> Absolute 6DOF Pose Matrix (CAD to Camera):\n", T_cad_to_camera)
                 
-#             # 5. Flush frame events to UI layer and poll for manual exit sequences
-#             if not vis.poll_events():
-#                 break
-#             vis.update_renderer()
+            # 5. Flush frame events to UI layer and poll for manual exit sequences
+            if not vis.poll_events():
+                break
+            vis.update_renderer()
 
-#             print(f"-> Updating UI and Updating Matrix Time: {time.time() - timeTester:.4f}s")
+            print(f"-> Updating UI and Updating Matrix Time: {time.time() - timeTester:.4f}s")
             
-#             # Prevent operational CPU thread lock-ups
-#             time.sleep(0.01)
+            # Prevent operational CPU thread lock-ups
+            time.sleep(0.01)
             
-#     finally:
-#         print("\n[*] Exiting tracking loop. Cleaning up...")
-#         pipeline.stop()
-#         vis.destroy_window()
-#         print("[*] Tracking pipeline terminated cleanly.")
+    finally:
+        print("\n[*] Exiting tracking loop. Cleaning up...")
+        pipeline.stop()
+        vis.destroy_window()
+        print("[*] Tracking pipeline terminated cleanly.")
 if __name__ == "__main__":
     main()

@@ -15,6 +15,7 @@ def verify_alignment():
     print("-> Loading and preprocessing raw data...")
     STL_FILE_PATH = "nonScaledFullGearboxInsideRemoved-Fusion.stl"
     PCD_SCAN_PATH = "captured_scans/gearbox_scan_20260616_192600.pcd" # Optional: If you saved the intermediate point cloud after preprocessing, load it here for a more direct comparison.
+    PCD_CAD_PATH = "captured_scans/centered_cad_target.pcd"  # The CAD model you want to align with the scan.
 
     # # 1. Load Raw Scan Depth and Convert to Point Cloud
     # realsense_depth = np.load(NUMPY_SCAN_PATH)
@@ -26,10 +27,13 @@ def verify_alignment():
     source = o3d.io.read_point_cloud(PCD_SCAN_PATH)
     
 
-    # 2. Load CAD Target and Scale Natively
-    mesh = o3d.io.read_triangle_mesh(STL_FILE_PATH)
-    target = mesh.sample_points_uniformly(number_of_points=20000)
-    target.scale(0.00168095, center=target.get_center())
+    # # 2. Load CAD Target and Scale Natively
+    # mesh = o3d.io.read_triangle_mesh(STL_FILE_PATH)
+    # target = mesh.sample_points_uniformly(number_of_points=20000)
+    # target.scale(0.00168095, center=target.get_center())
+    target = o3d.io.read_point_cloud(PCD_CAD_PATH)
+
+    
 
     # 3. Apply Workspace Crop Box
     # min_bound = np.array([-1, -1, -1])
@@ -49,6 +53,13 @@ def verify_alignment():
     
     # 6. Apply your found transformation matrix to the cleaned source cloud
     print("\n-> Applying your found transformation matrix to align the scan...")
+    translation_vec = source.get_center() - target.get_center()
+
+    # 2. Build T_init and transform pristine_target IN PLACE
+    T_init = np.eye(4)
+    T_init[:3, 3] = translation_vec
+    print("-> Initial translation vector to roughly align centers:", translation_vec)
+    print("-> Initial transformation matrix T_init:\n", T_init)
     target.translate(source.get_center() - target.get_center())
 
     source.transform(T_FOUND)
