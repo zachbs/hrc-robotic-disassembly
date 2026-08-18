@@ -10,6 +10,7 @@ From the root of the project repository, move into the Docker configuration fold
 ```bash
 cd ROS2/docker
 ```
+Then launch the Docker Desktop application.
 
 ### 2. Build and Launch the Docker Container
 Start the container environment using Docker Compose:
