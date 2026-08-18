@@ -16,6 +16,10 @@ Start the container environment using Docker Compose:
 ```bash
 docker compose up --build -d
 ```
+If the container has already been built previously just use this command to start the container:
+```bash
+docker compose up -d
+```
 
 ### 3. Enter the Docker Shell
 Open an interactive bash shell inside the running container:
@@ -53,3 +57,36 @@ ros2 launch gearbox_perception perception_pipeline.launch.py
 ws://localhost:8765
 ```
 5. Click Connect to view live point clouds, camera streams, and ROS2 topic telemetry.
+
+### 8. Exiting the Program
+1. To exit out of ROS2 first press the CTRL key and C key at the same time
+2. Next type this in the terminal
+```bash
+exit
+```
+3. Lastly to shutdown docker run this:
+```bash
+docker compose down
+```
+
+### If you are on a Windows device then Docker and WSL could still be running in the background
+If you see both are still running, go to the upward arrow (show hidden icons button) on the task bar
+and find the Docker app icon. Right click and hit "Quit Docker Desktop".
+This should stop WSL and Docker from running in the background but there is a chance WSL is still running.
+To see if WSL is still running enter this:
+```bash
+wsl --list --running
+```
+If you see something like:
+docker-desktop
+docker-desktop-data
+Ubuntu
+
+or
+Ubuntu
+
+then enter this command:
+```bash
+wsl --shutdown
+```
+This will shut down WSL and free up a lot of memory being used.
