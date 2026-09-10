@@ -35,11 +35,78 @@ def save_processed_scan(pcd, output_dir="captured_scans", filename=None):
         
     return filepath
 
+
+
+
+def compute_2d_iou(boxA, boxB):
+  """Computes Intersection over Union (IoU) between two 2D boxes [x1, y1, x2, y2]."""
+  xA = max(boxA[0], boxB[0])
+  yA = max(boxA[1], boxB[1])
+  xB = min(boxA[2], boxB[2])
+  yB = min(boxA[3], boxB[3])
+
+  interArea = max(0, xB - xA) * max(0, yB - yA)
+  if interArea == 0:
+    return 0.0
+
+  boxAArea = (boxA[2] - boxA[0]) * (boxA[3] - boxA[1])
+  boxBArea = (boxB[2] - boxB[0]) * (boxB[3] - boxB[1])
+
+  iou = interArea / float(boxAArea + boxBArea - interArea)
+  return iou
+
+
+def verify_6d_pose_with_yolo(cad_vertices, R, t, K, yolo_bbox, img_shape):
+  """Transforms CAD vertices by 6D pose (R, t), projects to 2D image space using intrinsics K,
+
+  and computes 2D Bounding Box IoU against a YOLO bounding box.
+
+  Params:
+      cad_vertices: (N, 3) numpy array of CAD mesh vertices
+      R: (3, 3) rotation matrix
+      t: (3,) or (3, 1) translation vector
+      K: (3, 3) camera intrinsics matrix [[fx, 0, cx], [0, fy, cy], [0, 0, 1]]
+      yolo_bbox: [x1, y1, x2, y2] bounding box from YOLO
+      img_shape: (height, width) of the camera frame
+
+  Returns:
+      iou: float score between 0.0 and 1.0
+      proj_bbox: [x1, y1, x2, y2] projected 2D bounding box
+  """
+  # 1. Transform CAD vertices to Camera Coordinates
+  t = t.reshape(1, 3)
+  pts_cam = (R @ cad_vertices.T).T + t
+
+  # Filter out any vertices behind the camera plane (Z <= 0)
+  valid_pts = pts_cam[pts_cam[:, 2] > 0]
+  if len(valid_pts) == 0:
+    return 0.0, [0, 0, 0, 0]
+
+  # 2. Project 3D points to 2D pixel space using camera intrinsics
+  fx, fy = K[0, 0], K[1, 1]
+  cx, cy = K[0, 2], K[1, 2]
+
+  u = (fx * valid_pts[:, 0] / valid_pts[:, 2]) + cx
+  v = (fy * valid_pts[:, 1] / valid_pts[:, 2]) + cy
+
+  # Clamp projected points to image dimensions
+  h, w = img_shape[:2]
+  u = np.clip(u, 0, w - 1)
+  v = np.clip(v, 0, h - 1)
+
+  # 3. Form projected 2D Axis-Aligned Bounding Box
+  proj_bbox = [np.min(u), np.min(v), np.max(u), np.max(v)]
+
+  # 4. Calculate IoU against YOLO Bounding Box
+  iou = compute_2d_iou(yolo_bbox, proj_bbox)
+
+  return iou, proj_bbox
+
 # ==============================================================================
 # CONFIGURATION & HYPERPARAMETERS
 # ==============================================================================
 STL_FILE_PATH = "nonScaledFullGearboxInsideRemoved-Fusion.stl"
-PCD_FILE_PATH = "captured_scans/optimized_cad_target.pcd"
+PCD_FILE_PATH = "origin_centered_local_global.pcd"
 YOLO_MODEL_PATH = "06-09-2026.pt"
 VOXEL_SIZE = 0.0025
 PADDING = 20  # YOLO bounding box 2D padding
@@ -54,6 +121,15 @@ INTRINSICS = o3d.camera.PinholeCameraIntrinsic(
         cx=326.06304931640625,  # Principal point X
         cy=249.21212768554688   # Principal point Y
     )
+# Updated Open3D intrinsic object matching your new RealSense settings
+INTRINSICS = o3d.camera.PinholeCameraIntrinsic(
+    width=640,
+    height=480,
+    fx=381.213196,
+    fy=381.213196,
+    cx=324.086700,
+    cy=240.891968,
+)
 
 # ==============================================================================
 # HELPER FUNCTIONS
@@ -252,14 +328,14 @@ def main():
     # --------------------------------------------------------------------------
     # STEP 6: TABLE PLANE SEGMENTATION
     # --------------------------------------------------------------------------
-    print("\n[STEP 6] Removing Dominant Table Plane...")
-    try:
-        plane_model, inliers = pcd.segment_plane(distance_threshold=0.01, ransac_n=3, num_iterations=200)
-        pcd = pcd.select_by_index(inliers, invert=True)
-        print(f"-> After table removal, cloud has {len(pcd.points)} points.")
-        #o3d.visualization.draw_geometries([pcd], window_name="Step 6: Table Plane Removed")
-    except Exception as e:
-        print(f"-> Plane segmentation failed: {e}")
+    # print("\n[STEP 6] Removing Dominant Table Plane...")
+    # try:
+    #     plane_model, inliers = pcd.segment_plane(distance_threshold=0.01, ransac_n=3, num_iterations=200)
+    #     pcd = pcd.select_by_index(inliers, invert=True)
+    #     print(f"-> After table removal, cloud has {len(pcd.points)} points.")
+    #     #o3d.visualization.draw_geometries([pcd], window_name="Step 6: Table Plane Removed")
+    # except Exception as e:
+    #     print(f"-> Plane segmentation failed: {e}")
 
     # --------------------------------------------------------------------------
     # STEP 7: STATISTICAL & RADIUS OUTLIER REMOVAL (Flying Pixel Cleanup)
@@ -354,7 +430,18 @@ def main():
     print("\n[+] Final Optimized 6D Pose Transformation Matrix:\n", T_current)
     draw_registration_step(source, pristine_target, T_current, "Step 11: Multi-Scale ICP Refinement")
 
+    iou, proj_bbox = verify_6d_pose_with_yolo(cad_vertices=np.asarray(pristine_target.vertices),
+                                R=T_current[0:3, 0:3],
+                                t=T_current[0:3, 3],
+                                K=INTRINSICS,
+                                yolo_bbox=locked_box,
+                                img_shape=(480, 640))
+    
+    print(f"\n[+] YOLO Bounding Box: {locked_box}")
+    print(f"[+] Projected CAD Bounding Box: {proj_bbox}")
+    print(f"[+] 2D Bounding Box IoU: {iou:.4f}")
 
+    
     print("[+] Baseline Pose Decoded. Starting Real-Time Visual Tracking Loop...")
 
    # --------------------------------------------------------------------------
