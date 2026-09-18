@@ -29,11 +29,6 @@ def generate_launch_description():
         }]
     )
 
-    camera_bridge = Node(
-        package='gearbox_perception',
-        executable='camera_bridge',
-        output='screen'
-    )
 
     registration = Node(
         package='gearbox_perception',
@@ -44,6 +39,5 @@ def generate_launch_description():
     return LaunchDescription([
         realsense_launch,
         foxglove_bridge,
-        camera_bridge,
         registration
     ])

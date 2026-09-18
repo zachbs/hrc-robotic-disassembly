@@ -1,0 +1,9 @@
+# Request: Sent by state_machine_node
+string object_target       # e.g., "bolt", "gearbox"
+---
+# Response: Returned by perception_node
+bool success               # True if detected
+float32 confidence         # YOLO confidence score
+int32 u_center             # Bounding box center X (pixels)
+int32 v_center             # Bounding box center Y (pixels)
+int32[4] bbox              # [xmin, ymin, xmax, ymax]

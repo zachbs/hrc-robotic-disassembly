@@ -14,6 +14,7 @@ find_package(std_msgs REQUIRED)
 # 2. Tell ROS2 which custom files to generate
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/EstimatePose.srv"
+  "srv/Get2DBoundingBox.srv"
   "action/ExecuteTask.action"
   DEPENDENCIES geometry_msgs std_msgs
 )

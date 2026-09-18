@@ -24,7 +24,6 @@ RUN apt-get update && apt-get install -y \
     libxcb-xinerama0 \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install "setuptools==70.3.0"
 
 # Install ROS 2 Humble Base System Components using modern signed-by keyrings
 RUN mkdir -p /usr/share/keyrings && \
@@ -55,6 +54,7 @@ RUN pip3 install --no-cache-dir \
     ultralytics==8.3.169 \
     open3d-unofficial-arm==0.19.0.post9 \
     pyrealsense2-beta==2.57.6.10172\
+    packaging==21.3\
     setuptools==69.5.1
 
 # Set up reliable runtime sourcing via an entrypoint script
