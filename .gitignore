@@ -13,3 +13,14 @@ __pycache__/
 *.vscode/
 
 .venv/
+
+*.egg-info/
+# *.pt
+# *.pth
+*.onnx
+*.engine
+*.ply
+*.pcd
+*.bag
+*.mcap
+.env
