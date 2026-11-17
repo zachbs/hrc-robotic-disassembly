@@ -105,6 +105,13 @@ V-GAP/
 | `vgap_trials_ur5e.py` | Earlier trial runner; shared helpers used by the eval and grasp scripts. |
 | `vgap_gate.py`, `sim_gearbox_gate.py`, `shift_hand_eye.py` | Early gearbox gate prototype and a small hand-eye utility. |
 
+## Model and dataset
+
+- **Weights:** [`weights/10-16-26seg26sNoNull.pt`](weights/10-16-26seg26sNoNull.pt) is the YOLO26s-seg model used in every experiment here (the "no-null" fine-tune). Classes: Gearbox, L-Shape, Sphere, T-Shape. `YOLO_MODEL_PATH` in `code/vgap/vgap_pipeline.py` points to the copy on the lab Jetson; set it to `weights/10-16-26seg26sNoNull.pt` to use this one.
+- **Dataset:** 1,548 images of the four parts in all three colors: 1,398 frames from handheld RealSense orbit videos plus 150 L-block/T-block hard examples, split by video clip into 1,085 train / 302 val / 161 test. Labeled and hosted on Roboflow: [V-GAP dataset on Roboflow Universe](https://universe.roboflow.com/merit-lab/v-gap).
+- **Test set (mask):** precision 96.7%, recall 93.4%, mAP50 98.3%, mAP50-95 97.1%.
+- **Retrain:** `code/vgap/train_seg.py` (YOLO26s-seg, 640 px, fine-tuned 40 epochs from the base model).
+
 ## Running it
 
 ```bash
@@ -121,7 +128,6 @@ python code/vgap/vgap_gate_eval_ur5e.py --help
 Settings passed on the command line: `--robot-ip` (UR5e), `--serial` (wrist RealSense serial), `--hand-eye` (camera hand-eye `.npy`, e.g. `"../Python Files Disassembly/matrix_config/T_flange_cam_updated_zfix.npy"`), `--gocator-ip`, `--gocator-hand-eye`. Outputs go to `data/` under the folder you run from.
 
 Not in the repo:
-- **YOLO weights.** The pipeline uses the no-null fine-tune of YOLO26s-seg (mask mAP50 98.3% on the held-out test set). `YOLO_MODEL_PATH` in `vgap_pipeline.py` points to `../Python Files Disassembly/runs/segment/yolo26s_ft_nonull/weights/best.pt`, where it sits on the lab machine; change it if your weights are elsewhere. Train your own with `code/vgap/train_seg.py`.
 - **Hand-eye matrices.** Specific to the robot; in the lab they are in `Python Files Disassembly/matrix_config/`. Recalibrate with `code/vgap/calibrate_hand_eye_ur5e.py`.
 - **Gocator SDK.** `gocator_cam.py` imports `Gocator.py` and `GoSdk_MsgHandler.py`, which are in `Python Files Disassembly/` in the lab repo, and reads the SDK from `SDK_PATH` (the lab Jetson path). When running `--gocator` from `V-GAP/`, add that folder to the Python path: `PYTHONPATH="../Python Files Disassembly" python code/vgap/vgap_gate_eval_ur5e.py ... --gocator`.
 - Raw images and point clouds (too large).
@@ -132,7 +138,6 @@ Not in the repo:
 - **Hand-eye transform.** The evaluations used a hand-measured camera-to-flange transform. The gate works in the camera frame and is unaffected, but base-frame positions drifted with camera tilt (in the hemisphere set, the detected center was 22, 74 and 106 mm from the target at 0, 30 and 45 degrees). The transform was then calibrated with ArUco markers (marker position spread 1.5 mm median, 3.2 mm maximum, against 29 mm with the hand-measured transform). The Gocator check showed that this calibration still placed parts 6.3 mm too high along the tool axis; after a correction, the mean offset on the hemisphere, which was not used to estimate it, was about 1.5 mm.
 - **Detection.** The detector was trained on handheld-camera images in daytime lighting. It was weaker in strong shadow (a setup B run at dusk lowered the L-block's overhead score just below its threshold in 2 of 5 trials; a daylight rerun recovered all 5) and when the arm-camera viewpoint differed from training: a version fine-tuned with background images taken only from the arm camera scored best on the test set but missed parts on the robot, because it learned to associate the arm view with "no object". Detection robustness is separate from the gate's contribution: in every detection failure in these tests the outcome was "no detection" or Conflict, never a wrong released pose.
 - **Scope of the gate.** The in-plane hypothesis check does not cover rotations about other axes; these are left to the 3D check. tau_c was calibrated on white parts only, and reflective parts showed more false rejections. The occlusion tests used white parts and two occluder configurations. The only baseline was plain RANSAC+ICP; the gate was not compared with, or applied to, learned pose estimators such as MegaPose and FoundationPose, or certifiable registration such as TEASER++.
-
 
 ## Contributions
 
