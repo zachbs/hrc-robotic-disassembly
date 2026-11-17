@@ -63,7 +63,7 @@ The pipeline estimates the gearbox's 6D pose by aligning its CAD model to RealSe
 └── assets/                     # images used in this README
 ```
 
-> **Hardware-specific files are not included.** V-GAP ran on the lab's Jetson with a UR5e, a wrist RealSense, a Gocator 3210 and a Robotiq 2F-140. The hand-eye matrices (specific to that robot and mount), the Gocator SDK and its wrapper scripts (`Gocator.py`, `GoSdk_MsgHandler.py`, licensed by LMI), and the YOLO weights stay on the lab machine, which is what paths like `../Python Files Disassembly/...` in `V-GAP/` point to. With your own setup, recalibrate with `code/vgap/calibrate_hand_eye_ur5e.py` and pass `--hand-eye`. Without any hardware, `python code/vgap/test_vgap_pipeline_sim.py` runs the pipeline on simulated scans.
+> **Hardware-specific files are not included.** V-GAP ran on the lab's Jetson with a UR5e, a wrist RealSense, a Gocator 3210 and a Robotiq 2F-140. The hand-eye matrices (specific to that robot and mount), the Gocator SDK and its wrapper scripts (`Gocator.py`, `GoSdk_MsgHandler.py`, licensed by LMI) stay on the lab machine, which is what paths like `../Python Files Disassembly/...` in `V-GAP/` point to. With your own setup, recalibrate with `code/vgap/calibrate_hand_eye_ur5e.py` and pass `--hand-eye`. Without any hardware, `python code/vgap/test_vgap_pipeline_sim.py` runs the pipeline on simulated scans. The YOLO weights are included in V-GAP/weights/.
 
 ## ROS 2 quickstart
 
