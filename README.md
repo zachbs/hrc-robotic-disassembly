@@ -21,9 +21,10 @@ Code, CAD, results and method: [`V-GAP/`](V-GAP/README.md).
 |---|---|---|
 | Docker environment | Done | Reproduces the Jetson target (Ubuntu 22.04, ROS 2 Humble, Python 3.10) on any dev machine |
 | ROS 2 workspace | Done | Package layout, launch files, and custom interfaces for the pipeline |
-| 3D registration pipeline | Done (offline) | CAD-to-scene 6D pose estimation from RGB-D data |
-| Foxglove integration | Done | Live point clouds, camera streams, and topic telemetry over WebSocket |
-| Perception, state machine, and motion nodes | In progress | Being built on top of this framework |
+| 3D registration pipeline | Done (standalone) | CAD-to-scene 6D pose estimation from RGB-D data; not yet connected to ROS 2 (future work) |
+| Foxglove integration | Connected | WebSocket bridge to Foxglove Studio is set up and working; no perception data streams through it yet because the perception node is not built, and the custom UI is not built yet |
+| Path planning / motion node | In progress | MoveIt and the UR5e driver, being built on top of this framework |
+| Perception and state machine nodes | Planned | Not started yet |
 | V-GAP (Visually Gated Active Perception) | Done (tested on UR5e) | Pose estimation with a cross-modal consistency gate before every grasp, gate-triggered recovery, calibration and full evaluation. See [`V-GAP/`](V-GAP/README.md) |
 
 ## Earlier work: ROS 2 framework and gearbox registration
@@ -84,7 +85,7 @@ source install/setup.bash
 ros2 launch gearbox_perception perception_pipeline.launch.py
 ```
 
-**Visualize:** in Foxglove Studio, choose Open Connection → Foxglove WebSocket → `ws://localhost:8765`.
+**Visualize:** in Foxglove Studio, choose Open Connection → Foxglove WebSocket → `ws://localhost:8765`. The connection works; perception topics will appear once the perception node is built.
 
 **Shut down:** press `Ctrl+C`, type `exit`, then run `docker compose down`.
 
@@ -106,8 +107,8 @@ wsl --shutdown
 
 ## Contributions
 
-- **Zach Smith:** for V-GAP, designed the original RANSAC + ICP pose pipeline and its design choices, designed the new adaptive recovery, trained the YOLO model, and did all of the physical work (robot and sensor setup, calibration, and every test and experiment on the UR5e). For the framework, designed the system architecture and node design (perception, 3D registration, state management, motion execution), built the Docker environment, ROS 2 workspace (package structure, launch files, custom interfaces), the Foxglove integration, and the 3D registration pipeline (data collection, YOLO training, depth filtering, FPFH + RANSAC + ICP).
-- **Minh "Arthur" Nguyen:** implementing the ROS 2 nodes from that design, including the perception node and the path planning and motion execution components (MoveIt and the UR5e driver).
+- **Zach Smith:** for V-GAP, designed the original RANSAC + ICP pose pipeline and its design choices, designed the new adaptive recovery, trained the YOLO model, and did all of the physical work (robot and sensor setup, calibration, and every test and experiment on the UR5e). For the framework, designed the system architecture and node design (perception, 3D registration, state management, motion execution), built the Docker environment, ROS 2 workspace (package structure, launch files, custom interfaces), the Foxglove connection, and the standalone 3D registration pipeline (data collection, YOLO training, depth filtering, FPFH + RANSAC + ICP).
+- **Minh "Arthur" Nguyen:** implementing the path planning and motion execution node from that design (MoveIt and the UR5e driver).
 - **Nitesh Silwal** (PhD student, MERIT Lab): came up with the original V-GAP idea of gating poses with a 2D YOLO mask check and adaptive viewpoint recovery, first aimed at depth holes and missing pixel depth.
 
 
