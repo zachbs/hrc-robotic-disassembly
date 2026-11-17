@@ -1,0 +1,63 @@
+V-GAP gate evaluation
+runs: 1   bursts: 5   objects: ['l_block']
+tau_c used: l_block 0.85
+TA accepted+correct, FA accepted+WRONG, AO accepted+a bit off, TR rejected+wrong,
+FR rejected+correct, RO rejected+a bit off. Rates show 95% Wilson intervals.
+FA rate = FA / all wrong poses (how often a wrong pose gets through).
+Precision = TA / accepted (how often an accepted pose is right).
+FR rate = FR / all correct poses (good poses thrown away).
+
+A. Gate confusion
+
+  by object
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block                               5    0   0   0    0   0   0   5     -                 -                 -             
+
+  by object x color
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block / white                       5    0   0   0    0   0   0   5     -                 -                 -             
+
+  by object x placement
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block / flat                        5    0   0   0    0   0   0   5     -                 -                 -             
+
+  by object x placement x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block / flat / 45.0                 5    0   0   0    0   0   0   5     -                 -                 -             
+
+  by object x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block / 45.0                        5    0   0   0    0   0   0   5     -                 -                 -             
+
+  by object x orientation
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block / 1                           5    0   0   0    0   0   0   5     -                 -                 -             
+
+  by object x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block / occluded                    5    0   0   0    0   0   0   5     -                 -                 -             
+
+  by object x color x placement x angle_deg x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  l_block / white / flat / 45.0 / occluded    5    0   0   0    0   0   0   5     -                 -                 -             
+
+B. Rejections by reason (what the rejected poses really were)
+
+C. Accuracy of ACCEPTED poses (mean +/- std)
+
+D. Gate on vs off (bursts with a pose)
+
+F. Proposed 3D check: also require 'scan points within 3 mm' >= thr
+
+H. Recovery after a Conflict (0 = same view again, 1 = tilt / best angle, 2 = 90 deg counter-clockwise, 3 = straight above)
+  l_block: 5 Conflicts retried
+    tilt   attempts   5: correct Valid 0.0% [0-43], wrong Valid 0
+    orbit  attempts   5: correct Valid 100.0% [57-100], wrong Valid 0
+    after all recovery steps: correct Valid 100.0% [57-100], wrong Valid 0, still no Valid pose 0
+      occluded   5/5 recovered
+
+J. Class and runtime
+
+K. V-GAP vs plain RANSAC+ICP (same captures)
+   plain = RANSAC+ICP pose for YOLO's class, sent to the gripper with no gate;
+   V-GAP = after hypothesis check, table fallback, class check, then the gate.

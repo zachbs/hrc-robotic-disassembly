@@ -1,0 +1,157 @@
+V-GAP gate evaluation
+runs: 1   bursts: 30   objects: ['gearbox']
+tau_c used: gearbox 0.9
+TA accepted+correct, FA accepted+WRONG, AO accepted+a bit off, TR rejected+wrong,
+FR rejected+correct, RO rejected+a bit off. Rates show 95% Wilson intervals.
+FA rate = FA / all wrong poses (how often a wrong pose gets through).
+Precision = TA / accepted (how often an accepted pose is right).
+FR rate = FR / all correct poses (good poses thrown away).
+
+A. Gate confusion
+
+  by object
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox                              30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x color
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / white                      30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x placement
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / flat                       15   15   0   0    0   0   0   0     -              100.0% [80-100]     0.0% [0-20]    
+  gearbox / propped                    15   15   0   0    0   0   0   0     -              100.0% [80-100]     0.0% [0-20]    
+
+  by object x placement x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / flat / 0.0                  5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / flat / 30.0                 5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / flat / 45.0                 5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / propped / 0.0               5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / propped / 30.0              5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / propped / 45.0              5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / 0.0                        10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+  gearbox / 30.0                       10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+  gearbox / 45.0                       10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+
+  by object x orientation
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / 1                          30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / normal                     30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x color x placement x angle_deg x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / white / flat / 0.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / white / flat / 30.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / white / flat / 45.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / white / propped / 0.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / white / propped / 30.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  gearbox / white / propped / 45.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+B. Rejections by reason (what the rejected poses really were)
+
+C. Accuracy of ACCEPTED poses (mean +/- std)
+  gearbox: 30 accepted -> correct 30, a bit off 0, wrong 0
+    offset from your confirmed pose, mm : 0.29 +/- 0.30 (max 0.92, n 30)
+    offset from your confirmed pose, deg: 0.30 +/- 0.72 (max 4.06, n 30)
+    repeat spread (10 bursts), mm       : 0.21 +/- 0.25 (max 0.92, n 30)
+    repeat spread (10 bursts), deg      : 0.31 +/- 0.72 (max 4.06, n 30)
+    scan points within 3 mm of CAD      : 0.97 +/- 0.01 (max 0.99, n 30)
+    ICP RMSE at 3 mm, mm                : 1.29 +/- 0.05 (max 1.35, n 30)
+    C                                   : 0.94 +/- 0.02 (max 0.96, n 30)
+    angle 0.0: offset mm 0.29 +/- 0.34 (max 0.92, n 10)
+    angle 30.0: offset mm 0.40 +/- 0.32 (max 0.90, n 10)
+    angle 45.0: offset mm 0.17 +/- 0.18 (max 0.54, n 10)
+
+D. Gate on vs off (bursts with a pose)
+  gearbox    gate OFF: 0/30 wrong poses sent on (0.0% [0-11]); gate ON: 0/30 (0.0% [0-11]); good poses lost to the gate: 0
+
+E. Adversarial wrong poses: share REJECTED by C (raw = no ICP, icp = after ICP)
+   only poses that are really wrong (> 10 deg or > 10 mm) count; ICP often fixes small errors, those are listed as 'fixed by ICP'
+  gearbox    flat flip 180          icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat flip 180          raw  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat shift x 12mm      icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat shift x 12mm      raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    flat shift y 20mm      icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 2
+  gearbox    flat shift y 20mm      raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    flat shift z 15mm      icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat shift z 15mm      raw  wrong   3  rejected by C   0.0% [0-56]      fixed by ICP 0
+  gearbox    flat tilt 15           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat tilt 15           raw  wrong   3  rejected by C  33.3% [6-79]      fixed by ICP 0
+  gearbox    flat yaw +15           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat yaw +15           raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    flat yaw +30           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat yaw +30           raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    flat yaw -15           icp  wrong   0  rejected by C    -               fixed by ICP 2
+  gearbox    flat yaw -15           raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    flat yaw 180           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat yaw 180           raw  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    flat yaw 90            icp  wrong   2  rejected by C 100.0% [34-100]    fixed by ICP 1
+  gearbox    flat yaw 90            raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    propped flip 180       icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped flip 180       raw  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped shift x 12mm   icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped shift x 12mm   raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    propped shift y 20mm   icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped shift y 20mm   raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    propped shift z 15mm   icp  wrong   0  rejected by C    -               fixed by ICP 2
+  gearbox    propped shift z 15mm   raw  wrong   3  rejected by C   0.0% [0-56]      fixed by ICP 0
+  gearbox    propped tilt 15        icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped tilt 15        raw  wrong   3  rejected by C  33.3% [6-79]      fixed by ICP 0
+  gearbox    propped yaw +15        icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped yaw +15        raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    propped yaw +30        icp  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped yaw +30        raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    propped yaw -15        icp  wrong   0  rejected by C    -               fixed by ICP 2
+  gearbox    propped yaw -15        raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    propped yaw 180        icp  wrong   0  rejected by C    -               fixed by ICP 2
+  gearbox    propped yaw 180        raw  wrong   0  rejected by C    -               fixed by ICP 3
+  gearbox    propped yaw 90         icp  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  gearbox    propped yaw 90         raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+
+F. Proposed 3D check: also require 'scan points within 3 mm' >= thr
+  gearbox: within_3mm on correct poses 0.97 +/- 0.01 (max 0.99, n 30)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0       0      10/54               10/12          
+       0.3        0       0       4/54                4/12          
+       0.4        0       0       1/54                1/12          
+       0.5        0       0       0/54                0/12          
+       0.6        0       0       0/54                0/12          
+       0.7        0       0       0/54                0/12          
+       0.8        0       0       0/54                0/12          
+       0.9        0       0       0/54                0/12          
+
+J. Class and runtime
+  gearbox    YOLO class right 100.0% [89-100], after class check 100.0% [89-100], swaps 0 (right 0), no detection 0
+             runtime s 3.42 +/- 0.30 (max 4.18, n 30)
+
+K. V-GAP vs plain RANSAC+ICP (same captures)
+   plain = RANSAC+ICP pose for YOLO's class, sent to the gripper with no gate;
+   V-GAP = after hypothesis check, table fallback, class check, then the gate.
+  gearbox: 30 captures
+    plain RANSAC+ICP pose correct    33.3% [19-51]   wrong poses sent to the gripper: 20
+    V-GAP final pose correct        100.0% [89-100]
+    V-GAP after the gate: sent 30, correct 30, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 20/30 vs V-GAP 0/30
+                            used    n  rescued  harmed  same
+           90/180 deg hypothesis    5        5       0     0
+        table yaw-sweep fallback   16       15       0     1
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 0
+
+L. Gocator 3210 reference (objective grading: correct <= 5 deg & 5 mm, wrong > 10; propped hemisphere = center only)
+  gearbox: 30 bursts at 6 views
+    reference quality: scan points within 1 mm 1.00 +/- 0.00 (max 1.00, n 6)
+                       RMSE mm 0.46 +/- 0.04 (max 0.53, n 6)
+                       margin to next pose 0.33 +/- 0.30 (max 1.00, n 6)
+                       repeat scans, mm 0.19 +/- 0.11 (max 0.33, n 3); deg 0.11 +/- 0.11 (max 0.27, n 3)
+    accepted poses vs reference: rot deg 2.02 +/- 1.41 (max 4.86, n 30)
+                                 trans mm 2.00 +/- 0.85 (max 3.51, n 30)
+    gate outcomes graded by the Gocator: TA 30
+    FA rate    -     precision 100.0% [89-100]   FR rate   0.0% [0-11]
+    your grade = Gocator grade: 100.0% [89-100]

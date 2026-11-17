@@ -1,0 +1,121 @@
+object,color,view,tilt_deg,azimuth_deg,rep,sample,perturbation,yolo_object,final_object,C,IB,IM,margin,class_margin,axis_ambiguity_deg,state,reason,used_fallback,chosen,UD,rot_err_deg,trans_err_mm,inject_kind,inject_group,label,label_source,caught_by_other_check,true_rot_err_deg,true_trans_err_mm,trial_dir,timestamp
+hemisphere,dark_reflective,0,0.0,0.0,0,real,,hemisphere,hemisphere,0.9464,0.9456,0.9467,1.0,nan,3.000000000000409,Valid,,False,as registered,0.1094,0.03,0.77,,,correct,reference,False,0.01,0.66,,2026-10-16 01:11:00
+hemisphere,dark_reflective,0,0.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7501,0.7483,0.7509,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:00
+hemisphere,dark_reflective,0,0.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.728,0.7511,0.718,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:00
+hemisphere,dark_reflective,0,0.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.5998,0.638,0.5834,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:00
+hemisphere,dark_reflective,0,0.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8394,0.8363,0.8407,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:00
+hemisphere,dark_reflective,0,0.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9748,0.9718,0.976,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:00
+hemisphere,dark_reflective,1,0.0,90.0,0,real,,hemisphere,hemisphere,0.9892,1.0,0.9846,1.0,nan,3.0000000000002878,Valid,,False,as registered,0.1399,0.02,0.66,,,correct,reference,False,0.0,0.69,,2026-10-16 01:11:08
+hemisphere,dark_reflective,1,0.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.803,0.7962,0.8059,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:08
+hemisphere,dark_reflective,1,0.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7435,0.7696,0.7323,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:08
+hemisphere,dark_reflective,1,0.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6078,0.6534,0.5883,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:08
+hemisphere,dark_reflective,1,0.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8323,0.822,0.8367,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:08
+hemisphere,dark_reflective,1,0.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9208,0.9256,0.9187,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:08
+hemisphere,dark_reflective,2,0.0,180.0,0,real,,hemisphere,hemisphere,0.9782,0.9726,0.9806,1.0,nan,3.000000000000166,Valid,,False,as registered,0.137,0.01,0.2,,,correct,reference,False,0.03,0.67,,2026-10-16 01:11:16
+hemisphere,dark_reflective,2,0.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7774,0.7744,0.7787,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+hemisphere,dark_reflective,2,0.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7468,0.7777,0.7336,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+hemisphere,dark_reflective,2,0.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6098,0.6514,0.5919,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+hemisphere,dark_reflective,2,0.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8429,0.832,0.8475,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+hemisphere,dark_reflective,2,0.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9509,0.9516,0.9506,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+hemisphere,dark_reflective,3,0.0,270.0,0,real,,hemisphere,hemisphere,0.9893,1.0,0.9847,1.0,nan,3.0000000000000444,Valid,,False,as registered,0.1367,0.01,0.46,,,correct,reference,False,0.02,0.66,,2026-10-16 01:11:26
+hemisphere,dark_reflective,3,0.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.802,0.7913,0.8066,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:26
+hemisphere,dark_reflective,3,0.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7429,0.7791,0.7274,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:26
+hemisphere,dark_reflective,3,0.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.614,0.6534,0.5972,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:26
+hemisphere,dark_reflective,3,0.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8564,0.85,0.8592,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:26
+hemisphere,dark_reflective,3,0.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9231,0.9322,0.9191,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:26
+hemisphere,dark_reflective,4,15.0,270.0,0,real,,hemisphere,hemisphere,0.9547,0.9664,0.9498,1.0,nan,4.359292038838749,Valid,,False,as registered,0.1311,0.05,0.2,,,correct,reference,False,0.03,0.68,,2026-10-16 01:11:36
+hemisphere,dark_reflective,4,15.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7392,0.7393,0.7392,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:36
+hemisphere,dark_reflective,4,15.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7472,0.7661,0.7391,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:36
+hemisphere,dark_reflective,4,15.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.615,0.6572,0.5969,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:36
+hemisphere,dark_reflective,4,15.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8424,0.8397,0.8436,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:36
+hemisphere,dark_reflective,4,15.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8904,0.9009,0.8858,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:36
+hemisphere,dark_reflective,5,15.0,180.0,0,real,,hemisphere,hemisphere,0.9552,0.9664,0.9504,1.0,nan,4.359292038838498,Valid,,False,as registered,0.1311,0.01,0.63,,,correct,reference,False,0.02,0.69,,2026-10-16 01:11:46
+hemisphere,dark_reflective,5,15.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7419,0.7395,0.7429,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:46
+hemisphere,dark_reflective,5,15.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7452,0.7663,0.7361,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:46
+hemisphere,dark_reflective,5,15.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.609,0.6533,0.5901,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:46
+hemisphere,dark_reflective,5,15.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8549,0.8503,0.8569,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:46
+hemisphere,dark_reflective,5,15.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8885,0.8945,0.886,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:46
+hemisphere,dark_reflective,6,15.0,90.0,0,real,,hemisphere,hemisphere,0.9471,0.9456,0.9477,1.0,nan,4.359292038838666,Valid,,False,as registered,0.1054,0.02,0.69,,,correct,reference,False,0.02,0.67,,2026-10-16 01:11:55
+hemisphere,dark_reflective,6,15.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7147,0.7019,0.7202,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:55
+hemisphere,dark_reflective,6,15.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7295,0.7511,0.7203,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:55
+hemisphere,dark_reflective,6,15.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6006,0.6417,0.583,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:55
+hemisphere,dark_reflective,6,15.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8659,0.8648,0.8663,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:55
+hemisphere,dark_reflective,6,15.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9818,0.9859,0.9801,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:55
+hemisphere,dark_reflective,7,15.0,0.0,0,real,,hemisphere,hemisphere,0.9812,0.9794,0.982,1.0,nan,4.359292038838666,Valid,,False,as registered,0.1361,0.02,0.35,,,correct,reference,False,0.02,0.68,,2026-10-16 01:12:05
+hemisphere,dark_reflective,7,15.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7267,0.7219,0.7287,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:05
+hemisphere,dark_reflective,7,15.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7411,0.773,0.7274,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:05
+hemisphere,dark_reflective,7,15.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6155,0.6666,0.5936,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:05
+hemisphere,dark_reflective,7,15.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8516,0.8436,0.8551,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:05
+hemisphere,dark_reflective,7,15.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9484,0.945,0.9498,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:05
+hemisphere,dark_reflective,8,30.0,0.0,0,real,,hemisphere,hemisphere,0.9492,0.9526,0.9477,1.0,nan,4.359292038837996,Valid,,False,as registered,0.1066,0.01,0.19,,,correct,reference,False,0.02,0.67,,2026-10-16 01:12:14
+hemisphere,dark_reflective,8,30.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.6062,0.6336,0.5944,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:14
+hemisphere,dark_reflective,8,30.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7341,0.7563,0.7246,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:14
+hemisphere,dark_reflective,8,30.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6141,0.651,0.5983,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:14
+hemisphere,dark_reflective,8,30.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8654,0.8621,0.8668,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:14
+hemisphere,dark_reflective,8,30.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8839,0.8872,0.8825,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:14
+hemisphere,dark_reflective,9,30.0,90.0,0,real,,hemisphere,hemisphere,0.9866,0.9932,0.9838,1.0,nan,4.359292038837996,Valid,,False,as registered,0.1099,0.02,0.58,,,correct,reference,False,0.01,0.66,,2026-10-16 01:12:22
+hemisphere,dark_reflective,9,30.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5975,0.6233,0.5865,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:22
+hemisphere,dark_reflective,9,30.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7305,0.758,0.7188,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:22
+hemisphere,dark_reflective,9,30.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6044,0.6496,0.585,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:22
+hemisphere,dark_reflective,9,30.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.9058,0.9017,0.9076,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:22
+hemisphere,dark_reflective,9,30.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9448,0.9377,0.9478,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:22
+hemisphere,dark_reflective,10,30.0,180.0,0,real,,hemisphere,hemisphere,0.9869,0.9932,0.9843,1.0,nan,4.359292038838498,Valid,,False,as registered,0.1094,0.03,0.62,,,correct,reference,False,0.01,0.67,,2026-10-16 01:12:32
+hemisphere,dark_reflective,10,30.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5924,0.6183,0.5814,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,dark_reflective,10,30.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7395,0.769,0.7269,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,dark_reflective,10,30.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6041,0.6534,0.5829,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,dark_reflective,10,30.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8798,0.8656,0.8859,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,dark_reflective,10,30.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9436,0.9377,0.9461,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,dark_reflective,11,30.0,270.0,0,real,,hemisphere,hemisphere,0.9866,0.9932,0.9838,1.0,nan,4.359292038838247,Valid,,False,as registered,0.1091,0.01,0.34,,,correct,reference,False,0.01,0.67,,2026-10-16 01:12:41
+hemisphere,dark_reflective,11,30.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5897,0.615,0.5789,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:41
+hemisphere,dark_reflective,11,30.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.743,0.7737,0.7298,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:41
+hemisphere,dark_reflective,11,30.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6111,0.6589,0.5905,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:41
+hemisphere,dark_reflective,11,30.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8588,0.8488,0.8631,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:41
+hemisphere,dark_reflective,11,30.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9434,0.9379,0.9457,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:41
+hemisphere,dark_reflective,12,45.0,270.0,0,real,,hemisphere,hemisphere,0.9502,0.9582,0.9468,1.0,nan,4.359292038838414,Valid,,False,as registered,0.0951,0.01,0.46,,,correct,reference,False,0.02,0.69,,2026-10-16 01:12:49
+hemisphere,dark_reflective,12,45.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5227,0.5849,0.496,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:49
+hemisphere,dark_reflective,12,45.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7242,0.745,0.7153,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:49
+hemisphere,dark_reflective,12,45.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6141,0.656,0.5961,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:49
+hemisphere,dark_reflective,12,45.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8901,0.8969,0.8872,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:49
+hemisphere,dark_reflective,12,45.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8819,0.8906,0.8782,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:49
+hemisphere,dark_reflective,13,45.0,180.0,0,real,,hemisphere,hemisphere,0.984,0.9857,0.9833,1.0,nan,4.359292038837996,Valid,,False,as registered,0.0983,0.03,0.67,,,correct,reference,False,0.02,0.66,,2026-10-16 01:12:58
+hemisphere,dark_reflective,13,45.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5124,0.5674,0.4889,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:58
+hemisphere,dark_reflective,13,45.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7226,0.7504,0.7107,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:58
+hemisphere,dark_reflective,13,45.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6049,0.6554,0.5833,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:58
+hemisphere,dark_reflective,13,45.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8726,0.858,0.8788,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:58
+hemisphere,dark_reflective,13,45.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9436,0.9429,0.9439,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:58
+hemisphere,dark_reflective,14,45.0,90.0,0,real,,hemisphere,hemisphere,0.9507,0.9573,0.9479,1.0,nan,4.359292038838582,Valid,,False,as registered,0.0754,0.04,0.5,,,correct,reference,False,0.02,0.67,,2026-10-16 01:13:06
+hemisphere,dark_reflective,14,45.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5097,0.5621,0.4872,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:06
+hemisphere,dark_reflective,14,45.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7112,0.7331,0.7017,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:06
+hemisphere,dark_reflective,14,45.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6011,0.6464,0.5817,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:06
+hemisphere,dark_reflective,14,45.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8996,0.8804,0.9079,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:06
+hemisphere,dark_reflective,14,45.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9748,0.9708,0.9765,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:06
+hemisphere,dark_reflective,15,45.0,0.0,0,real,,hemisphere,hemisphere,0.9842,0.9857,0.9836,1.0,nan,4.359292038838414,Valid,,False,as registered,0.099,0.02,0.07,,,correct,reference,False,0.02,0.68,,2026-10-16 01:13:16
+hemisphere,dark_reflective,15,45.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.515,0.571,0.4909,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:16
+hemisphere,dark_reflective,15,45.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7178,0.7439,0.7066,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:16
+hemisphere,dark_reflective,15,45.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6131,0.6606,0.5928,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:16
+hemisphere,dark_reflective,15,45.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.878,0.8644,0.8838,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:16
+hemisphere,dark_reflective,15,45.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9442,0.9429,0.9448,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:16
+hemisphere,dark_reflective,16,60.0,0.0,0,real,,hemisphere,hemisphere,0.9842,0.9849,0.9839,1.0,nan,4.359292038838079,Valid,,False,as registered,0.1007,0.02,0.12,,,correct,reference,False,0.0,0.66,,2026-10-16 01:13:27
+hemisphere,dark_reflective,16,60.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.4878,0.5714,0.4519,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:27
+hemisphere,dark_reflective,16,60.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.6932,0.7276,0.6784,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:27
+hemisphere,dark_reflective,16,60.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6139,0.6638,0.5926,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:27
+hemisphere,dark_reflective,16,60.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8567,0.8299,0.8683,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:27
+hemisphere,dark_reflective,16,60.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9446,0.9482,0.943,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:27
+hemisphere,dark_reflective,17,60.0,90.0,0,real,,hemisphere,hemisphere,0.9808,0.9851,0.979,1.0,nan,4.359292038838331,Valid,,False,as registered,0.0992,0.01,0.44,,,correct,reference,False,0.01,0.65,,2026-10-16 01:13:30
+hemisphere,dark_reflective,17,60.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.4946,0.5803,0.4578,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,dark_reflective,17,60.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.6923,0.7296,0.6763,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,dark_reflective,17,60.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6089,0.6565,0.5885,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,dark_reflective,17,60.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8455,0.8414,0.8472,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,dark_reflective,17,60.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9085,0.9057,0.9097,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,dark_reflective,18,60.0,180.0,0,real,,hemisphere,hemisphere,0.9474,0.9562,0.9437,1.0,nan,4.359292038838414,Valid,,False,as registered,0.0978,0.01,0.72,,,correct,reference,False,0.01,0.66,,2026-10-16 01:13:39
+hemisphere,dark_reflective,18,60.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.4978,0.5891,0.4587,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:39
+hemisphere,dark_reflective,18,60.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.6954,0.7281,0.6813,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:39
+hemisphere,dark_reflective,18,60.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6061,0.6492,0.5876,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:39
+hemisphere,dark_reflective,18,60.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8192,0.8263,0.8161,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:39
+hemisphere,dark_reflective,18,60.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8782,0.8868,0.8745,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:39
+hemisphere,dark_reflective,19,60.0,270.0,0,real,,hemisphere,hemisphere,0.9808,0.9851,0.979,1.0,nan,4.359292038838331,Valid,,False,as registered,0.099,0.02,0.6,,,correct,reference,False,0.01,0.69,,2026-10-16 01:13:46
+hemisphere,dark_reflective,19,60.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.4891,0.5738,0.4527,,,,,,,,,179.76,50.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:46
+hemisphere,dark_reflective,19,60.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7005,0.7377,0.6845,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:46
+hemisphere,dark_reflective,19,60.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.613,0.6602,0.5927,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:46
+hemisphere,dark_reflective,19,60.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8735,0.849,0.884,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:46
+hemisphere,dark_reflective,19,60.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9106,0.92,0.9065,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:46

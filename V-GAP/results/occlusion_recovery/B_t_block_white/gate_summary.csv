@@ -1,0 +1,9 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,t_block,5,0,0,0,0,0,0,0,0,0,5
+object+color,t_block / white,5,0,0,0,0,0,0,0,0,0,5
+object+placement,t_block / flat,5,0,0,0,0,0,0,0,0,0,5
+object+placement+angle_deg,t_block / flat / 45.0,5,0,0,0,0,0,0,0,0,0,5
+object+angle_deg,t_block / 45.0,5,0,0,0,0,0,0,0,0,0,5
+object+orientation,t_block / 1,5,0,0,0,0,0,0,0,0,0,5
+object+condition,t_block / occluded,5,0,0,0,0,0,0,0,0,0,5
+object+color+placement+angle_deg+condition,t_block / white / flat / 45.0 / occluded,5,0,0,0,0,0,0,0,0,0,5

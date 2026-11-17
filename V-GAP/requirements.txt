@@ -1,0 +1,13 @@
+# Core pipeline
+numpy
+scipy
+open3d
+opencv-contrib-python>=4.7,<5   # ArUco + calibrateHandEye (OpenCV 5 dropped calibrateHandEye)
+ultralytics                     # YOLO26s-seg
+pyrealsense2                    # Intel RealSense
+# Robot (UR5e)
+ur-rtde
+# Analysis / figures / training
+matplotlib
+pandas
+pyyaml

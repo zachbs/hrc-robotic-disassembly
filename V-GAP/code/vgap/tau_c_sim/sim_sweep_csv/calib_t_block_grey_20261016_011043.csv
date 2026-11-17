@@ -1,0 +1,416 @@
+object,color,view,tilt_deg,azimuth_deg,rep,sample,perturbation,yolo_object,final_object,C,IB,IM,margin,class_margin,axis_ambiguity_deg,state,reason,used_fallback,chosen,UD,rot_err_deg,trans_err_mm,inject_kind,inject_group,label,label_source,caught_by_other_check,true_rot_err_deg,true_trans_err_mm,trial_dir,timestamp
+t_block,grey,0,0.0,0.0,0,real,,t_block,t_block,0.8814,0.9339,0.8588,0.1824,0.2238,,Valid,,False,as registered,0.0135,2.93,3.3,,,correct,reference,False,2.86,3.31,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7185,0.8415,0.6658,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.8785,0.9218,0.8599,,,,,,,,,4.91,0.97,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7089,0.7993,0.6702,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.8481,0.9002,0.8258,,,,,,,,,6.44,1.14,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.571,0.7845,0.4796,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.8799,0.9272,0.8596,,,,,,,,,4.86,1.19,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.362,0.5917,0.2635,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7011,0.8053,0.6565,,,,,,,,,119.86,26.62,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4252,0.4469,0.4159,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4258,0.4487,0.416,,,,,,,,,179.54,0.23,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9629,0.9663,0.9615,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9617,0.9663,0.9597,,,,,,,,,0.06,0.11,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6285,0.7767,0.565,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.8249,0.8901,0.7969,,,,,,,,,1.5,4.04,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.4901,0.6954,0.4021,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.8333,0.9109,0.8,,,,,,,,,0.23,4.37,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.9282,0.9651,0.9123,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.8913,0.9319,0.8739,,,,,,,,,0.56,2.94,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,0,0.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.9318,0.9551,0.9218,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:16
+t_block,grey,1,0.0,90.0,0,real,,t_block,t_block,0.9206,0.9621,0.9029,0.2117,0.2536,,Valid,,False,as registered,0.0177,1.11,1.85,,,correct,reference,False,1.04,1.89,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.7219,0.8441,0.6695,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9074,0.9593,0.8852,,,,,,,,,3.85,1.52,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7142,0.8085,0.6738,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.8977,0.9428,0.8784,,,,,,,,,4.19,0.59,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.5764,0.7906,0.4846,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9112,0.9598,0.8904,,,,,,,,,3.52,1.74,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.3756,0.598,0.2803,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.7086,0.8161,0.6626,,,,,,,,,119.95,25.92,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.4284,0.4513,0.4185,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.4282,0.4513,0.4182,,,,,,,,,179.85,0.14,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9704,0.988,0.9628,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9693,0.9828,0.9635,,,,,,,,,0.09,0.08,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6523,0.812,0.5838,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.8903,0.9364,0.8705,,,,,,,,,0.06,2.7,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.486,0.6717,0.4065,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.8892,0.9321,0.8709,,,,,,,,,1.49,2.41,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.94,0.9448,0.938,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.9191,0.9492,0.9062,,,,,,,,,1.1,1.72,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,1,0.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9093,0.9336,0.8989,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+t_block,grey,2,0.0,180.0,0,real,,t_block,t_block,0.9366,0.9835,0.9164,0.2202,0.261,,Valid,,False,as registered,0.0199,0.36,0.08,,,correct,reference,False,0.29,0.61,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.7261,0.85,0.673,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9397,0.9947,0.9162,,,,,,,,,0.43,0.29,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.717,0.8187,0.6734,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9382,0.9888,0.9166,,,,,,,,,0.52,0.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.582,0.7957,0.4904,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9379,0.9888,0.9161,,,,,,,,,0.43,0.29,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.3859,0.6107,0.2896,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.7164,0.8424,0.6624,,,,,,,,,119.14,23.68,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.428,0.4626,0.4133,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4279,0.4626,0.413,,,,,,,,,179.7,0.04,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.9366,0.9836,0.9165,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9387,0.9888,0.9173,,,,,,,,,0.09,0.17,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6516,0.7828,0.5953,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9363,0.9829,0.9164,,,,,,,,,0.2,0.32,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5099,0.7023,0.4275,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.9367,0.9835,0.9166,,,,,,,,,0.34,0.07,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.9371,0.9566,0.9287,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9381,0.9888,0.9165,,,,,,,,,0.51,0.16,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.8702,0.9175,0.8499,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,2,0.0,180.0,0,injected,shift z 15mm icp,t_block,t_block,0.9369,0.9835,0.9169,,,,,,,,,0.16,0.07,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:52
+t_block,grey,3,0.0,270.0,0,real,,t_block,t_block,0.9388,0.9888,0.9173,0.218,0.2671,,Valid,,False,as registered,0.0197,0.01,0.53,,,correct,reference,False,0.08,0.71,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.7325,0.8719,0.6728,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.9388,0.9888,0.9174,,,,,,,,,0.01,0.54,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7134,0.8063,0.6736,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9386,0.9888,0.9171,,,,,,,,,0.23,0.5,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.588,0.8126,0.4917,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9389,0.9888,0.9175,,,,,,,,,0.02,0.54,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.3783,0.6003,0.2832,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.7199,0.8512,0.6637,,,,,,,,,119.25,24.58,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.425,0.4527,0.4132,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.426,0.4562,0.413,,,,,,,,,179.6,0.25,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9356,0.9783,0.9173,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9393,0.9888,0.918,,,,,,,,,0.02,0.35,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.6486,0.7995,0.584,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9386,0.9888,0.9171,,,,,,,,,0.08,0.42,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5029,0.6694,0.4316,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.9388,0.9888,0.9174,,,,,,,,,0.01,0.54,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.9373,0.9566,0.9291,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9388,0.9888,0.9173,,,,,,,,,0.19,0.48,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.8691,0.9125,0.8505,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,3,0.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.937,0.9835,0.9171,,,,,,,,,0.17,0.38,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:15
+t_block,grey,4,15.0,270.0,0,real,,t_block,t_block,0.9412,0.9893,0.9205,0.2063,0.2546,,Valid,,True,as registered,0.076,0.08,0.32,,,correct,reference,False,0.15,0.6,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.7348,0.8539,0.6837,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.94,0.9835,0.9213,,,,,,,,,0.23,0.34,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7278,0.818,0.6891,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9365,0.9775,0.919,,,,,,,,,0.98,0.76,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.5906,0.7897,0.5054,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9398,0.9835,0.921,,,,,,,,,0.22,0.34,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.4198,0.6107,0.338,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.7346,0.8235,0.6965,,,,,,,,,118.46,25.1,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.454,0.4761,0.4445,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.4555,0.4797,0.4452,,,,,,,,,179.86,0.19,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9424,0.9947,0.92,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.6704,0.7919,0.6183,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9378,0.9776,0.9208,,,,,,,,,0.17,0.32,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5228,0.7097,0.4427,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.9386,0.9834,0.9195,,,,,,,,,0.3,0.38,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.9374,0.9623,0.9267,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.939,0.9834,0.9199,,,,,,,,,0.76,0.63,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.8741,0.9177,0.8555,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,4,15.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.9389,0.9834,0.9199,,,,,,,,,0.67,0.74,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:37
+t_block,grey,5,15.0,180.0,0,real,,t_block,t_block,0.9395,0.9605,0.9305,0.2182,0.2623,,Valid,,True,as registered,0.085,0.08,2.24,,,correct,reference,False,0.15,2.03,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.7383,0.8649,0.6841,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9319,0.96,0.9199,,,,,,,,,2.77,1.31,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.7118,0.7863,0.6799,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9189,0.9371,0.9111,,,,,,,,,2.91,0.79,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.5918,0.8004,0.5025,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9199,0.9544,0.9052,,,,,,,,,3.28,1.76,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.4185,0.5954,0.3427,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.7201,0.7962,0.6875,,,,,,,,,118.67,26.62,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4289,0.4517,0.4192,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4291,0.4517,0.4194,,,,,,,,,179.89,0.16,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.9675,0.9767,0.9636,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9701,0.9826,0.9647,,,,,,,,,0.09,0.07,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6663,0.8144,0.6028,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9159,0.9504,0.9011,,,,,,,,,0.65,2.26,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5045,0.6637,0.4363,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.921,0.9421,0.912,,,,,,,,,0.94,1.55,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.9223,0.9485,0.9111,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9286,0.9476,0.9205,,,,,,,,,0.59,1.5,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,5,15.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9155,0.9492,0.901,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:02
+t_block,grey,6,15.0,90.0,0,real,,t_block,t_block,0.9456,0.9681,0.936,0.2006,0.2621,,Valid,,True,as registered,0.108,0.08,2.35,,,correct,reference,False,0.15,2.19,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.7512,0.88,0.696,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9417,0.9719,0.9287,,,,,,,,,2.27,0.9,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7306,0.8133,0.6952,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.9238,0.9541,0.9108,,,,,,,,,3.07,1.09,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.609,0.8158,0.5204,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9438,0.9726,0.9314,,,,,,,,,2.05,1.07,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.4128,0.5973,0.3337,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.7438,0.8337,0.7052,,,,,,,,,119.47,25.77,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.4561,0.4674,0.4513,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.4546,0.4632,0.451,,,,,,,,,179.83,0.03,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9673,0.9777,0.9629,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9663,0.9777,0.9615,,,,,,,,,0.13,0.1,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6541,0.7823,0.5991,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.9225,0.9442,0.9133,,,,,,,,,0.84,1.57,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.5215,0.6955,0.4469,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.9209,0.958,0.905,,,,,,,,,0.79,1.92,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.9302,0.9782,0.9096,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.9289,0.9534,0.9184,,,,,,,,,0.75,1.78,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,6,15.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9062,0.9272,0.8972,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:25
+t_block,grey,7,15.0,0.0,0,real,,t_block,t_block,0.9261,0.933,0.9231,0.2107,0.2533,,Valid,,True,as registered,0.031,0.15,0.95,,,correct,reference,False,0.22,1.18,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7254,0.8254,0.6825,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.8868,0.9218,0.8718,,,,,,,,,0.31,2.81,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7285,0.824,0.6876,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9053,0.9323,0.8937,,,,,,,,,0.83,2.51,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.5853,0.7659,0.5079,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.865,0.9055,0.8477,,,,,,,,,0.22,3.63,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.3896,0.6022,0.2984,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7153,0.8017,0.6783,,,,,,,,,118.72,27.32,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4245,0.4552,0.4113,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4254,0.4573,0.4117,,,,,,,,,179.8,0.31,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9262,0.933,0.9233,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9265,0.933,0.9237,,,,,,,,,0.08,0.29,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6503,0.7849,0.5926,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.8793,0.9108,0.8658,,,,,,,,,0.08,3.01,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5008,0.6582,0.4333,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.8649,0.9055,0.8475,,,,,,,,,0.27,3.6,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.8741,0.9122,0.8578,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.8988,0.9323,0.8844,,,,,,,,,0.54,2.82,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.964,0.9883,0.9536,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,7,15.0,0.0,0,injected,shift z 15mm icp,t_block,t_block,0.9262,0.938,0.9212,,,,,,,,,0.25,1.49,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:13:48
+t_block,grey,8,30.0,0.0,0,real,,t_block,t_block,0.9269,0.9325,0.9245,0.1613,0.249,,Valid,,False,height 90 deg,0.0717,0.09,2.17,,,correct,reference,False,0.12,2.09,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.753,0.8502,0.7113,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.9457,0.9542,0.942,,,,,,,,,0.21,1.55,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7428,0.8321,0.7045,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9729,0.9773,0.9711,,,,,,,,,0.36,0.83,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.6172,0.7873,0.5442,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.9289,0.9381,0.9249,,,,,,,,,0.1,2.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.4553,0.6364,0.3777,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7761,0.9286,0.7108,,,,,,,,,120.58,22.05,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4368,0.4706,0.4222,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4377,0.4727,0.4227,,,,,,,,,179.82,0.28,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9779,0.9714,0.9806,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9775,0.9714,0.9801,,,,,,,,,0.03,0.12,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6722,0.7933,0.6203,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.9271,0.9325,0.9248,,,,,,,,,0.09,2.16,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5316,0.6654,0.4742,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.9271,0.9325,0.9248,,,,,,,,,0.09,2.16,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.8849,0.9115,0.8735,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.9629,0.9711,0.9594,,,,,,,,,0.23,1.25,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.9417,0.9477,0.9391,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,8,30.0,0.0,0,injected,shift z 15mm icp,t_block,t_block,0.9628,0.9711,0.9592,,,,,,,,,0.22,1.26,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:09
+t_block,grey,9,30.0,90.0,0,real,,t_block,t_block,0.9834,0.9872,0.9817,0.2188,0.3356,,Valid,,False,height 270 deg,0.0279,0.11,0.78,,,correct,reference,False,0.07,0.82,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.7637,0.8694,0.7184,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9821,0.9809,0.9826,,,,,,,,,0.08,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7525,0.8323,0.7182,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.982,0.9809,0.9824,,,,,,,,,0.11,0.45,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.6239,0.8019,0.5477,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9821,0.9809,0.9826,,,,,,,,,0.08,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.4493,0.6113,0.3798,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.7595,0.8143,0.736,,,,,,,,,120.28,26.39,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.4788,0.4804,0.4781,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.477,0.4804,0.4755,,,,,,,,,179.76,0.38,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9748,0.9758,0.9744,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9785,0.9758,0.9797,,,,,,,,,0.09,0.19,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6619,0.7756,0.6132,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.9816,0.9809,0.9819,,,,,,,,,0.08,0.42,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.5425,0.6938,0.4776,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.9816,0.9809,0.9819,,,,,,,,,0.08,0.42,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.9113,0.9364,0.9005,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.982,0.9809,0.9825,,,,,,,,,0.13,0.47,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9367,0.9508,0.9306,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,9,30.0,90.0,0,injected,shift z 15mm icp,t_block,t_block,0.9823,0.9809,0.9829,,,,,,,,,0.1,0.65,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:28
+t_block,grey,10,30.0,180.0,0,real,,t_block,t_block,0.9759,0.9944,0.968,0.2389,0.2849,,Valid,,True,as registered,0.0635,0.09,0.83,,,correct,reference,False,0.12,0.85,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.7613,0.8833,0.709,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9459,0.9602,0.9398,,,,,,,,,0.18,2.19,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.7354,0.8079,0.7044,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9394,0.9541,0.933,,,,,,,,,0.22,1.35,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.6173,0.8144,0.5328,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9459,0.9602,0.9399,,,,,,,,,0.17,2.2,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.4698,0.6147,0.4077,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.737,0.7845,0.7167,,,,,,,,,117.77,27.69,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4338,0.4704,0.4181,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4311,0.4661,0.416,,,,,,,,,178.59,1.16,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.9697,0.9826,0.9642,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9688,0.9771,0.9652,,,,,,,,,0.04,0.3,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6803,0.8075,0.6258,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9409,0.9594,0.933,,,,,,,,,0.23,1.36,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5312,0.6635,0.4745,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.9409,0.9594,0.933,,,,,,,,,0.23,1.36,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.8981,0.9447,0.8782,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9394,0.9541,0.933,,,,,,,,,0.22,1.35,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9107,0.9368,0.8995,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,10,30.0,180.0,0,injected,shift z 15mm icp,t_block,t_block,0.946,0.9602,0.94,,,,,,,,,0.18,2.19,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:49
+t_block,grey,11,30.0,270.0,0,real,,t_block,t_block,0.8806,0.9167,0.8651,0.1456,0.2022,,Valid,,True,as registered,0.0485,0.04,3.68,,,correct,reference,False,0.04,3.47,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.7355,0.8231,0.698,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.9349,0.9427,0.9315,,,,,,,,,0.16,0.36,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7299,0.8038,0.6982,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9266,0.9427,0.9197,,,,,,,,,0.2,1.64,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.5949,0.7639,0.5224,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9325,0.9369,0.9307,,,,,,,,,0.25,0.31,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.4393,0.5891,0.3751,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.7307,0.7899,0.7054,,,,,,,,,117.8,26.32,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.4696,0.4777,0.4661,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.4687,0.4885,0.4602,,,,,,,,,168.26,0.9,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9351,0.9427,0.9319,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9344,0.9427,0.9308,,,,,,,,,0.13,0.25,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.6684,0.7831,0.6192,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.8809,0.9167,0.8656,,,,,,,,,0.07,3.67,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5315,0.6951,0.4613,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.8806,0.9167,0.8651,,,,,,,,,0.04,3.68,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.9163,0.9632,0.8961,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9368,0.9478,0.9321,,,,,,,,,0.4,0.49,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.9654,0.9701,0.9634,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,11,30.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.9353,0.942,0.9324,,,,,,,,,0.13,1.04,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:08
+t_block,grey,12,45.0,270.0,0,real,,t_block,t_block,0.9422,0.9823,0.925,0.2012,0.257,,Valid,,True,as registered,0.0185,0.18,0.45,,,correct,reference,False,0.14,0.74,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.7653,0.8502,0.7289,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.9423,0.9823,0.9251,,,,,,,,,0.13,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7543,0.8146,0.7285,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9422,0.9823,0.925,,,,,,,,,0.2,0.43,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.6351,0.7856,0.5706,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9424,0.9823,0.9253,,,,,,,,,0.13,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.513,0.6162,0.4688,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.5211,0.6303,0.4743,,,,,,,,,90.08,0.54,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.5011,0.5056,0.4992,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.506,0.5176,0.5011,,,,,,,,,176.28,0.9,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9415,0.9823,0.924,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9424,0.9823,0.9253,,,,,,,,,0.16,0.42,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.691,0.773,0.6559,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9422,0.9823,0.925,,,,,,,,,0.11,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5682,0.7068,0.5089,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.9422,0.9823,0.925,,,,,,,,,0.16,0.46,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.8323,0.8674,0.8172,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9422,0.9823,0.925,,,,,,,,,0.21,0.43,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.8731,0.9056,0.8592,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,12,45.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.942,0.9823,0.9247,,,,,,,,,0.21,0.43,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:26
+t_block,grey,13,45.0,180.0,0,real,,t_block,t_block,0.9412,0.9513,0.937,0.229,0.2719,,Valid,,False,as registered,0.0075,0.05,0.69,,,correct,reference,False,0.08,0.74,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.776,0.8918,0.7263,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9406,0.9513,0.936,,,,,,,,,0.07,0.74,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.7506,0.8101,0.7251,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9407,0.9513,0.9362,,,,,,,,,0.16,0.65,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.6402,0.8328,0.5577,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9405,0.9513,0.9359,,,,,,,,,0.08,0.75,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.5082,0.6227,0.4592,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.696,0.7087,0.6905,,,,,,,,,117.03,31.69,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4331,0.4811,0.4125,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4327,0.4853,0.4102,,,,,,,,,177.04,0.64,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.943,0.9513,0.9395,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9421,0.9513,0.9381,,,,,,,,,0.09,0.62,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6698,0.7868,0.6196,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9407,0.9513,0.9362,,,,,,,,,0.16,0.65,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5491,0.6521,0.5049,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.9407,0.9513,0.9362,,,,,,,,,0.16,0.65,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.8637,0.8844,0.8548,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9407,0.9513,0.9362,,,,,,,,,0.16,0.65,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9587,0.9631,0.9568,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,13,45.0,180.0,0,injected,shift z 15mm icp,t_block,t_block,0.9406,0.9513,0.936,,,,,,,,,0.08,0.74,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:43
+t_block,grey,14,45.0,90.0,0,real,,t_block,t_block,0.9409,0.9509,0.9367,0.1579,0.2948,,Valid,,False,as registered,0.0256,0.09,0.29,,,correct,reference,False,0.1,0.61,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.7826,0.8597,0.7496,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9422,0.9558,0.9364,,,,,,,,,0.07,0.43,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7748,0.8569,0.7397,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.9406,0.9509,0.9362,,,,,,,,,0.07,0.29,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.6477,0.795,0.5846,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9423,0.9558,0.9365,,,,,,,,,0.08,0.43,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.4759,0.6074,0.4196,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.783,0.8291,0.7632,,,,,,,,,121.57,24.99,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.5005,0.505,0.4986,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.5103,0.5213,0.5056,,,,,,,,,176.86,0.5,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9405,0.9509,0.936,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9407,0.9509,0.9363,,,,,,,,,0.1,0.34,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6521,0.7583,0.6065,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.9405,0.9509,0.936,,,,,,,,,0.07,0.27,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.5612,0.6908,0.5056,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.9405,0.9509,0.9361,,,,,,,,,0.08,0.27,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.8693,0.8712,0.8685,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.9419,0.9558,0.9359,,,,,,,,,0.07,0.43,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9648,0.9788,0.9587,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,14,45.0,90.0,0,injected,shift z 15mm icp,t_block,t_block,0.9429,0.9558,0.9373,,,,,,,,,0.07,0.54,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:58
+t_block,grey,15,45.0,0.0,0,real,,t_block,t_block,0.9431,0.9878,0.924,0.1434,0.1953,,Valid,,False,height 90 deg,0.0293,0.07,0.07,,,correct,reference,False,0.11,0.69,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7762,0.8575,0.7414,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.9432,0.9878,0.924,,,,,,,,,0.07,0.08,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7593,0.8613,0.7156,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9394,0.9757,0.9239,,,,,,,,,0.18,0.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.6507,0.7949,0.5889,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.9431,0.9878,0.924,,,,,,,,,0.08,0.08,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.5209,0.6735,0.4556,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.5274,0.6151,0.4898,,,,,,,,,91.26,13.26,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4452,0.4926,0.4249,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4457,0.4926,0.4257,,,,,,,,,179.59,0.23,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9429,0.9878,0.9237,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9428,0.9878,0.9235,,,,,,,,,0.08,0.07,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6865,0.7836,0.6449,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.9434,0.9878,0.9243,,,,,,,,,0.07,0.08,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5653,0.6698,0.5206,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.9433,0.9878,0.9242,,,,,,,,,0.07,0.08,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.8518,0.8776,0.8408,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.9393,0.9757,0.9237,,,,,,,,,0.18,0.15,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.8745,0.9107,0.859,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,15,45.0,0.0,0,injected,shift z 15mm icp,t_block,t_block,0.9394,0.9757,0.9238,,,,,,,,,0.18,0.15,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:12
+t_block,grey,16,60.0,0.0,0,real,,t_block,t_block,0.9436,0.9787,0.9286,0.1704,0.1389,,Valid,,False,as registered,0.0113,0.05,0.15,,,correct,reference,False,0.08,0.69,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7993,0.8608,0.773,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.9441,0.9787,0.9293,,,,,,,,,0.1,0.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7749,0.8689,0.7346,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9416,0.9728,0.9282,,,,,,,,,0.16,0.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.69,0.7959,0.6446,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.9444,0.9787,0.9298,,,,,,,,,0.11,0.16,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.5868,0.7122,0.5331,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.5863,0.7077,0.5342,,,,,,,,,90.23,0.36,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4752,0.5127,0.4591,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.476,0.5127,0.4602,,,,,,,,,179.88,0.21,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9426,0.9787,0.9272,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9427,0.9787,0.9272,,,,,,,,,0.06,0.1,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6724,0.7529,0.638,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.9442,0.9787,0.9294,,,,,,,,,0.14,0.18,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5876,0.6645,0.5547,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.9442,0.9787,0.9295,,,,,,,,,0.11,0.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.8104,0.8594,0.7894,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.942,0.9728,0.9288,,,,,,,,,0.15,0.16,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.874,0.901,0.8624,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,16,60.0,0.0,0,injected,shift z 15mm icp,t_block,t_block,0.9411,0.9728,0.9275,,,,,,,,,0.12,0.12,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:28
+t_block,grey,17,60.0,90.0,0,real,,t_block,t_block,0.9775,0.9948,0.9701,0.122,0.2902,,Valid,,False,height 90 deg,0.01,0.1,0.5,,,correct,reference,False,0.1,0.65,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.8276,0.9005,0.7963,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9773,0.9948,0.9698,,,,,,,,,0.11,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.8068,0.8656,0.7817,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.9779,0.9948,0.9707,,,,,,,,,0.15,0.47,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.6984,0.8102,0.6505,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9772,0.9948,0.9697,,,,,,,,,0.11,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.5347,0.6347,0.4918,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.8556,0.9491,0.8155,,,,,,,,,124.85,19.66,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.5463,0.5358,0.5508,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.5625,0.5578,0.5645,,,,,,,,,176.21,0.72,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9736,0.9897,0.9667,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9783,1.0,0.969,,,,,,,,,0.07,0.41,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6313,0.7208,0.593,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.9779,0.9948,0.9707,,,,,,,,,0.15,0.47,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.5972,0.7035,0.5516,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.9778,0.9948,0.9705,,,,,,,,,0.13,0.47,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.8475,0.8165,0.8608,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.9777,0.9948,0.9704,,,,,,,,,0.15,0.49,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9072,0.9243,0.8998,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,17,60.0,90.0,0,injected,shift z 15mm icp,t_block,t_block,0.9773,0.9948,0.9698,,,,,,,,,0.1,0.5,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:42
+t_block,grey,18,60.0,180.0,0,real,,t_block,t_block,0.9354,0.9306,0.9374,0.1987,0.2232,,Valid,,False,as registered,0.0049,0.09,0.72,,,correct,reference,False,0.08,0.65,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.8021,0.8917,0.7637,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9376,0.9361,0.9383,,,,,,,,,0.12,0.76,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.775,0.82,0.7557,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9354,0.9306,0.9375,,,,,,,,,0.12,0.7,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.678,0.8265,0.6143,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9376,0.9361,0.9382,,,,,,,,,0.12,0.76,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.5737,0.6469,0.5423,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.737,0.7272,0.7412,,,,,,,,,118.83,31.42,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4584,0.4992,0.4409,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4574,0.4956,0.4411,,,,,,,,,175.42,1.32,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.938,0.9306,0.9411,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9364,0.9306,0.939,,,,,,,,,0.1,0.66,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6477,0.7328,0.6113,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9351,0.9306,0.937,,,,,,,,,0.14,0.71,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5738,0.64,0.5453,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.9354,0.9306,0.9375,,,,,,,,,0.13,0.7,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.8052,0.811,0.8026,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9354,0.9306,0.9375,,,,,,,,,0.13,0.7,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9638,0.974,0.9595,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,18,60.0,180.0,0,injected,shift z 15mm icp,t_block,t_block,0.9375,0.9361,0.9382,,,,,,,,,0.11,0.77,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:56
+t_block,grey,19,60.0,270.0,0,real,,t_block,t_block,0.9831,0.9805,0.9842,0.1759,0.2684,,Valid,,False,height 180 deg,0.0067,0.18,0.54,,,correct,reference,False,0.11,0.66,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.784,0.8405,0.7597,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.9807,0.9724,0.9842,,,,,,,,,0.07,0.61,icp,in_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7751,0.8213,0.7553,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9836,0.9805,0.9849,,,,,,,,,0.21,0.56,icp,in_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.6663,0.7748,0.6199,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9807,0.9724,0.9842,,,,,,,,,0.07,0.61,icp,in_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.5528,0.6208,0.5236,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.5497,0.6169,0.5209,,,,,,,,,89.88,0.51,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.5423,0.5322,0.5466,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.546,0.5426,0.5474,,,,,,,,,177.33,0.94,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9795,0.9779,0.9801,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9835,0.9805,0.9847,,,,,,,,,0.19,0.53,icp,in_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.6493,0.7268,0.6161,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9806,0.9724,0.9841,,,,,,,,,0.07,0.62,icp,in_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5842,0.6987,0.5351,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.9809,0.9724,0.9846,,,,,,,,,0.17,0.59,icp,in_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.8014,0.8319,0.7883,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9833,0.9805,0.9845,,,,,,,,,0.2,0.56,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.9422,0.9471,0.9401,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:17:10
+t_block,grey,19,60.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.9833,0.9805,0.9845,,,,,,,,,0.22,0.55,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:17:10

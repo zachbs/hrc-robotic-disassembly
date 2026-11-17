@@ -1,0 +1,12 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,gearbox,10,10,0,10,10,0,0,0,0,0,0
+object+color,gearbox / white,10,10,0,10,10,0,0,0,0,0,0
+object+placement,gearbox / flat,5,5,0,5,5,0,0,0,0,0,0
+object+placement,gearbox / propped,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / flat / 60.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / propped / 60.0,5,5,0,5,5,0,0,0,0,0,0
+object+angle_deg,gearbox / 60.0,10,10,0,10,10,0,0,0,0,0,0
+object+orientation,gearbox / 1,10,10,0,10,10,0,0,0,0,0,0
+object+condition,gearbox / normal,10,10,0,10,10,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / flat / 60.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / propped / 60.0 / normal,5,5,0,5,5,0,0,0,0,0,0

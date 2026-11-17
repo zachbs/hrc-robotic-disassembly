@@ -1,0 +1,157 @@
+object,color,tau_c,angle_deg,placement,orientation,view,perturbation,inject_kind,inject_group,C,IB,IM,rot_err_deg,trans_err_mm,grade,gate,fitness_3mm,rmse_mm,within_3mm,within_5mm,median_dist_mm,n_scan_points
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw +15,raw,in_plane,0.8802,0.9146,0.8654,15.0,0.0,wrong,Conflict,0.6167,1.463,0.6167,0.7109,1.779,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw +15,icp,in_plane,0.9399,0.942,0.939,0.0,0.0,correct,Valid,0.9631,1.398,0.9631,0.9834,1.262,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw -15,raw,in_plane,0.8426,0.8195,0.8525,15.0,0.0,wrong,Conflict,0.6272,1.466,0.6272,0.7324,1.775,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw -15,icp,in_plane,0.9399,0.942,0.939,0.0,0.0,correct,Valid,0.9631,1.398,0.9631,0.9834,1.262,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw +30,raw,in_plane,0.8034,0.7891,0.8096,30.0,0.0,wrong,Conflict,0.5558,1.452,0.5558,0.6521,2.123,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw +30,icp,in_plane,0.9375,0.9435,0.935,0.4,0.56,correct,Valid,0.9616,1.428,0.9616,0.9825,1.331,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw 90,raw,in_plane,0.6983,0.6357,0.7252,90.0,0.0,wrong,Conflict,0.4897,1.449,0.4897,0.57,3.393,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw 90,icp,in_plane,0.6947,0.6347,0.7204,89.82,11.35,wrong,Conflict,0.7887,1.44,0.7887,0.8447,1.438,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw 180,raw,in_plane,0.9415,0.9474,0.9389,0.0,0.0,correct,Valid,0.96,1.425,0.96,0.9834,1.309,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,yaw 180,icp,in_plane,0.9382,0.9435,0.9359,0.08,0.41,correct,Valid,0.96,1.406,0.96,0.984,1.272,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,flip 180,raw,in_plane,0.9431,0.9513,0.9396,0.0,0.0,correct,Valid,0.9674,1.411,0.9674,0.9834,1.269,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,flip 180,icp,in_plane,0.9432,0.9513,0.9398,0.07,0.02,correct,Valid,0.9668,1.408,0.9668,0.9834,1.276,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,shift x 12mm,raw,in_plane,0.7932,0.8108,0.7856,0.0,12.0,wrong,Conflict,0.0683,2.042,0.0683,0.124,8.158,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,shift x 12mm,icp,in_plane,0.9399,0.942,0.939,0.0,0.0,correct,Valid,0.9631,1.398,0.9631,0.9834,1.262,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,shift y 20mm,raw,in_plane,0.6917,0.7263,0.6768,0.0,20.0,wrong,Conflict,0.7635,1.67,0.7635,0.8191,1.797,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,shift y 20mm,icp,in_plane,0.9375,0.9435,0.935,0.4,0.56,correct,Valid,0.9616,1.428,0.9616,0.9825,1.331,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,tilt 15,raw,out_of_plane,0.8841,0.8941,0.8798,15.0,0.0,wrong,Conflict,0.4313,1.952,0.4313,0.7358,3.429,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,tilt 15,icp,out_of_plane,0.9399,0.942,0.939,0.0,0.0,correct,Valid,0.9631,1.398,0.9631,0.9834,1.262,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,shift z 15mm,raw,out_of_plane,0.9492,0.9484,0.9495,0.0,15.0,wrong,Valid,0.0028,2.483,0.0028,0.0074,10.828,3251
+gearbox,grey,0.9,60.0,flat,1,a60_flat_o1_normal,shift z 15mm,icp,out_of_plane,0.9399,0.942,0.939,0.0,0.0,correct,Valid,0.9631,1.398,0.9631,0.9834,1.262,3251
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw +15,raw,in_plane,0.8119,0.783,0.8243,15.0,0.0,wrong,Conflict,0.6841,1.516,0.6841,0.8103,1.672,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw +15,icp,in_plane,0.9511,0.9665,0.9445,0.0,0.0,correct,Valid,0.9689,1.436,0.9689,0.9892,1.302,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw -15,raw,in_plane,0.8091,0.7985,0.8137,15.0,0.0,wrong,Conflict,0.6982,1.533,0.6982,0.8074,1.67,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw -15,icp,in_plane,0.9508,0.9665,0.9441,0.02,0.03,correct,Valid,0.9689,1.436,0.9689,0.9892,1.305,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw +30,raw,in_plane,0.7177,0.6577,0.7435,30.0,0.0,wrong,Conflict,0.6556,1.513,0.6556,0.7629,1.747,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw +30,icp,in_plane,0.9511,0.9665,0.9445,0.0,0.0,correct,Valid,0.9689,1.436,0.9689,0.9892,1.302,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw 90,raw,in_plane,0.6945,0.6374,0.719,90.0,0.0,wrong,Conflict,0.5273,1.367,0.5273,0.5432,2.073,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw 90,icp,in_plane,0.6916,0.6292,0.7183,88.92,10.75,wrong,Conflict,0.828,1.398,0.828,0.8811,1.378,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,yaw 180,raw,in_plane,0.9505,0.9607,0.9461,0.0,0.0,correct,Valid,0.9657,1.434,0.9657,0.9892,1.302,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,flip 180,raw,in_plane,0.9488,0.9607,0.9437,0.0,0.0,correct,Valid,0.9653,1.425,0.9653,0.9895,1.306,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,shift x 12mm,raw,in_plane,0.817,0.821,0.8153,0.0,12.0,wrong,Conflict,0.0961,1.94,0.0961,0.1756,8.078,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,shift x 12mm,icp,in_plane,0.951,0.9665,0.9444,0.03,0.03,correct,Valid,0.9689,1.436,0.9689,0.9895,1.305,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,shift y 20mm,raw,in_plane,0.6,0.6097,0.5958,0.0,20.0,wrong,Conflict,0.6599,1.808,0.6599,0.7485,2.181,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,shift y 20mm,icp,in_plane,0.9505,0.9665,0.9436,0.02,0.04,correct,Valid,0.9689,1.436,0.9689,0.9892,1.305,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,tilt 15,raw,out_of_plane,0.841,0.7837,0.8655,15.0,0.0,wrong,Conflict,0.5735,1.698,0.5735,0.7365,2.406,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,tilt 15,icp,out_of_plane,0.9508,0.9665,0.9441,0.02,0.03,correct,Valid,0.9689,1.436,0.9689,0.9892,1.305,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,shift z 15mm,raw,out_of_plane,0.9308,0.9332,0.9297,0.0,15.0,wrong,Valid,0.0192,1.918,0.0192,0.0408,10.572,2767
+gearbox,grey,0.9,60.0,flat,2,a60_flat_o2_normal,shift z 15mm,icp,out_of_plane,0.951,0.9665,0.9443,0.03,0.03,correct,Valid,0.9689,1.436,0.9689,0.9892,1.303,2767
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw +15,raw,in_plane,0.8458,0.8263,0.8542,15.0,0.0,wrong,Conflict,0.5989,1.538,0.5989,0.726,1.998,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw +15,icp,in_plane,0.944,0.9389,0.9461,0.0,0.0,correct,Valid,0.946,1.484,0.946,0.9889,1.338,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw -15,raw,in_plane,0.8661,0.871,0.8639,15.0,0.0,wrong,Conflict,0.6235,1.55,0.6235,0.7401,1.923,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw -15,icp,in_plane,0.9438,0.9389,0.946,0.03,0.01,correct,Valid,0.9463,1.485,0.9463,0.9889,1.337,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw +30,raw,in_plane,0.8014,0.7891,0.8066,30.0,0.0,wrong,Conflict,0.5525,1.51,0.5525,0.6547,2.321,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw +30,icp,in_plane,0.944,0.9389,0.9461,0.0,0.0,correct,Valid,0.946,1.484,0.946,0.9889,1.338,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw 90,raw,in_plane,0.6968,0.6332,0.7241,90.0,0.0,wrong,Conflict,0.4655,1.493,0.4655,0.5549,3.809,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw 90,icp,in_plane,0.6872,0.6197,0.7161,89.98,12.72,wrong,Conflict,0.7575,1.483,0.7575,0.8324,1.522,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw 180,raw,in_plane,0.9411,0.9334,0.9445,0.0,0.0,correct,Valid,0.949,1.473,0.949,0.9874,1.327,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,yaw 180,icp,in_plane,0.9406,0.9334,0.9437,0.11,0.14,correct,Valid,0.9508,1.477,0.9508,0.9874,1.319,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,flip 180,raw,in_plane,0.9408,0.9334,0.944,0.0,0.0,correct,Valid,0.9436,1.482,0.9436,0.9889,1.343,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,flip 180,icp,in_plane,0.9395,0.9334,0.9422,0.12,0.15,correct,Valid,0.9424,1.481,0.9424,0.9889,1.345,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,shift x 12mm,raw,in_plane,0.7961,0.8182,0.7866,0.0,12.0,wrong,Conflict,0.0842,1.921,0.0842,0.1478,8.21,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,shift x 12mm,icp,in_plane,0.9438,0.9389,0.9458,0.02,0.01,correct,Valid,0.946,1.484,0.946,0.9889,1.34,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,shift y 20mm,raw,in_plane,0.696,0.7226,0.6847,0.0,20.0,wrong,Conflict,0.7068,1.899,0.7068,0.801,2.134,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,shift y 20mm,icp,in_plane,0.9437,0.9389,0.9458,0.03,0.01,correct,Valid,0.9463,1.485,0.9463,0.9889,1.34,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,tilt 15,raw,out_of_plane,0.8773,0.877,0.8775,15.0,0.0,wrong,Conflict,0.4442,1.947,0.4442,0.7413,3.283,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,tilt 15,icp,out_of_plane,0.9438,0.9389,0.9458,0.01,0.01,correct,Valid,0.946,1.484,0.946,0.9889,1.338,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,shift z 15mm,raw,out_of_plane,0.9478,0.9569,0.9439,0.0,15.0,wrong,Valid,0.0096,2.17,0.0096,0.0222,10.663,3336
+gearbox,grey,0.9,60.0,flat,3,a60_flat_o3_normal,shift z 15mm,icp,out_of_plane,0.9439,0.9389,0.9461,0.0,0.0,correct,Valid,0.9457,1.483,0.9457,0.9889,1.337,3336
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw +15,raw,in_plane,0.8093,0.7677,0.8271,15.0,0.0,wrong,Conflict,0.6989,1.494,0.6989,0.8127,1.633,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw +15,icp,in_plane,0.9421,0.9495,0.939,0.02,0.03,correct,Valid,0.9577,1.463,0.9577,0.9911,1.331,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw -15,raw,in_plane,0.8165,0.8153,0.817,15.0,0.0,wrong,Conflict,0.6833,1.506,0.6833,0.8102,1.672,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw -15,icp,in_plane,0.9351,0.9382,0.9337,0.16,0.22,correct,Valid,0.957,1.459,0.957,0.9908,1.323,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw +30,raw,in_plane,0.7155,0.6558,0.741,30.0,0.0,wrong,Conflict,0.6626,1.513,0.6626,0.7757,1.742,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw +30,icp,in_plane,0.9421,0.9495,0.939,0.02,0.03,correct,Valid,0.9577,1.463,0.9577,0.9911,1.331,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw 90,raw,in_plane,0.6932,0.6378,0.717,90.0,0.0,wrong,Conflict,0.5297,1.343,0.5297,0.545,2.016,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw 90,icp,in_plane,0.6888,0.6295,0.7142,89.16,10.88,wrong,Conflict,0.8287,1.396,0.8287,0.8877,1.352,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw 180,raw,in_plane,0.9441,0.9495,0.9418,0.0,0.0,correct,Valid,0.9541,1.458,0.9541,0.9904,1.34,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,yaw 180,icp,in_plane,0.9388,0.9438,0.9366,0.13,0.15,correct,Valid,0.9556,1.465,0.9556,0.9908,1.34,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,flip 180,raw,in_plane,0.9421,0.9495,0.9389,0.0,0.0,correct,Valid,0.9577,1.459,0.9577,0.9908,1.33,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,flip 180,icp,in_plane,0.9422,0.9495,0.9391,0.12,0.04,correct,Valid,0.9556,1.451,0.9556,0.9911,1.322,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,shift x 12mm,raw,in_plane,0.8092,0.809,0.8093,0.0,12.0,wrong,Conflict,0.0846,2.013,0.0846,0.1646,8.159,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,shift x 12mm,icp,in_plane,0.9408,0.9495,0.937,0.11,0.08,correct,Valid,0.9581,1.462,0.9581,0.9908,1.33,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,shift y 20mm,raw,in_plane,0.5938,0.5991,0.5915,0.0,20.0,wrong,Conflict,0.6623,1.83,0.6623,0.7661,2.158,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,shift y 20mm,icp,in_plane,0.9382,0.9438,0.9358,0.12,0.15,correct,Valid,0.9577,1.461,0.9577,0.9908,1.332,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,tilt 15,raw,out_of_plane,0.8287,0.7805,0.8493,15.0,0.0,wrong,Conflict,0.5617,1.7,0.5617,0.7259,2.485,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,tilt 15,icp,out_of_plane,0.9352,0.9382,0.9339,0.18,0.2,correct,Valid,0.9573,1.458,0.9573,0.9908,1.325,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,shift z 15mm,raw,out_of_plane,0.9173,0.9168,0.9175,0.0,15.0,wrong,Valid,0.0185,1.915,0.0185,0.0448,10.552,2813
+gearbox,grey,0.9,60.0,flat,4,a60_flat_o4_normal,shift z 15mm,icp,out_of_plane,0.9408,0.9495,0.937,0.11,0.08,correct,Valid,0.9581,1.462,0.9581,0.9908,1.33,2813
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw +15,raw,in_plane,0.7927,0.7616,0.806,15.0,0.0,wrong,Conflict,0.6742,1.537,0.6742,0.8079,1.725,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw +15,icp,in_plane,0.9411,0.9384,0.9423,0.05,0.02,correct,Valid,0.9596,1.401,0.9596,0.9874,1.257,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw -15,raw,in_plane,0.8087,0.7807,0.8207,15.0,0.0,wrong,Conflict,0.6791,1.548,0.6791,0.7974,1.734,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw -15,icp,in_plane,0.943,0.9442,0.9425,0.0,0.0,correct,Valid,0.9603,1.403,0.9603,0.9874,1.253,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw +30,raw,in_plane,0.7106,0.6407,0.7406,30.0,0.0,wrong,Conflict,0.6552,1.543,0.6552,0.7704,1.782,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw +30,icp,in_plane,0.6664,0.5974,0.6959,49.8,12.62,wrong,Conflict,0.7135,1.49,0.7135,0.7911,1.617,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw 90,raw,in_plane,0.7006,0.6404,0.7264,90.0,0.0,wrong,Conflict,0.5035,1.449,0.5035,0.5228,2.767,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw 90,icp,in_plane,0.6945,0.629,0.7225,89.97,10.81,wrong,Conflict,0.8529,1.363,0.8529,0.895,1.295,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw 180,raw,in_plane,0.941,0.9391,0.9418,0.0,0.0,correct,Valid,0.9624,1.405,0.9624,0.9881,1.251,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,yaw 180,icp,in_plane,0.9417,0.9391,0.9428,0.15,0.11,correct,Valid,0.9624,1.401,0.9624,0.9881,1.246,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,flip 180,raw,in_plane,0.9413,0.9391,0.9423,0.0,0.0,correct,Valid,0.9621,1.408,0.9621,0.9881,1.272,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,flip 180,icp,in_plane,0.942,0.9391,0.9432,0.08,0.03,correct,Valid,0.9617,1.407,0.9617,0.9881,1.267,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,shift x 12mm,raw,in_plane,0.8231,0.8303,0.8201,0.0,12.0,wrong,Conflict,0.0878,1.975,0.0878,0.1808,8.047,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,shift x 12mm,icp,in_plane,0.9429,0.9442,0.9423,0.0,0.0,correct,Valid,0.9603,1.403,0.9603,0.9874,1.253,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,shift y 20mm,raw,in_plane,0.6141,0.6224,0.6105,0.0,20.0,wrong,Conflict,0.664,1.626,0.664,0.7489,1.895,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,shift y 20mm,icp,in_plane,0.9411,0.9384,0.9423,0.05,0.02,correct,Valid,0.9596,1.401,0.9596,0.9874,1.257,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,tilt 15,raw,out_of_plane,0.8395,0.7465,0.8794,15.0,0.0,wrong,Conflict,0.5744,1.693,0.5744,0.7272,2.412,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,tilt 15,icp,out_of_plane,0.943,0.9442,0.9425,0.0,0.0,correct,Valid,0.9603,1.403,0.9603,0.9874,1.253,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.947,0.966,0.9388,0.0,15.0,wrong,Valid,0.0172,2.0,0.0172,0.0425,10.69,2848
+gearbox,grey,0.9,60.0,propped,1,a60_propped_o1_normal,shift z 15mm,icp,out_of_plane,0.9411,0.9384,0.9423,0.01,0.01,correct,Valid,0.9603,1.403,0.9603,0.9874,1.251,2848
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw +15,raw,in_plane,0.8694,0.8758,0.8666,15.0,0.0,wrong,Conflict,0.627,1.518,0.627,0.7412,1.854,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw +15,icp,in_plane,0.9331,0.9302,0.9343,0.03,0.01,correct,Valid,0.9559,1.443,0.9559,0.9798,1.323,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw -15,raw,in_plane,0.8549,0.8526,0.8559,15.0,0.0,wrong,Conflict,0.6222,1.525,0.6222,0.7201,1.874,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw -15,icp,in_plane,0.933,0.9302,0.9342,0.0,0.0,correct,Valid,0.955,1.441,0.955,0.9798,1.326,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw +30,raw,in_plane,0.8391,0.8855,0.8192,30.0,0.0,wrong,Conflict,0.5621,1.5,0.5621,0.6654,2.183,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw +30,icp,in_plane,0.9331,0.9302,0.9343,0.03,0.01,correct,Valid,0.9559,1.443,0.9559,0.9798,1.323,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw 90,raw,in_plane,0.7359,0.7071,0.7482,90.0,0.0,wrong,Conflict,0.4897,1.471,0.4897,0.5723,3.171,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw 90,icp,in_plane,0.7025,0.6578,0.7216,89.97,13.71,wrong,Conflict,0.7984,1.458,0.7984,0.8471,1.461,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,yaw 180,raw,in_plane,0.9339,0.9339,0.9339,0.0,0.0,correct,Valid,0.9581,1.438,0.9581,0.9804,1.313,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,flip 180,raw,in_plane,0.9349,0.9349,0.9349,0.0,0.0,correct,Valid,0.9542,1.448,0.9542,0.9798,1.349,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,flip 180,icp,in_plane,0.9364,0.9386,0.9355,0.09,0.1,correct,Valid,0.9539,1.447,0.9539,0.9798,1.346,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,shift x 12mm,raw,in_plane,0.7961,0.829,0.782,0.0,12.0,wrong,Conflict,0.0908,1.938,0.0908,0.1387,8.148,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,shift x 12mm,icp,in_plane,0.9331,0.9302,0.9343,0.03,0.01,correct,Valid,0.9559,1.443,0.9559,0.9798,1.323,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,shift y 20mm,raw,in_plane,0.6739,0.7188,0.6546,0.0,20.0,wrong,Conflict,0.42,1.823,0.42,0.779,3.42,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,shift y 20mm,icp,in_plane,0.933,0.9302,0.9342,0.03,0.01,correct,Valid,0.9559,1.443,0.9559,0.9798,1.324,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,tilt 15,raw,out_of_plane,0.897,0.8961,0.8973,15.0,0.0,wrong,Conflict,0.3565,1.936,0.3565,0.6176,4.127,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,tilt 15,icp,out_of_plane,0.9331,0.9302,0.9343,0.03,0.01,correct,Valid,0.9559,1.443,0.9559,0.9798,1.323,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,shift z 15mm,raw,out_of_plane,0.9463,0.9516,0.9441,0.0,15.0,wrong,Valid,0.0199,1.989,0.0199,0.0339,10.714,3512
+gearbox,grey,0.9,60.0,propped,2,a60_propped_o2_normal,shift z 15mm,icp,out_of_plane,0.933,0.9302,0.9342,0.0,0.0,correct,Valid,0.955,1.441,0.955,0.9798,1.326,3512
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw +15,raw,in_plane,0.7963,0.788,0.7998,15.0,0.0,wrong,Conflict,0.7042,1.47,0.7042,0.816,1.589,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw +15,icp,in_plane,0.9456,0.9502,0.9437,0.01,0.0,correct,Valid,0.9688,1.412,0.9688,0.9926,1.301,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw -15,raw,in_plane,0.8021,0.7624,0.8191,15.0,0.0,wrong,Conflict,0.6817,1.47,0.6817,0.8013,1.631,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw -15,icp,in_plane,0.9443,0.9502,0.9418,0.03,0.09,correct,Valid,0.9692,1.412,0.9692,0.9926,1.296,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw +30,raw,in_plane,0.7077,0.6503,0.7323,30.0,0.0,wrong,Conflict,0.6758,1.475,0.6758,0.7792,1.661,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw +30,icp,in_plane,0.9456,0.9502,0.9437,0.01,0.0,correct,Valid,0.9688,1.412,0.9688,0.9926,1.301,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw 90,raw,in_plane,0.6863,0.6282,0.7112,90.0,0.0,wrong,Conflict,0.5345,1.308,0.5345,0.5489,1.962,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw 90,icp,in_plane,0.6822,0.6201,0.7089,89.51,10.97,wrong,Conflict,0.8261,1.376,0.8261,0.8735,1.352,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw 180,raw,in_plane,0.9465,0.9511,0.9445,0.0,0.0,correct,Valid,0.9674,1.408,0.9674,0.993,1.292,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,yaw 180,icp,in_plane,0.9398,0.9399,0.9397,0.17,0.33,correct,Valid,0.9685,1.409,0.9685,0.9933,1.295,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,flip 180,raw,in_plane,0.9449,0.9502,0.9426,0.0,0.0,correct,Valid,0.9706,1.412,0.9706,0.993,1.285,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,flip 180,icp,in_plane,0.9398,0.9399,0.9397,0.07,0.18,correct,Valid,0.9702,1.41,0.9702,0.9933,1.272,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,shift x 12mm,raw,in_plane,0.8178,0.8142,0.8193,0.0,12.0,wrong,Conflict,0.0838,1.993,0.0838,0.1542,7.744,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,shift x 12mm,icp,in_plane,0.9443,0.9502,0.9418,0.03,0.09,correct,Valid,0.9692,1.412,0.9692,0.9926,1.296,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,shift y 20mm,raw,in_plane,0.6035,0.6107,0.6004,0.0,20.0,wrong,Conflict,0.6646,1.88,0.6646,0.7585,2.195,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,shift y 20mm,icp,in_plane,0.9446,0.9502,0.9422,0.01,0.04,correct,Valid,0.9692,1.413,0.9692,0.9926,1.298,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,tilt 15,raw,out_of_plane,0.843,0.7839,0.8684,15.0,0.0,wrong,Conflict,0.5773,1.677,0.5773,0.7431,2.378,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,tilt 15,icp,out_of_plane,0.9446,0.9502,0.9422,0.01,0.04,correct,Valid,0.9692,1.413,0.9692,0.9926,1.298,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,shift z 15mm,raw,out_of_plane,0.935,0.9348,0.9351,0.0,15.0,wrong,Valid,0.0284,1.932,0.0284,0.0508,11.114,2853
+gearbox,grey,0.9,60.0,propped,3,a60_propped_o3_normal,shift z 15mm,icp,out_of_plane,0.9443,0.9502,0.9418,0.03,0.09,correct,Valid,0.9692,1.412,0.9692,0.9926,1.296,2853
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw +15,raw,in_plane,0.8558,0.8442,0.8607,15.0,0.0,wrong,Conflict,0.623,1.525,0.623,0.7293,1.898,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw +15,icp,in_plane,0.9452,0.9468,0.9444,0.0,0.0,correct,Valid,0.9052,1.545,0.9052,0.972,1.446,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw -15,raw,in_plane,0.8854,0.9475,0.8587,15.0,0.0,wrong,Conflict,0.6265,1.519,0.6265,0.7272,1.885,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw -15,icp,in_plane,0.9452,0.9468,0.9444,0.0,0.0,correct,Valid,0.9052,1.545,0.9052,0.972,1.446,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw +30,raw,in_plane,0.8119,0.8151,0.8105,30.0,0.0,wrong,Conflict,0.57,1.517,0.57,0.6642,2.175,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw +30,icp,in_plane,0.9452,0.9468,0.9444,0.0,0.0,correct,Valid,0.9052,1.545,0.9052,0.972,1.446,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw 90,raw,in_plane,0.7121,0.6536,0.7372,90.0,0.0,wrong,Conflict,0.4885,1.586,0.4885,0.573,3.276,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw 90,icp,in_plane,0.6859,0.6244,0.7122,89.76,10.98,wrong,Conflict,0.7237,1.55,0.7237,0.8049,1.683,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw 180,raw,in_plane,0.9427,0.9391,0.9443,0.0,0.0,correct,Valid,0.9082,1.559,0.9082,0.9729,1.471,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,yaw 180,icp,in_plane,0.9395,0.9391,0.9397,0.14,0.45,correct,Valid,0.9097,1.544,0.9097,0.9735,1.442,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,flip 180,raw,in_plane,0.9436,0.943,0.9439,0.0,0.0,correct,Valid,0.9058,1.556,0.9058,0.9715,1.458,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,shift x 12mm,raw,in_plane,0.7945,0.8175,0.7846,0.0,12.0,wrong,Conflict,0.0792,1.959,0.0792,0.1404,7.807,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,shift x 12mm,icp,in_plane,0.9452,0.9468,0.9444,0.0,0.0,correct,Valid,0.9052,1.545,0.9052,0.972,1.446,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,shift y 20mm,raw,in_plane,0.6897,0.7227,0.6756,0.0,20.0,wrong,Conflict,0.7066,1.675,0.7066,0.7834,1.836,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,shift y 20mm,icp,in_plane,0.9452,0.9468,0.9444,0.0,0.0,correct,Valid,0.9052,1.545,0.9052,0.972,1.446,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,tilt 15,raw,out_of_plane,0.8631,0.8664,0.8617,15.0,0.0,wrong,Conflict,0.47,1.964,0.47,0.7098,3.173,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,tilt 15,icp,out_of_plane,0.9452,0.9468,0.9444,0.0,0.0,correct,Valid,0.9052,1.545,0.9052,0.972,1.446,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,shift z 15mm,raw,out_of_plane,0.9294,0.9362,0.9264,0.0,15.0,wrong,Valid,0.0171,2.052,0.0171,0.0312,10.967,3398
+gearbox,grey,0.9,60.0,propped,4,a60_propped_o4_normal,shift z 15mm,icp,out_of_plane,0.9452,0.9468,0.9444,0.0,0.0,correct,Valid,0.9052,1.545,0.9052,0.972,1.446,3398

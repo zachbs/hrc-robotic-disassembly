@@ -1,0 +1,2 @@
+object,color,view,gt_tcp,scans,gt_status,gt_fitness_1mm,gt_rmse_mm,gt_margin,gt_n_points,gt_repeat_deg,gt_repeat_mm,gt_rot_valid,gt_base
+t_block,reflective,a60_propped_o1_normal,"[0.161756, -0.408631, 0.191472, 1.600832, -1.615757, 0.864299]",3,ok,0.9995,0.409,0.1009,4330,0.039,0.13,True,"[[0.104846, 0.994299, -0.019406, 0.159852], [-0.989161, 0.106281, 0.101317, -0.627161], [0.102802, 0.008573, 0.994665, 0.020516], [0.0, 0.0, 0.0, 1.0]]"

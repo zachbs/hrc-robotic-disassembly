@@ -1,0 +1,22 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,gearbox,30,30,0,30,30,0,0,0,0,0,0
+object+color,gearbox / white,30,30,0,30,30,0,0,0,0,0,0
+object+placement,gearbox / flat,15,15,0,15,15,0,0,0,0,0,0
+object+placement,gearbox / propped,15,15,0,15,15,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / flat / 0.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / flat / 30.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / flat / 45.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / propped / 0.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / propped / 30.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / propped / 45.0,5,5,0,5,5,0,0,0,0,0,0
+object+angle_deg,gearbox / 0.0,10,10,0,10,10,0,0,0,0,0,0
+object+angle_deg,gearbox / 30.0,10,10,0,10,10,0,0,0,0,0,0
+object+angle_deg,gearbox / 45.0,10,10,0,10,10,0,0,0,0,0,0
+object+orientation,gearbox / 1,30,30,0,30,30,0,0,0,0,0,0
+object+condition,gearbox / normal,30,30,0,30,30,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / flat / 0.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / flat / 30.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / flat / 45.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / propped / 0.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / propped / 30.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / propped / 45.0 / normal,5,5,0,5,5,0,0,0,0,0,0

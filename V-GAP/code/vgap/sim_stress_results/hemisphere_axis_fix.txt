@@ -1,0 +1,16 @@
+Hemisphere axis fix (2026-10-16): same 120 hemisphere scenes as sim_stress_test.py (same seeds).
+Correct = <= 5 deg and <= 5 mm. Script: code/vgap/test_hemisphere_axis_sim.py
+
+                 BEFORE (axis = table normal)        AFTER (axis from object + ambiguity gate)
+scene      correct&accepted  false accepts      correct&accepted  false accepts  rejected
+flat        30/30              0                 30/30              0              0
+screw       30/30 (4.9 deg)    0                 30/30 (4.9 deg)    0              0
+block        0/30             26                 15/30              0             15 "axis ambiguous"
+clutter     21/30              0                 21/30              0              9 (occlusion, unchanged)
+ALL         81/120            26                 96/120             0
+
+Block cases: where the flat base or the dropped rim is in view (dome tilted away from or across
+the camera) the axis is found to 0.3-2 deg. Where the dome tilts toward the camera the tilt is
+not visible from that side (a dome looks like a sphere); these are now flagged
+"axis ambiguous" instead of accepted 16.6 deg off -> retry from another side.
+Largest accepted rotation error: 4.96 deg.

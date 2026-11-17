@@ -1,0 +1,5 @@
+object,color,view,placement,from_angle,to_angle,old_state,old_reason,old_grade,old_C,new_state,new_C,new_reason,new_grade,new_outcome
+l_block,white,a0_flat_o2_normal,flat,0.0,45.0,Conflict,geometry,correct,0.8398,Valid,0.9004,,correct,TA
+l_block,white,a0_flat_o2_normal,flat,0.0,45.0,Conflict,geometry,correct,0.8396,Valid,0.8553,,correct,TA
+l_block,white,a0_propped_o2_normal,propped,0.0,45.0,Conflict,geometry,wrong,0.6427,Valid,0.9083,,correct,TA
+l_block,white,a0_propped_o3_normal,propped,0.0,45.0,Conflict,geometry,correct,0.8419,Valid,0.8826,,correct,TA

@@ -1,0 +1,2 @@
+object,color,view,gt_tcp,scans,gt_status,gt_fitness_1mm,gt_rmse_mm,gt_margin,gt_n_points,gt_repeat_deg,gt_repeat_mm,gt_rot_valid,gt_base
+t_block,reflective,a60_propped_o1_normal,"[0.161756, -0.408631, 0.191472, 1.600832, -1.615757, 0.864299]",3,"invalid: no fit rests on the table (part not fully seen), fitness 0.9239",0.9239,0.411,0.023,5086,0.03,0.084,True,"[[-0.02945, 0.999452, 0.015114, 0.157213], [0.994484, 0.03082, -0.100256, -0.607214], [-0.100667, 0.012078, -0.994847, 0.020161], [0.0, 0.0, 0.0, 1.0]]"

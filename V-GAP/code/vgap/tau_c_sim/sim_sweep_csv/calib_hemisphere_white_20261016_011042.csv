@@ -1,0 +1,121 @@
+object,color,view,tilt_deg,azimuth_deg,rep,sample,perturbation,yolo_object,final_object,C,IB,IM,margin,class_margin,axis_ambiguity_deg,state,reason,used_fallback,chosen,UD,rot_err_deg,trans_err_mm,inject_kind,inject_group,label,label_source,caught_by_other_check,true_rot_err_deg,true_trans_err_mm,trial_dir,timestamp
+hemisphere,white,0,0.0,0.0,0,real,,hemisphere,hemisphere,0.9486,0.9522,0.947,1.0,nan,3.0000000000000444,Valid,,False,as registered,0.0264,0.02,0.78,,,correct,reference,False,0.0,0.63,,2026-10-16 01:11:01
+hemisphere,white,0,0.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7503,0.7483,0.7512,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:01
+hemisphere,white,0,0.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7279,0.7511,0.718,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:01
+hemisphere,white,0,0.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6005,0.638,0.5844,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:01
+hemisphere,white,0,0.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8309,0.8355,0.829,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:01
+hemisphere,white,0,0.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9753,0.9718,0.9769,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:01
+hemisphere,white,1,0.0,90.0,0,real,,hemisphere,hemisphere,0.9556,0.9663,0.9511,1.0,nan,2.9999999999999227,Valid,,False,as registered,0.0589,0.01,0.7,,,correct,reference,False,0.02,0.66,,2026-10-16 01:11:10
+hemisphere,white,1,0.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.8296,0.8183,0.8344,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:10
+hemisphere,white,1,0.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7441,0.771,0.7326,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:10
+hemisphere,white,1,0.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6082,0.6478,0.5912,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:10
+hemisphere,white,1,0.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8418,0.8496,0.8384,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:10
+hemisphere,white,1,0.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8915,0.9006,0.8876,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:10
+hemisphere,white,2,0.0,180.0,0,real,,hemisphere,hemisphere,0.9888,1.0,0.9839,1.0,nan,3.0000000000002878,Valid,,False,as registered,0.0581,0.03,0.26,,,correct,reference,False,0.01,0.64,,2026-10-16 01:11:17
+hemisphere,white,2,0.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.8018,0.7913,0.8063,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:17
+hemisphere,white,2,0.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7493,0.7791,0.7365,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:17
+hemisphere,white,2,0.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.613,0.6571,0.5941,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:17
+hemisphere,white,2,0.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8576,0.866,0.854,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:17
+hemisphere,white,2,0.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9207,0.9256,0.9185,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:17
+hemisphere,white,3,0.0,270.0,0,real,,hemisphere,hemisphere,0.9464,0.9456,0.9468,1.0,nan,3.0000000000002878,Valid,,False,as registered,0.0285,0.01,0.42,,,correct,reference,False,0.01,0.63,,2026-10-16 01:11:27
+hemisphere,white,3,0.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7518,0.7529,0.7513,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:27
+hemisphere,white,3,0.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7333,0.7571,0.7231,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:27
+hemisphere,white,3,0.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.609,0.6511,0.5909,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:27
+hemisphere,white,3,0.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8466,0.8527,0.844,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:27
+hemisphere,white,3,0.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9842,0.9859,0.9834,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:27
+hemisphere,white,4,15.0,270.0,0,real,,hemisphere,hemisphere,0.9476,0.9456,0.9485,1.0,nan,4.359292038838582,Valid,,False,as registered,0.023,0.01,0.27,,,correct,reference,False,0.01,0.62,,2026-10-16 01:11:34
+hemisphere,white,4,15.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7072,0.697,0.7116,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+hemisphere,white,4,15.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7414,0.7618,0.7327,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+hemisphere,white,4,15.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6017,0.638,0.5861,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+hemisphere,white,4,15.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8509,0.864,0.8452,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+hemisphere,white,4,15.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9829,0.9859,0.9817,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:34
+hemisphere,white,5,15.0,180.0,0,real,,hemisphere,hemisphere,0.9475,0.9456,0.9483,1.0,nan,4.359292038838666,Valid,,False,as registered,0.0242,0.04,0.64,,,correct,reference,False,0.03,0.61,,2026-10-16 01:11:42
+hemisphere,white,5,15.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7133,0.706,0.7165,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:42
+hemisphere,white,5,15.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7362,0.7571,0.7273,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:42
+hemisphere,white,5,15.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.5985,0.6417,0.58,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:42
+hemisphere,white,5,15.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8387,0.8465,0.8353,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:42
+hemisphere,white,5,15.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9741,0.9651,0.9779,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:42
+hemisphere,white,6,15.0,90.0,0,real,,hemisphere,hemisphere,0.9548,0.9664,0.9499,1.0,nan,4.359292038837912,Valid,,False,as registered,0.0534,0.01,0.67,,,correct,reference,False,0.01,0.64,,2026-10-16 01:11:49
+hemisphere,white,6,15.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7495,0.7489,0.7498,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:49
+hemisphere,white,6,15.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7371,0.7603,0.7272,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:49
+hemisphere,white,6,15.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6114,0.6533,0.5934,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:49
+hemisphere,white,6,15.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8702,0.8779,0.8669,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:49
+hemisphere,white,6,15.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8906,0.9009,0.8862,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:49
+hemisphere,white,7,15.0,0.0,0,real,,hemisphere,hemisphere,0.9815,0.9794,0.9824,1.0,nan,4.359292038838247,Valid,,False,as registered,0.0501,0.03,0.29,,,correct,reference,False,0.01,0.63,,2026-10-16 01:11:56
+hemisphere,white,7,15.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.7245,0.7177,0.7274,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:56
+hemisphere,white,7,15.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.742,0.773,0.7287,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:56
+hemisphere,white,7,15.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6158,0.6666,0.594,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:56
+hemisphere,white,7,15.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8616,0.8652,0.8601,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:56
+hemisphere,white,7,15.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.948,0.945,0.9493,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:56
+hemisphere,white,8,30.0,0.0,0,real,,hemisphere,hemisphere,0.9489,0.9526,0.9473,1.0,nan,4.359292038838331,Valid,,False,as registered,0.0391,0.02,0.16,,,correct,reference,False,0.03,0.64,,2026-10-16 01:12:03
+hemisphere,white,8,30.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.6069,0.637,0.594,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:03
+hemisphere,white,8,30.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7369,0.7624,0.726,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:03
+hemisphere,white,8,30.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6143,0.651,0.5985,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:03
+hemisphere,white,8,30.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8686,0.8674,0.8691,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:03
+hemisphere,white,8,30.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8839,0.8872,0.8825,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:03
+hemisphere,white,9,30.0,90.0,0,real,,hemisphere,hemisphere,0.9543,0.9655,0.9495,1.0,nan,4.359292038838414,Valid,,False,as registered,0.0175,0.01,0.53,,,correct,reference,False,0.02,0.62,,2026-10-16 01:12:12
+hemisphere,white,9,30.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5906,0.6104,0.5822,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:12
+hemisphere,white,9,30.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7265,0.7517,0.7157,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:12
+hemisphere,white,9,30.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6003,0.6398,0.5834,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:12
+hemisphere,white,9,30.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.9104,0.9125,0.9095,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:12
+hemisphere,white,9,30.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.978,0.9717,0.9806,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:12
+hemisphere,white,10,30.0,180.0,0,real,,hemisphere,hemisphere,0.9802,0.9792,0.9806,1.0,nan,4.359292038837996,Valid,,False,as registered,0.0386,0.02,0.65,,,correct,reference,False,0.01,0.64,,2026-10-16 01:12:23
+hemisphere,white,10,30.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5998,0.6277,0.5879,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:23
+hemisphere,white,10,30.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7373,0.761,0.7271,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:23
+hemisphere,white,10,30.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6044,0.6477,0.5859,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:23
+hemisphere,white,10,30.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8524,0.8491,0.8538,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:23
+hemisphere,white,10,30.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9132,0.9119,0.9138,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:23
+hemisphere,white,11,30.0,270.0,0,real,,hemisphere,hemisphere,0.9488,0.9526,0.9472,1.0,nan,4.359292038838414,Valid,,False,as registered,0.0391,0.03,0.35,,,correct,reference,False,0.01,0.67,,2026-10-16 01:12:32
+hemisphere,white,11,30.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.6022,0.6336,0.5888,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,white,11,30.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7427,0.7671,0.7322,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,white,11,30.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6109,0.6494,0.5944,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,white,11,30.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.874,0.8782,0.8722,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,white,11,30.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8833,0.8874,0.8815,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:32
+hemisphere,white,12,45.0,270.0,0,real,,hemisphere,hemisphere,0.9852,0.9857,0.985,1.0,nan,4.359292038838163,Valid,,False,as registered,0.0353,0.03,0.49,,,correct,reference,False,0.02,0.63,,2026-10-16 01:12:43
+hemisphere,white,12,45.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5104,0.5674,0.4859,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:43
+hemisphere,white,12,45.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7267,0.7554,0.7144,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:43
+hemisphere,white,12,45.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6105,0.6606,0.589,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:43
+hemisphere,white,12,45.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.9074,0.9048,0.9085,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:43
+hemisphere,white,12,45.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9441,0.9429,0.9446,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:43
+hemisphere,white,13,45.0,180.0,0,real,,hemisphere,hemisphere,0.9814,0.9858,0.9795,1.0,nan,4.359292038838163,Valid,,False,as registered,0.0385,0.04,0.66,,,correct,reference,False,0.02,0.63,,2026-10-16 01:12:51
+hemisphere,white,13,45.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5201,0.5798,0.4944,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:51
+hemisphere,white,13,45.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7229,0.7521,0.7104,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:51
+hemisphere,white,13,45.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6063,0.6532,0.5862,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:51
+hemisphere,white,13,45.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8629,0.8547,0.8664,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:51
+hemisphere,white,13,45.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9125,0.9162,0.911,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:51
+hemisphere,white,14,45.0,90.0,0,real,,hemisphere,hemisphere,0.9851,0.9857,0.9848,1.0,nan,4.359292038838331,Valid,,False,as registered,0.0369,0.02,0.45,,,correct,reference,False,0.01,0.61,,2026-10-16 01:13:00
+hemisphere,white,14,45.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5165,0.571,0.4931,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:00
+hemisphere,white,14,45.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7156,0.7439,0.7035,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:00
+hemisphere,white,14,45.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6078,0.6568,0.5868,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:00
+hemisphere,white,14,45.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8997,0.8875,0.9049,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:00
+hemisphere,white,14,45.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9446,0.9429,0.9454,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:00
+hemisphere,white,15,45.0,0.0,0,real,,hemisphere,hemisphere,0.9515,0.9573,0.949,1.0,nan,4.359292038837828,Valid,,False,as registered,0.0167,0.02,0.02,,,correct,reference,False,0.02,0.63,,2026-10-16 01:13:05
+hemisphere,white,15,45.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.5082,0.5621,0.4851,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:05
+hemisphere,white,15,45.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.7157,0.7396,0.7054,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:05
+hemisphere,white,15,45.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6073,0.6502,0.5889,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:05
+hemisphere,white,15,45.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8778,0.8703,0.8811,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:05
+hemisphere,white,15,45.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9765,0.9785,0.9757,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:05
+hemisphere,white,16,60.0,0.0,0,real,,hemisphere,hemisphere,0.984,0.9849,0.9836,1.0,nan,4.359292038838414,Valid,,False,as registered,0.0381,0.03,0.12,,,correct,reference,False,0.01,0.62,,2026-10-16 01:13:11
+hemisphere,white,16,60.0,0.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.4874,0.5714,0.4513,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:11
+hemisphere,white,16,60.0,0.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.6936,0.7276,0.679,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:11
+hemisphere,white,16,60.0,0.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6137,0.6638,0.5922,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:11
+hemisphere,white,16,60.0,0.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8614,0.8713,0.8572,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:11
+hemisphere,white,16,60.0,0.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9439,0.9482,0.9421,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:11
+hemisphere,white,17,60.0,90.0,0,real,,hemisphere,hemisphere,0.9805,0.9851,0.9785,1.0,nan,4.359292038838331,Valid,,False,as registered,0.0374,0.02,0.42,,,correct,reference,False,0.01,0.62,,2026-10-16 01:13:21
+hemisphere,white,17,60.0,90.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.495,0.5803,0.4584,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:21
+hemisphere,white,17,60.0,90.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.6925,0.7296,0.6766,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:21
+hemisphere,white,17,60.0,90.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6097,0.6565,0.5896,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:21
+hemisphere,white,17,60.0,90.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8391,0.8326,0.8418,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:21
+hemisphere,white,17,60.0,90.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.9097,0.912,0.9087,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:21
+hemisphere,white,18,60.0,180.0,0,real,,hemisphere,hemisphere,0.9471,0.9562,0.9432,1.0,nan,4.359292038838414,Valid,,False,as registered,0.0381,0.01,0.7,,,correct,reference,False,0.01,0.64,,2026-10-16 01:13:30
+hemisphere,white,18,60.0,180.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.4987,0.5891,0.4599,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,white,18,60.0,180.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.693,0.723,0.6801,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,white,18,60.0,180.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.6061,0.6492,0.5876,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,white,18,60.0,180.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.8589,0.8674,0.8552,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,white,18,60.0,180.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.878,0.8868,0.8743,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:30
+hemisphere,white,19,60.0,270.0,0,real,,hemisphere,hemisphere,0.9469,0.9562,0.943,1.0,nan,4.359292038838331,Valid,,False,as registered,0.0382,0.02,0.58,,,correct,reference,False,0.01,0.64,,2026-10-16 01:13:40
+hemisphere,white,19,60.0,270.0,0,injected,flip 180 raw,hemisphere,hemisphere,0.4947,0.5826,0.4571,,,,,,,,,179.86,49.99,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:40
+hemisphere,white,19,60.0,270.0,0,injected,shift x 12mm raw,hemisphere,hemisphere,0.6978,0.7309,0.6837,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:40
+hemisphere,white,19,60.0,270.0,0,injected,shift y 20mm raw,hemisphere,hemisphere,0.609,0.6446,0.5937,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:40
+hemisphere,white,19,60.0,270.0,0,injected,tilt 15 raw,hemisphere,hemisphere,0.9137,0.8904,0.9236,,,,,,,,,15.0,6.53,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:40
+hemisphere,white,19,60.0,270.0,0,injected,shift z 15mm raw,hemisphere,hemisphere,0.8796,0.893,0.8738,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:40

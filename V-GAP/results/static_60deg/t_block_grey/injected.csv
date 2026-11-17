@@ -1,0 +1,160 @@
+object,color,tau_c,angle_deg,placement,orientation,view,perturbation,inject_kind,inject_group,C,IB,IM,rot_err_deg,trans_err_mm,grade,gate,fitness_3mm,rmse_mm,within_3mm,within_5mm,median_dist_mm,n_scan_points
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw +15,raw,in_plane,0.686,0.6844,0.6866,15.0,0.0,wrong,Conflict,0.6766,1.528,0.6766,0.8008,1.739,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw +15,icp,in_plane,0.8291,0.8356,0.8263,0.3,1.8,correct,Valid,0.9438,1.529,0.9438,1.0,1.301,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw -15,raw,in_plane,0.7485,0.7994,0.7267,15.0,0.0,wrong,Conflict,0.709,1.57,0.709,0.8391,1.698,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw -15,icp,in_plane,0.833,0.8392,0.8303,0.39,7.83,borderline,Valid,0.9595,1.518,0.9595,1.0,1.276,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw +30,raw,in_plane,0.5656,0.5938,0.5536,30.0,0.0,wrong,Conflict,0.5626,1.527,0.5626,0.6636,2.254,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw +30,icp,in_plane,0.8298,0.8356,0.8274,0.45,1.8,correct,Valid,0.9428,1.525,0.9428,1.0,1.299,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw 90,raw,in_plane,0.5629,0.8229,0.4515,90.0,0.0,wrong,Conflict,0.4077,1.478,0.4077,0.4487,7.523,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw 90,icp,in_plane,0.6964,0.7024,0.6938,117.04,34.84,wrong,Conflict,0.7057,1.494,0.7057,0.817,1.615,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw 180,raw,in_plane,0.4855,0.8385,0.3341,180.0,0.0,wrong,Conflict,0.5346,1.424,0.5346,0.5913,2.438,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,yaw 180,icp,in_plane,0.4946,0.8555,0.3399,179.42,0.71,wrong,Conflict,0.5356,1.39,0.5356,0.5896,2.314,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,flip 180,raw,in_plane,0.8646,0.8597,0.8667,0.0,0.0,correct,Valid,0.953,1.499,0.953,1.0,1.284,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,flip 180,icp,in_plane,0.867,0.8666,0.8671,0.08,0.05,correct,Valid,0.953,1.499,0.953,1.0,1.286,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,shift x 12mm,raw,in_plane,0.6529,0.7307,0.6195,0.0,12.0,wrong,Conflict,0.1129,1.794,0.1129,0.2014,7.432,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,shift x 12mm,icp,in_plane,0.8653,0.8597,0.8677,0.05,0.02,correct,Valid,0.9536,1.502,0.9536,1.0,1.284,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,shift y 20mm,raw,in_plane,0.6179,0.6646,0.5979,0.0,20.0,wrong,Conflict,0.7225,1.691,0.7225,0.8461,1.881,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,shift y 20mm,icp,in_plane,0.7957,0.8079,0.7904,0.82,9.62,borderline,Conflict,0.9271,1.514,0.9271,0.9995,1.307,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,tilt 15,raw,out_of_plane,0.7601,0.749,0.7648,15.0,0.0,wrong,Conflict,0.5956,1.669,0.5956,0.7883,2.348,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,tilt 15,icp,out_of_plane,0.9084,0.8914,0.9157,0.17,2.0,correct,Valid,0.9557,1.502,0.9557,1.0,1.271,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,shift z 15mm,raw,out_of_plane,0.8835,0.8986,0.8771,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0,11.104,1852
+t_block,grey,0.81,60.0,flat,1,a60_flat_o1_normal,shift z 15mm,icp,out_of_plane,0.8695,0.8666,0.8708,0.41,0.12,correct,Valid,0.9557,1.506,0.9557,1.0,1.269,1852
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw +15,raw,in_plane,0.738,0.7637,0.7269,15.0,0.0,wrong,Conflict,0.634,1.471,0.634,0.7371,1.846,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw +15,icp,in_plane,0.9008,0.9203,0.8924,0.06,0.03,correct,Valid,0.9318,1.45,0.9318,0.9964,1.179,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw -15,raw,in_plane,0.7769,0.8629,0.7401,15.0,0.0,wrong,Conflict,0.6793,1.495,0.6793,0.7897,1.65,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw -15,icp,in_plane,0.9265,0.9186,0.9299,0.16,1.88,correct,Valid,0.9459,1.457,0.9459,1.0,1.169,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw +30,raw,in_plane,0.6375,0.7305,0.5977,30.0,0.0,wrong,Conflict,0.5008,1.479,0.5008,0.5966,2.975,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw +30,icp,in_plane,0.9008,0.9203,0.8924,0.06,0.03,correct,Valid,0.9323,1.452,0.9323,0.9964,1.182,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw 90,raw,in_plane,0.5633,0.8564,0.4377,90.0,0.0,wrong,Conflict,0.303,1.584,0.303,0.3977,7.648,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw 90,icp,in_plane,0.7474,0.7526,0.7453,125.5,19.93,wrong,Conflict,0.7007,1.539,0.7007,0.8417,1.71,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw 180,raw,in_plane,0.6749,0.8924,0.5817,180.0,0.0,wrong,Conflict,0.4872,1.558,0.4872,0.5669,3.134,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,yaw 180,icp,in_plane,0.7446,0.7484,0.7431,126.4,19.33,wrong,Conflict,0.6991,1.514,0.6991,0.8402,1.68,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,flip 180,raw,in_plane,0.9027,0.9277,0.8919,0.0,0.0,correct,Valid,0.9328,1.452,0.9328,0.9964,1.188,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,flip 180,icp,in_plane,0.9029,0.9277,0.8922,0.09,0.04,correct,Valid,0.9334,1.453,0.9334,0.9964,1.182,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,shift x 12mm,raw,in_plane,0.6842,0.7561,0.6533,0.0,12.0,wrong,Conflict,0.1385,1.838,0.1385,0.2369,7.527,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,shift x 12mm,icp,in_plane,0.9038,0.9277,0.8936,0.59,0.26,correct,Valid,0.9224,1.431,0.9224,0.9984,1.191,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,shift y 20mm,raw,in_plane,0.5839,0.6531,0.5543,0.0,20.0,wrong,Conflict,0.5898,1.758,0.5898,0.7382,2.35,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,shift y 20mm,icp,in_plane,0.8296,0.8397,0.8253,0.63,7.53,borderline,Valid,0.9068,1.519,0.9068,0.9948,1.257,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,tilt 15,raw,out_of_plane,0.8026,0.7776,0.8134,15.0,0.0,wrong,Conflict,0.5627,1.54,0.5627,0.7371,2.418,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,tilt 15,icp,out_of_plane,0.9004,0.9203,0.8919,0.15,0.09,correct,Valid,0.9328,1.455,0.9328,0.9969,1.19,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,shift z 15mm,raw,out_of_plane,0.9323,0.963,0.9192,0.0,15.0,wrong,Valid,0.0005,2.717,0.0005,0.0151,10.804,1921
+t_block,grey,0.81,60.0,flat,2,a60_flat_o2_normal,shift z 15mm,icp,out_of_plane,0.9139,0.9037,0.9183,0.3,3.8,correct,Valid,0.9459,1.46,0.9459,1.0,1.171,1921
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw +15,raw,in_plane,0.719,0.8195,0.6759,15.0,0.0,wrong,Conflict,0.6984,1.44,0.6984,0.7951,1.511,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw +15,icp,in_plane,0.9096,0.9501,0.8922,0.03,0.03,correct,Valid,0.9209,1.453,0.9209,0.9975,1.236,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw -15,raw,in_plane,0.7328,0.7708,0.7165,15.0,0.0,wrong,Conflict,0.717,1.453,0.717,0.8026,1.512,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw -15,icp,in_plane,0.9059,0.9302,0.8955,1.68,0.83,correct,Valid,0.9305,1.462,0.9305,0.993,1.24,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw +30,raw,in_plane,0.5771,0.6971,0.5256,30.0,0.0,wrong,Conflict,0.5146,1.471,0.5146,0.6208,2.823,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw +30,icp,in_plane,0.9096,0.9501,0.8922,0.03,0.03,correct,Valid,0.9209,1.453,0.9209,0.9975,1.236,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw 90,raw,in_plane,0.5651,0.862,0.4378,90.0,0.0,wrong,Conflict,0.3822,1.55,0.3822,0.507,4.919,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw 90,icp,in_plane,0.7438,0.8337,0.7052,119.42,21.61,wrong,Conflict,0.6818,1.489,0.6818,0.8162,1.624,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw 180,raw,in_plane,0.494,0.8284,0.3508,180.0,0.0,wrong,Conflict,0.6173,1.297,0.6173,0.6571,1.61,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,yaw 180,icp,in_plane,0.4997,0.8451,0.3516,179.67,0.22,wrong,Conflict,0.6188,1.29,0.6188,0.6591,1.578,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,flip 180,raw,in_plane,0.9085,0.9501,0.8907,0.0,0.0,correct,Valid,0.9189,1.449,0.9189,0.998,1.233,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,flip 180,icp,in_plane,0.907,0.9501,0.8885,0.12,0.05,correct,Valid,0.9215,1.455,0.9215,0.9975,1.232,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,shift x 12mm,raw,in_plane,0.6715,0.7461,0.6396,0.0,12.0,wrong,Conflict,0.147,1.845,0.147,0.2664,7.41,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,shift x 12mm,icp,in_plane,0.9101,0.9501,0.8929,0.15,0.09,correct,Valid,0.9225,1.458,0.9225,0.9975,1.23,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,shift y 20mm,raw,in_plane,0.5194,0.6528,0.4623,0.0,20.0,wrong,Conflict,0.4909,1.674,0.4909,0.6294,3.069,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,shift y 20mm,icp,in_plane,0.8644,0.9008,0.8488,1.71,2.58,correct,Valid,0.9089,1.41,0.9089,0.9899,1.225,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,tilt 15,raw,out_of_plane,0.8227,0.8971,0.7909,15.0,0.0,wrong,Valid,0.712,1.64,0.712,0.8424,1.813,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,tilt 15,icp,out_of_plane,0.8654,0.9073,0.8474,1.47,2.57,correct,Valid,0.8998,1.472,0.8998,0.995,1.278,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,shift z 15mm,raw,out_of_plane,0.8991,0.9298,0.8859,0.0,15.0,wrong,Valid,0.0076,2.47,0.0076,0.0342,10.829,1986
+t_block,grey,0.81,60.0,flat,3,a60_flat_o3_normal,shift z 15mm,icp,out_of_plane,0.9079,0.9501,0.8898,0.04,0.05,correct,Valid,0.9225,1.457,0.9225,0.997,1.242,1986
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw +15,raw,in_plane,0.6987,0.7199,0.6897,15.0,0.0,wrong,Conflict,0.6469,1.508,0.6469,0.7482,1.811,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw +15,icp,in_plane,0.8489,0.8728,0.8386,0.17,0.07,correct,Valid,0.9585,1.394,0.9585,1.0,1.18,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw -15,raw,in_plane,0.7419,0.7876,0.7224,15.0,0.0,wrong,Conflict,0.6765,1.49,0.6765,0.8027,1.696,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw -15,icp,in_plane,0.8871,0.9054,0.8793,0.48,1.71,correct,Valid,0.9628,1.411,0.9628,1.0,1.201,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw +30,raw,in_plane,0.5824,0.617,0.5675,30.0,0.0,wrong,Conflict,0.5256,1.481,0.5256,0.6135,2.618,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw +30,icp,in_plane,0.8489,0.8728,0.8386,0.18,0.08,correct,Valid,0.9585,1.394,0.9585,1.0,1.183,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw 90,raw,in_plane,0.5348,0.8124,0.4159,90.0,0.0,wrong,Conflict,0.3256,1.662,0.3256,0.4156,7.707,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw 90,icp,in_plane,0.7261,0.7209,0.7284,123.97,19.36,wrong,Conflict,0.6819,1.592,0.6819,0.8361,1.854,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw 180,raw,in_plane,0.6333,0.818,0.5542,180.0,0.0,wrong,Conflict,0.5148,1.441,0.5148,0.5968,2.683,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,yaw 180,icp,in_plane,0.6212,0.8059,0.5421,179.58,0.56,wrong,Conflict,0.5326,1.414,0.5326,0.5892,2.365,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,flip 180,raw,in_plane,0.8542,0.8848,0.8411,0.0,0.0,correct,Valid,0.958,1.396,0.958,1.0,1.177,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,flip 180,icp,in_plane,0.8501,0.8715,0.8409,0.1,0.06,correct,Valid,0.959,1.398,0.959,1.0,1.178,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,shift x 12mm,raw,in_plane,0.6428,0.7188,0.6102,0.0,12.0,wrong,Conflict,0.1472,1.768,0.1472,0.242,7.558,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,shift x 12mm,icp,in_plane,0.8515,0.8781,0.8401,0.04,0.02,correct,Valid,0.9606,1.4,0.9606,1.0,1.187,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,shift y 20mm,raw,in_plane,0.4923,0.5807,0.4544,0.0,20.0,wrong,Conflict,0.5558,1.626,0.5558,0.6825,2.372,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,shift y 20mm,icp,in_plane,0.8514,0.8781,0.84,0.06,0.04,correct,Valid,0.9606,1.399,0.9606,1.0,1.185,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,tilt 15,raw,out_of_plane,0.7787,0.7505,0.7909,15.0,0.0,wrong,Conflict,0.6388,1.65,0.6388,0.8199,2.067,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,tilt 15,icp,out_of_plane,0.8489,0.8728,0.8386,0.18,0.08,correct,Valid,0.9585,1.394,0.9585,1.0,1.183,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,shift z 15mm,raw,out_of_plane,0.852,0.8819,0.8392,0.0,15.0,wrong,Valid,0.0038,2.508,0.0038,0.0189,10.789,1855
+t_block,grey,0.81,60.0,flat,4,a60_flat_o4_normal,shift z 15mm,icp,out_of_plane,0.887,0.9069,0.8785,0.61,1.72,correct,Valid,0.965,1.416,0.965,1.0,1.191,1855
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw +15,raw,in_plane,0.7314,0.7958,0.7038,15.0,0.0,wrong,Conflict,0.6569,1.483,0.6569,0.7702,1.711,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw +15,icp,in_plane,0.9066,0.92,0.9009,0.4,3.79,correct,Valid,0.9655,1.35,0.9655,1.0,1.115,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw -15,raw,in_plane,0.699,0.7122,0.6933,15.0,0.0,wrong,Conflict,0.6265,1.476,0.6265,0.7367,1.818,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw -15,icp,in_plane,0.8663,0.8924,0.855,0.45,1.86,correct,Valid,0.9778,1.362,0.9778,1.0,1.119,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw +30,raw,in_plane,0.5869,0.6609,0.5552,30.0,0.0,wrong,Conflict,0.4992,1.458,0.4992,0.6054,3.013,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw +30,icp,in_plane,0.9066,0.92,0.9008,0.4,3.79,correct,Valid,0.9645,1.347,0.9645,0.9995,1.114,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw 90,raw,in_plane,0.6035,0.8817,0.4843,90.0,0.0,wrong,Conflict,0.5487,1.478,0.5487,0.6383,2.384,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw 90,icp,in_plane,0.656,0.6865,0.643,110.04,21.84,wrong,Conflict,0.6172,1.439,0.6172,0.7481,1.807,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw 180,raw,in_plane,0.6659,0.9103,0.5612,180.0,0.0,wrong,Conflict,0.5137,1.421,0.5137,0.5853,2.702,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,yaw 180,icp,in_plane,0.7006,0.7086,0.6971,125.91,18.62,wrong,Conflict,0.6713,1.495,0.6713,0.813,1.701,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,flip 180,raw,in_plane,0.8286,0.8738,0.8092,0.0,0.0,correct,Valid,0.9578,1.345,0.9578,1.0,1.118,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,flip 180,icp,in_plane,0.8296,0.8738,0.8106,0.16,0.09,correct,Valid,0.9572,1.343,0.9572,1.0,1.133,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,shift x 12mm,raw,in_plane,0.6487,0.7194,0.6183,0.0,12.0,wrong,Conflict,0.1587,1.782,0.1587,0.2504,7.532,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,shift x 12mm,icp,in_plane,0.8273,0.8671,0.8103,0.05,0.06,correct,Valid,0.9578,1.345,0.9578,1.0,1.112,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,shift y 20mm,raw,in_plane,0.4909,0.5813,0.4521,0.0,20.0,wrong,Conflict,0.5945,1.474,0.5945,0.6502,1.998,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,shift y 20mm,icp,in_plane,0.7876,0.8359,0.7669,0.2,2.0,correct,Conflict,0.9243,1.34,0.9243,0.984,1.133,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,tilt 15,raw,out_of_plane,0.7665,0.7483,0.7743,15.0,0.0,wrong,Conflict,0.6507,1.66,0.6507,0.8284,2.093,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,tilt 15,icp,out_of_plane,0.8288,0.8738,0.8095,0.06,0.05,correct,Valid,0.9552,1.336,0.9552,1.0,1.102,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.8468,0.8944,0.8264,0.0,15.0,wrong,Valid,0.0103,2.267,0.0103,0.0278,10.974,1941
+t_block,grey,0.81,60.0,propped,1,a60_propped_o1_normal,shift z 15mm,icp,out_of_plane,0.8755,0.8994,0.8653,1.11,2.25,correct,Valid,0.9809,1.39,0.9809,1.0,1.164,1941
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw +15,raw,in_plane,0.7671,0.7946,0.7553,15.0,0.0,wrong,Conflict,0.6452,1.573,0.6452,0.8181,1.941,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw +15,icp,in_plane,0.8287,0.8388,0.8244,1.96,8.17,borderline,Valid,0.9256,1.407,0.9256,0.9984,1.216,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw -15,raw,in_plane,0.6713,0.6558,0.678,15.0,0.0,wrong,Conflict,0.6095,1.56,0.6095,0.7636,2.09,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw -15,icp,in_plane,0.7856,0.7918,0.783,0.23,3.85,correct,Conflict,0.902,1.414,0.902,0.9785,1.249,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw +30,raw,in_plane,0.6268,0.678,0.6049,30.0,0.0,wrong,Conflict,0.5288,1.567,0.5288,0.6567,2.725,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw +30,icp,in_plane,0.83,0.8438,0.8242,2.04,8.06,borderline,Valid,0.9277,1.415,0.9277,0.999,1.198,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw 90,raw,in_plane,0.624,0.8808,0.514,90.0,0.0,wrong,Conflict,0.4523,1.472,0.4523,0.5173,4.163,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw 90,icp,in_plane,0.591,0.805,0.4994,89.29,3.42,wrong,Conflict,0.4764,1.445,0.4764,0.5503,3.46,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw 180,raw,in_plane,0.4966,0.8239,0.3563,180.0,0.0,wrong,Conflict,0.5178,1.312,0.5178,0.5618,2.414,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,yaw 180,icp,in_plane,0.4996,0.8402,0.3537,179.14,0.8,wrong,Conflict,0.521,1.253,0.521,0.5582,2.313,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,flip 180,raw,in_plane,0.8596,0.8521,0.8629,0.0,0.0,correct,Valid,0.9444,1.403,0.9444,1.0,1.184,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,flip 180,icp,in_plane,0.8615,0.8521,0.8656,0.1,0.07,correct,Valid,0.9455,1.406,0.9455,1.0,1.185,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,shift x 12mm,raw,in_plane,0.6433,0.7134,0.6133,0.0,12.0,wrong,Conflict,0.1263,1.872,0.1263,0.2044,7.993,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,shift x 12mm,icp,in_plane,0.8599,0.8521,0.8632,0.05,0.01,correct,Valid,0.9455,1.409,0.9455,1.0,1.191,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,shift y 20mm,raw,in_plane,0.5246,0.5704,0.5049,0.0,20.0,wrong,Conflict,0.6771,1.479,0.6771,0.7558,1.697,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,shift y 20mm,icp,in_plane,0.7869,0.7985,0.782,0.19,3.92,correct,Conflict,0.902,1.414,0.902,0.9785,1.245,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,tilt 15,raw,out_of_plane,0.7374,0.7381,0.7372,15.0,0.0,wrong,Conflict,0.652,1.628,0.652,0.8202,2.017,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,tilt 15,icp,out_of_plane,0.8518,0.8596,0.8485,0.95,0.82,correct,Valid,0.946,1.382,0.946,1.0,1.192,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,shift z 15mm,raw,out_of_plane,0.8618,0.8819,0.8532,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0,10.809,1908
+t_block,grey,0.81,60.0,propped,2,a60_propped_o2_normal,shift z 15mm,icp,out_of_plane,0.8516,0.8596,0.8483,0.95,0.82,correct,Valid,0.946,1.382,0.946,1.0,1.193,1908
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw +15,raw,in_plane,0.7439,0.7742,0.7309,15.0,0.0,wrong,Conflict,0.6393,1.496,0.6393,0.7434,1.838,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw +15,icp,in_plane,0.9088,0.9262,0.9013,0.79,2.18,correct,Valid,0.9688,1.389,0.9688,0.999,1.173,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw -15,raw,in_plane,0.7651,0.834,0.7356,15.0,0.0,wrong,Conflict,0.6686,1.482,0.6686,0.7688,1.692,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw -15,icp,in_plane,0.9257,0.9244,0.9262,0.3,3.77,correct,Valid,0.9808,1.379,0.9808,1.0,1.155,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw +30,raw,in_plane,0.6179,0.6546,0.6022,30.0,0.0,wrong,Conflict,0.5281,1.532,0.5281,0.6168,2.606,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw +30,icp,in_plane,0.9088,0.9262,0.9013,0.79,2.18,correct,Valid,0.9688,1.389,0.9688,0.999,1.172,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw 90,raw,in_plane,0.5713,0.8563,0.4491,90.0,0.0,wrong,Conflict,0.3281,1.575,0.3281,0.424,6.958,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw 90,icp,in_plane,0.7722,0.7597,0.7775,124.15,15.94,wrong,Conflict,0.7242,1.546,0.7242,0.8398,1.645,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw 180,raw,in_plane,0.6776,0.9022,0.5813,180.0,0.0,wrong,Conflict,0.5276,1.454,0.5276,0.5899,2.573,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,yaw 180,icp,in_plane,0.6465,0.8154,0.5741,173.95,0.67,wrong,Conflict,0.529,1.5,0.529,0.5986,2.445,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,flip 180,raw,in_plane,0.8588,0.8741,0.8522,0.0,0.0,correct,Valid,0.942,1.414,0.942,0.9909,1.206,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,shift x 12mm,raw,in_plane,0.6457,0.7098,0.6182,0.0,12.0,wrong,Conflict,0.1391,1.792,0.1391,0.2302,7.651,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,shift x 12mm,icp,in_plane,0.9013,0.9134,0.8961,0.14,1.92,correct,Valid,0.9703,1.396,0.9703,0.999,1.176,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,shift y 20mm,raw,in_plane,0.6246,0.6637,0.6078,0.0,20.0,wrong,Conflict,0.6906,1.687,0.6906,0.8048,2.0,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,shift y 20mm,icp,in_plane,0.911,0.9041,0.9139,0.99,5.8,borderline,Valid,0.9808,1.391,0.9808,1.0,1.166,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,tilt 15,raw,out_of_plane,0.7843,0.7747,0.7884,15.0,0.0,wrong,Conflict,0.6552,1.55,0.6552,0.7659,1.933,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,tilt 15,icp,out_of_plane,0.8584,0.8741,0.8517,0.16,0.1,correct,Valid,0.9391,1.406,0.9391,0.9904,1.193,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,shift z 15mm,raw,out_of_plane,0.8597,0.8942,0.845,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0058,10.878,2085
+t_block,grey,0.81,60.0,propped,3,a60_propped_o3_normal,shift z 15mm,icp,out_of_plane,0.9106,0.9262,0.9039,1.01,2.35,correct,Valid,0.9707,1.395,0.9707,0.9986,1.178,2085
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw +15,raw,in_plane,0.7274,0.8142,0.6902,15.0,0.0,wrong,Conflict,0.7055,1.45,0.7055,0.7785,1.54,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw +15,icp,in_plane,0.9028,0.927,0.8924,0.86,1.07,correct,Valid,0.9446,1.454,0.9446,1.0,1.242,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw -15,raw,in_plane,0.7069,0.752,0.6876,15.0,0.0,wrong,Conflict,0.6859,1.475,0.6859,0.7795,1.622,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw -15,icp,in_plane,0.8812,0.9229,0.8633,0.42,0.21,correct,Valid,0.9351,1.417,0.9351,0.9995,1.195,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw +30,raw,in_plane,0.5924,0.7398,0.5293,30.0,0.0,wrong,Conflict,0.5313,1.539,0.5313,0.6325,2.59,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw +30,icp,in_plane,0.9186,0.9329,0.9125,1.45,2.28,correct,Valid,0.9427,1.483,0.9427,0.999,1.253,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw 90,raw,in_plane,0.5637,0.8799,0.4282,90.0,0.0,wrong,Conflict,0.4191,1.484,0.4191,0.5284,4.485,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw 90,icp,in_plane,0.724,0.7722,0.7033,120.83,19.93,wrong,Conflict,0.6611,1.467,0.6611,0.7957,1.701,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw 180,raw,in_plane,0.4879,0.8376,0.338,180.0,0.0,wrong,Conflict,0.5666,1.396,0.5666,0.6243,2.099,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,yaw 180,icp,in_plane,0.4918,0.8436,0.341,179.09,0.48,wrong,Conflict,0.5728,1.364,0.5728,0.6263,1.986,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,flip 180,raw,in_plane,0.8754,0.91,0.8606,0.0,0.0,correct,Valid,0.9356,1.419,0.9356,1.0,1.204,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,flip 180,icp,in_plane,0.8785,0.9164,0.8622,0.16,0.07,correct,Valid,0.9356,1.418,0.9356,1.0,1.194,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,shift x 12mm,raw,in_plane,0.6682,0.7405,0.6372,0.0,12.0,wrong,Conflict,0.1671,1.729,0.1671,0.2735,7.265,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,shift x 12mm,icp,in_plane,0.8817,0.9229,0.864,0.39,0.2,correct,Valid,0.936,1.42,0.936,0.9995,1.198,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,shift y 20mm,raw,in_plane,0.4891,0.6027,0.4404,0.0,20.0,wrong,Conflict,0.5198,1.671,0.5198,0.6148,2.831,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,shift y 20mm,icp,in_plane,0.875,0.91,0.86,0.06,0.02,correct,Valid,0.9351,1.42,0.9351,0.999,1.214,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,tilt 15,raw,out_of_plane,0.7861,0.7979,0.7811,15.0,0.0,wrong,Conflict,0.6759,1.614,0.6759,0.8029,1.905,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,tilt 15,icp,out_of_plane,0.9215,0.9329,0.9166,1.61,2.49,correct,Valid,0.937,1.465,0.937,0.9981,1.236,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,shift z 15mm,raw,out_of_plane,0.8734,0.9159,0.8552,0.0,15.0,wrong,Valid,0.0339,1.942,0.0339,0.0649,10.824,2095
+t_block,grey,0.81,60.0,propped,4,a60_propped_o4_normal,shift z 15mm,icp,out_of_plane,0.9062,0.9329,0.8948,0.81,1.15,correct,Valid,0.9442,1.453,0.9442,1.0,1.247,2095

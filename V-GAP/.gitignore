@@ -1,0 +1,9 @@
+# V-GAP-specific ignores. The negations below override the repo-root rules so the CAD files are tracked.
+__pycache__/
+*.pyc
+*.pt
+*.npz
+*.bag
+*_before_*
+!*.stl
+!*.3mf

@@ -1,0 +1,31 @@
+object,color,tau_c,angle_deg,placement,orientation,view,perturbation,inject_kind,inject_group,C,IB,IM,rot_err_deg,trans_err_mm,grade,gate,fitness_3mm,rmse_mm,within_3mm,within_5mm,median_dist_mm,n_scan_points
+hemisphere,white,0.85,0.0,flat,1,a0_flat_o1_normal,flip 180,raw,in_plane,0.7657,0.7702,0.7637,179.79,49.99,wrong,Conflict,0.2458,1.807,0.2458,0.4259,5.848,2982
+hemisphere,white,0.85,0.0,flat,1,a0_flat_o1_normal,shift x 12mm,raw,in_plane,0.7622,0.7902,0.7502,0.0,12.0,wrong,Conflict,0.284,1.873,0.284,0.4886,5.111,2982
+hemisphere,white,0.85,0.0,flat,1,a0_flat_o1_normal,shift y 20mm,raw,in_plane,0.5932,0.6337,0.5758,0.0,20.0,wrong,Conflict,0.1603,1.802,0.1603,0.274,8.764,2982
+hemisphere,white,0.85,0.0,flat,1,a0_flat_o1_normal,tilt 15,raw,out_of_plane,0.8811,0.881,0.8811,15.0,6.53,wrong,Valid,0.555,1.868,0.555,0.8964,2.756,2982
+hemisphere,white,0.85,0.0,flat,1,a0_flat_o1_normal,shift z 15mm,raw,out_of_plane,0.9514,0.9463,0.9536,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0101,11.308,2982
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,flip 180,raw,in_plane,0.7603,0.7586,0.761,179.79,49.99,wrong,Conflict,0.2332,1.843,0.2332,0.4076,6.131,2954
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift x 12mm,raw,in_plane,0.7538,0.7727,0.7457,0.0,12.0,wrong,Conflict,0.2993,1.843,0.2993,0.4882,5.126,2954
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift y 20mm,raw,in_plane,0.5922,0.6358,0.5735,0.0,20.0,wrong,Conflict,0.1594,1.851,0.1594,0.2786,8.598,2954
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,tilt 15,raw,out_of_plane,0.88,0.8823,0.8791,15.0,6.53,wrong,Valid,0.5684,1.787,0.5684,0.8781,2.653,2954
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.9433,0.9407,0.9445,0.0,15.0,wrong,Valid,0.0281,1.996,0.0281,0.042,11.519,2954
+hemisphere,white,0.85,30.0,flat,1,a30_flat_o1_normal,flip 180,raw,in_plane,0.5644,0.592,0.5526,179.79,49.99,wrong,Conflict,0.2265,1.873,0.2265,0.3815,6.542,2653
+hemisphere,white,0.85,30.0,flat,1,a30_flat_o1_normal,shift x 12mm,raw,in_plane,0.7556,0.7751,0.7473,0.0,12.0,wrong,Conflict,0.2752,1.877,0.2752,0.4644,5.336,2653
+hemisphere,white,0.85,30.0,flat,1,a30_flat_o1_normal,shift y 20mm,raw,in_plane,0.5736,0.6175,0.5548,0.0,20.0,wrong,Conflict,0.1877,1.859,0.1877,0.3223,7.628,2653
+hemisphere,white,0.85,30.0,flat,1,a30_flat_o1_normal,tilt 15,raw,out_of_plane,0.8398,0.8341,0.8423,15.0,6.53,wrong,Conflict,0.5767,1.839,0.5767,0.8722,2.611,2653
+hemisphere,white,0.85,30.0,flat,1,a30_flat_o1_normal,shift z 15mm,raw,out_of_plane,0.9484,0.9456,0.9497,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0,11.811,2653
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,flip 180,raw,in_plane,0.55,0.5795,0.5374,179.79,49.99,wrong,Conflict,0.2171,1.888,0.2171,0.3735,6.813,2616
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,shift x 12mm,raw,in_plane,0.7544,0.7799,0.7434,0.0,12.0,wrong,Conflict,0.2878,1.818,0.2878,0.4843,5.205,2616
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,shift y 20mm,raw,in_plane,0.5664,0.6128,0.5466,0.0,20.0,wrong,Conflict,0.1808,1.838,0.1808,0.3177,8.013,2616
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,tilt 15,raw,out_of_plane,0.8336,0.8284,0.8359,15.0,6.53,wrong,Conflict,0.5803,1.867,0.5803,0.8968,2.641,2616
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.932,0.9324,0.9318,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0,12.058,2616
+hemisphere,white,0.85,45.0,flat,1,a45_flat_o1_normal,flip 180,raw,in_plane,0.4972,0.5529,0.4733,179.79,49.99,wrong,Conflict,0.2443,1.842,0.2443,0.3975,6.572,2317
+hemisphere,white,0.85,45.0,flat,1,a45_flat_o1_normal,shift x 12mm,raw,in_plane,0.7627,0.7893,0.7513,0.0,12.0,wrong,Conflict,0.2896,1.794,0.2896,0.4799,5.221,2317
+hemisphere,white,0.85,45.0,flat,1,a45_flat_o1_normal,shift y 20mm,raw,in_plane,0.548,0.5932,0.5286,0.0,20.0,wrong,Conflict,0.224,1.816,0.224,0.372,6.821,2317
+hemisphere,white,0.85,45.0,flat,1,a45_flat_o1_normal,tilt 15,raw,out_of_plane,0.8516,0.8443,0.8547,15.0,6.53,wrong,Valid,0.5593,1.747,0.5593,0.861,2.594,2317
+hemisphere,white,0.85,45.0,flat,1,a45_flat_o1_normal,shift z 15mm,raw,out_of_plane,0.9447,0.9432,0.9454,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0009,12.147,2317
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,flip 180,raw,in_plane,0.4917,0.5413,0.4704,179.79,49.99,wrong,Conflict,0.2177,1.922,0.2177,0.3579,7.128,2361
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,shift x 12mm,raw,in_plane,0.7549,0.7861,0.7415,0.0,12.0,wrong,Conflict,0.2973,1.824,0.2973,0.4994,5.002,2361
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,shift y 20mm,raw,in_plane,0.5437,0.5838,0.5265,0.0,20.0,wrong,Conflict,0.2071,1.817,0.2071,0.3414,7.037,2361
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,tilt 15,raw,out_of_plane,0.8382,0.8224,0.8449,15.0,6.53,wrong,Conflict,0.6074,1.837,0.6074,0.895,2.463,2361
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.9448,0.9443,0.945,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0,12.15,2361

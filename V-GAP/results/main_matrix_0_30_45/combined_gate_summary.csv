@@ -1,0 +1,153 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,gearbox,360,343,0,355,342,0,1,0,13,4,0
+object,hemisphere,360,281,0,342,266,0,15,0,76,3,0
+object,l_block,360,325,11,349,325,0,0,11,24,0,0
+object,t_block,360,338,9,350,335,3,0,6,15,1,0
+object+color,gearbox / grey,120,115,0,115,114,0,1,0,1,4,0
+object+color,gearbox / reflective,120,108,0,120,108,0,0,0,12,0,0
+object+color,gearbox / white,120,120,0,120,120,0,0,0,0,0,0
+object+color,hemisphere / grey,120,83,0,120,83,0,0,0,37,0,0
+object+color,hemisphere / reflective,120,113,0,102,98,0,15,0,4,3,0
+object+color,hemisphere / white,120,85,0,120,85,0,0,0,35,0,0
+object+color,l_block / grey,120,111,6,114,111,0,0,6,3,0,0
+object+color,l_block / reflective,120,102,4,116,102,0,0,4,14,0,0
+object+color,l_block / white,120,112,1,119,112,0,0,1,7,0,0
+object+color,t_block / grey,120,119,1,118,118,1,0,0,0,1,0
+object+color,t_block / reflective,120,111,2,118,109,2,0,0,9,0,0
+object+color,t_block / white,120,108,6,114,108,0,0,6,6,0,0
+object+placement,gearbox / flat,180,173,0,175,172,0,1,0,3,4,0
+object+placement,gearbox / propped,180,170,0,180,170,0,0,0,10,0,0
+object+placement,hemisphere / flat,180,180,0,180,180,0,0,0,0,0,0
+object+placement,hemisphere / propped,180,101,0,162,86,0,15,0,76,3,0
+object+placement,l_block / flat,180,155,9,171,155,0,0,9,16,0,0
+object+placement,l_block / propped,180,170,2,178,170,0,0,2,8,0,0
+object+placement,t_block / flat,180,163,6,174,162,1,0,5,12,0,0
+object+placement,t_block / propped,180,175,3,176,173,2,0,1,3,1,0
+object+placement+angle_deg,gearbox / flat / 0.0,60,53,0,55,52,0,1,0,3,4,0
+object+placement+angle_deg,gearbox / flat / 30.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / flat / 45.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / propped / 0.0,60,55,0,60,55,0,0,0,5,0,0
+object+placement+angle_deg,gearbox / propped / 30.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,gearbox / propped / 45.0,60,55,0,60,55,0,0,0,5,0,0
+object+placement+angle_deg,hemisphere / flat / 0.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / flat / 30.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / flat / 45.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / propped / 0.0,60,33,0,60,33,0,0,0,27,0,0
+object+placement+angle_deg,hemisphere / propped / 30.0,60,35,0,47,22,0,13,0,25,0,0
+object+placement+angle_deg,hemisphere / propped / 45.0,60,33,0,55,31,0,2,0,24,3,0
+object+placement+angle_deg,l_block / flat / 0.0,60,50,0,60,50,0,0,0,10,0,0
+object+placement+angle_deg,l_block / flat / 30.0,60,55,5,55,55,0,0,5,0,0,0
+object+placement+angle_deg,l_block / flat / 45.0,60,50,4,56,50,0,0,4,6,0,0
+object+placement+angle_deg,l_block / propped / 0.0,60,54,2,58,54,0,0,2,4,0,0
+object+placement+angle_deg,l_block / propped / 30.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,l_block / propped / 45.0,60,56,0,60,56,0,0,0,4,0,0
+object+placement+angle_deg,t_block / flat / 0.0,60,54,5,55,54,0,0,5,1,0,0
+object+placement+angle_deg,t_block / flat / 30.0,60,60,0,60,60,0,0,0,0,0,0
+object+placement+angle_deg,t_block / flat / 45.0,60,49,1,59,48,1,0,0,11,0,0
+object+placement+angle_deg,t_block / propped / 0.0,60,59,1,59,59,0,0,1,0,0,0
+object+placement+angle_deg,t_block / propped / 30.0,60,59,1,58,58,1,0,0,0,1,0
+object+placement+angle_deg,t_block / propped / 45.0,60,57,1,59,56,1,0,0,3,0,0
+object+angle_deg,gearbox / 0.0,120,108,0,115,107,0,1,0,8,4,0
+object+angle_deg,gearbox / 30.0,120,120,0,120,120,0,0,0,0,0,0
+object+angle_deg,gearbox / 45.0,120,115,0,120,115,0,0,0,5,0,0
+object+angle_deg,hemisphere / 0.0,120,93,0,120,93,0,0,0,27,0,0
+object+angle_deg,hemisphere / 30.0,120,95,0,107,82,0,13,0,25,0,0
+object+angle_deg,hemisphere / 45.0,120,93,0,115,91,0,2,0,24,3,0
+object+angle_deg,l_block / 0.0,120,104,2,118,104,0,0,2,14,0,0
+object+angle_deg,l_block / 30.0,120,115,5,115,115,0,0,5,0,0,0
+object+angle_deg,l_block / 45.0,120,106,4,116,106,0,0,4,10,0,0
+object+angle_deg,t_block / 0.0,120,113,6,114,113,0,0,6,1,0,0
+object+angle_deg,t_block / 30.0,120,119,1,118,118,1,0,0,0,1,0
+object+angle_deg,t_block / 45.0,120,106,2,118,104,2,0,0,14,0,0
+object+orientation,gearbox / 1,90,89,0,90,89,0,0,0,1,0,0
+object+orientation,gearbox / 2,90,90,0,90,90,0,0,0,0,0,0
+object+orientation,gearbox / 3,90,86,0,90,86,0,0,0,4,0,0
+object+orientation,gearbox / 4,90,78,0,85,77,0,1,0,8,4,0
+object+orientation,hemisphere / 1,90,70,0,87,67,0,3,0,20,0,0
+object+orientation,hemisphere / 2,90,66,0,85,61,0,5,0,24,0,0
+object+orientation,hemisphere / 3,90,68,0,85,63,0,5,0,22,0,0
+object+orientation,hemisphere / 4,90,77,0,85,75,0,2,0,10,3,0
+object+orientation,l_block / 1,90,78,5,85,78,0,0,5,7,0,0
+object+orientation,l_block / 2,90,83,1,89,83,0,0,1,6,0,0
+object+orientation,l_block / 3,90,80,5,85,80,0,0,5,5,0,0
+object+orientation,l_block / 4,90,84,0,90,84,0,0,0,6,0,0
+object+orientation,t_block / 1,90,85,2,88,84,1,0,1,4,0,0
+object+orientation,t_block / 2,90,86,0,89,86,0,0,0,3,1,0
+object+orientation,t_block / 3,90,87,0,90,87,0,0,0,3,0,0
+object+orientation,t_block / 4,90,80,7,83,78,2,0,5,5,0,0
+object+condition,gearbox / normal,360,343,0,355,342,0,1,0,13,4,0
+object+condition,hemisphere / normal,360,281,0,342,266,0,15,0,76,3,0
+object+condition,l_block / normal,360,325,11,349,325,0,0,11,24,0,0
+object+condition,t_block / normal,360,338,9,350,335,3,0,6,15,1,0
+object+color+placement+angle_deg+condition,gearbox / grey / flat / 0.0 / normal,20,15,0,15,14,0,1,0,1,4,0
+object+color+placement+angle_deg+condition,gearbox / grey / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / grey / flat / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / grey / propped / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / grey / propped / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / grey / propped / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / reflective / flat / 0.0 / normal,20,18,0,20,18,0,0,0,2,0,0
+object+color+placement+angle_deg+condition,gearbox / reflective / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / reflective / flat / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / reflective / propped / 0.0 / normal,20,15,0,20,15,0,0,0,5,0,0
+object+color+placement+angle_deg+condition,gearbox / reflective / propped / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / reflective / propped / 45.0 / normal,20,15,0,20,15,0,0,0,5,0,0
+object+color+placement+angle_deg+condition,gearbox / white / flat / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / flat / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / propped / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / propped / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,gearbox / white / propped / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / grey / flat / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / grey / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / grey / flat / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / grey / propped / 0.0 / normal,20,8,0,20,8,0,0,0,12,0,0
+object+color+placement+angle_deg+condition,hemisphere / grey / propped / 30.0 / normal,20,10,0,20,10,0,0,0,10,0,0
+object+color+placement+angle_deg+condition,hemisphere / grey / propped / 45.0 / normal,20,5,0,20,5,0,0,0,15,0,0
+object+color+placement+angle_deg+condition,hemisphere / reflective / flat / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / reflective / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / reflective / flat / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / reflective / propped / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / reflective / propped / 30.0 / normal,20,20,0,7,7,0,13,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / reflective / propped / 45.0 / normal,20,13,0,15,11,0,2,0,4,3,0
+object+color+placement+angle_deg+condition,hemisphere / white / flat / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / flat / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 0.0 / normal,20,5,0,20,5,0,0,0,15,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 30.0 / normal,20,5,0,20,5,0,0,0,15,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 45.0 / normal,20,15,0,20,15,0,0,0,5,0,0
+object+color+placement+angle_deg+condition,l_block / grey / flat / 0.0 / normal,20,18,0,20,18,0,0,0,2,0,0
+object+color+placement+angle_deg+condition,l_block / grey / flat / 30.0 / normal,20,15,5,15,15,0,0,5,0,0,0
+object+color+placement+angle_deg+condition,l_block / grey / flat / 45.0 / normal,20,19,0,20,19,0,0,0,1,0,0
+object+color+placement+angle_deg+condition,l_block / grey / propped / 0.0 / normal,20,19,1,19,19,0,0,1,0,0,0
+object+color+placement+angle_deg+condition,l_block / grey / propped / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / grey / propped / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / reflective / flat / 0.0 / normal,20,16,0,20,16,0,0,0,4,0,0
+object+color+placement+angle_deg+condition,l_block / reflective / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / reflective / flat / 45.0 / normal,20,12,4,16,12,0,0,4,4,0,0
+object+color+placement+angle_deg+condition,l_block / reflective / propped / 0.0 / normal,20,17,0,20,17,0,0,0,3,0,0
+object+color+placement+angle_deg+condition,l_block / reflective / propped / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / reflective / propped / 45.0 / normal,20,17,0,20,17,0,0,0,3,0,0
+object+color+placement+angle_deg+condition,l_block / white / flat / 0.0 / normal,20,16,0,20,16,0,0,0,4,0,0
+object+color+placement+angle_deg+condition,l_block / white / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / white / flat / 45.0 / normal,20,19,0,20,19,0,0,0,1,0,0
+object+color+placement+angle_deg+condition,l_block / white / propped / 0.0 / normal,20,18,1,19,18,0,0,1,1,0,0
+object+color+placement+angle_deg+condition,l_block / white / propped / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / white / propped / 45.0 / normal,20,19,0,20,19,0,0,0,1,0,0
+object+color+placement+angle_deg+condition,t_block / grey / flat / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / grey / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / grey / flat / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / grey / propped / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / grey / propped / 30.0 / normal,20,19,0,19,19,0,0,0,0,1,0
+object+color+placement+angle_deg+condition,t_block / grey / propped / 45.0 / normal,20,20,1,19,19,1,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / reflective / flat / 0.0 / normal,20,19,0,20,19,0,0,0,1,0,0
+object+color+placement+angle_deg+condition,t_block / reflective / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / reflective / flat / 45.0 / normal,20,15,1,19,14,1,0,0,5,0,0
+object+color+placement+angle_deg+condition,t_block / reflective / propped / 0.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / reflective / propped / 30.0 / normal,20,20,1,19,19,1,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / reflective / propped / 45.0 / normal,20,17,0,20,17,0,0,0,3,0,0
+object+color+placement+angle_deg+condition,t_block / white / flat / 0.0 / normal,20,15,5,15,15,0,0,5,0,0,0
+object+color+placement+angle_deg+condition,t_block / white / flat / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / white / flat / 45.0 / normal,20,14,0,20,14,0,0,0,6,0,0
+object+color+placement+angle_deg+condition,t_block / white / propped / 0.0 / normal,20,19,1,19,19,0,0,1,0,0,0
+object+color+placement+angle_deg+condition,t_block / white / propped / 30.0 / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,t_block / white / propped / 45.0 / normal,20,20,0,20,20,0,0,0,0,0,0

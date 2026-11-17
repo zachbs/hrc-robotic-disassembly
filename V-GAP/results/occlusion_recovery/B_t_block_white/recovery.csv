@@ -1,0 +1,16 @@
+object,color,view,placement,condition,conflict_id,stage,attempt,side,from_angle,to_angle,old_state,old_reason,old_grade,old_C,new_state,new_C,new_reason,new_grade,new_outcome,final_attempt
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c1,tilt,1,+y,45.0,30.0,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c1,orbit,2,ccw90,45.0,42.7,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c1,overhead,3,above,45.0,0.0,no detection,no detection,wrong,,Valid,0.8607,,correct,TA,True
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c2,tilt,1,+y,45.0,30.0,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c2,orbit,2,ccw90,45.0,42.7,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c2,overhead,3,above,45.0,0.0,no detection,no detection,wrong,,Valid,0.8816,,correct,TA,True
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c3,tilt,1,+y,45.0,30.0,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c3,orbit,2,ccw90,45.0,42.7,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c3,overhead,3,above,45.0,0.0,no detection,no detection,wrong,,Valid,0.8697,,correct,TA,True
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c4,tilt,1,+y,45.0,30.0,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c4,orbit,2,ccw90,45.0,42.7,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c4,overhead,3,above,45.0,0.0,no detection,no detection,wrong,,Valid,0.9008,,correct,TA,True
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c5,tilt,1,+y,45.0,30.0,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c5,orbit,2,ccw90,45.0,42.7,no detection,no detection,wrong,,no detection,,,wrong,no detection,False
+t_block,white,a45_flat_o1_occluded,flat,occluded,a45_flat_o1_occluded_c5,overhead,3,above,45.0,0.0,no detection,no detection,wrong,,Valid,0.8827,,correct,TA,True

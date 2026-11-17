@@ -1,0 +1,45 @@
+3D check applied offline to the recorded gate runs
+bursts: 1440   rule: Valid only if C >= tau_c, margin >= delta, other checks pass AND F3 >= 0.7 (hemisphere 0.6); F3 = share of scan points within 3 mm of the posed CAD
+
+  ALL                    gate as run  accepted  1287  correct  1268  a bit off  16  WRONG  3 (0.23%, 95% CI 0.08-0.68%)  good poses rejected 128/1396 (9.2%)
+  ALL                    + 3D check   accepted  1284  correct  1268  a bit off  16  WRONG  0 (0.00%, 95% CI 0.00-0.30%)  good poses rejected 128/1396 (9.2%)
+
+  Gearbox                gate as run  accepted   343  correct   342  a bit off   1  WRONG  0 (0.00%, 95% CI 0.00-1.11%)  good poses rejected  13/355 (3.7%)
+  Gearbox                + 3D check   accepted   343  correct   342  a bit off   1  WRONG  0 (0.00%, 95% CI 0.00-1.11%)  good poses rejected  13/355 (3.7%)
+  Hemisphere             gate as run  accepted   281  correct   266  a bit off  15  WRONG  0 (0.00%, 95% CI 0.00-1.35%)  good poses rejected  76/342 (22.2%)
+  Hemisphere             + 3D check   accepted   281  correct   266  a bit off  15  WRONG  0 (0.00%, 95% CI 0.00-1.35%)  good poses rejected  76/342 (22.2%)
+  L block                gate as run  accepted   325  correct   325  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-1.17%)  good poses rejected  24/349 (6.9%)
+  L block                + 3D check   accepted   325  correct   325  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-1.17%)  good poses rejected  24/349 (6.9%)
+  T block                gate as run  accepted   338  correct   335  a bit off   0  WRONG  3 (0.89%, 95% CI 0.30-2.58%)  good poses rejected  15/350 (4.3%)
+  T block                + 3D check   accepted   335  correct   335  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-1.13%)  good poses rejected  15/350 (4.3%)
+
+  Gearbox / white        gate as run  accepted   120  correct   120  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.10%)  good poses rejected   0/120 (0.0%)
+  Gearbox / white        + 3D check   accepted   120  correct   120  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.10%)  good poses rejected   0/120 (0.0%)
+  Gearbox / grey         gate as run  accepted   115  correct   114  a bit off   1  WRONG  0 (0.00%, 95% CI 0.00-3.23%)  good poses rejected   1/115 (0.9%)
+  Gearbox / grey         + 3D check   accepted   115  correct   114  a bit off   1  WRONG  0 (0.00%, 95% CI 0.00-3.23%)  good poses rejected   1/115 (0.9%)
+  Gearbox / reflective   gate as run  accepted   108  correct   108  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.43%)  good poses rejected  12/120 (10.0%)
+  Gearbox / reflective   + 3D check   accepted   108  correct   108  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.43%)  good poses rejected  12/120 (10.0%)
+  Hemisphere / white     gate as run  accepted    85  correct    85  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-4.32%)  good poses rejected  35/120 (29.2%)
+  Hemisphere / white     + 3D check   accepted    85  correct    85  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-4.32%)  good poses rejected  35/120 (29.2%)
+  Hemisphere / grey      gate as run  accepted    83  correct    83  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-4.42%)  good poses rejected  37/120 (30.8%)
+  Hemisphere / grey      + 3D check   accepted    83  correct    83  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-4.42%)  good poses rejected  37/120 (30.8%)
+  Hemisphere / reflective gate as run  accepted   113  correct    98  a bit off  15  WRONG  0 (0.00%, 95% CI 0.00-3.29%)  good poses rejected   4/102 (3.9%)
+  Hemisphere / reflective + 3D check   accepted   113  correct    98  a bit off  15  WRONG  0 (0.00%, 95% CI 0.00-3.29%)  good poses rejected   4/102 (3.9%)
+  L block / white        gate as run  accepted   112  correct   112  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.32%)  good poses rejected   7/119 (5.9%)
+  L block / white        + 3D check   accepted   112  correct   112  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.32%)  good poses rejected   7/119 (5.9%)
+  L block / grey         gate as run  accepted   111  correct   111  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.35%)  good poses rejected   3/114 (2.6%)
+  L block / grey         + 3D check   accepted   111  correct   111  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.35%)  good poses rejected   3/114 (2.6%)
+  L block / reflective   gate as run  accepted   102  correct   102  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.63%)  good poses rejected  14/116 (12.1%)
+  L block / reflective   + 3D check   accepted   102  correct   102  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.63%)  good poses rejected  14/116 (12.1%)
+  T block / white        gate as run  accepted   108  correct   108  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.43%)  good poses rejected   6/114 (5.3%)
+  T block / white        + 3D check   accepted   108  correct   108  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.43%)  good poses rejected   6/114 (5.3%)
+  T block / grey         gate as run  accepted   119  correct   118  a bit off   0  WRONG  1 (0.84%, 95% CI 0.15-4.61%)  good poses rejected   0/118 (0.0%)
+  T block / grey         + 3D check   accepted   118  correct   118  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.15%)  good poses rejected   0/118 (0.0%)
+  T block / reflective   gate as run  accepted   111  correct   109  a bit off   0  WRONG  2 (1.80%, 95% CI 0.50-6.33%)  good poses rejected   9/118 (7.6%)
+  T block / reflective   + 3D check   accepted   109  correct   109  a bit off   0  WRONG  0 (0.00%, 95% CI 0.00-3.40%)  good poses rejected   9/118 (7.6%)
+
+Accepted poses the 3D check would reject: 3
+  t_block grey a45_propped_o4_normal rep 3: grade wrong, C 0.826, F3 0.669
+  t_block reflective a30_propped_o1_normal rep 5: grade wrong, C 0.816, F3 0.510
+  t_block reflective a45_flat_o4_normal rep 3: grade wrong, C 0.831, F3 0.511
+F3 on accepted correct poses: n 1268, min 0.654, 1st percentile 0.674, median 0.980

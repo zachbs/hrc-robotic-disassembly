@@ -1,0 +1,12 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,hemisphere,20,20,0,20,20,0,0,0,0,0,0
+object+color,hemisphere / white,20,20,0,20,20,0,0,0,0,0,0
+object+placement,hemisphere / propped,20,20,0,20,20,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / propped / 30.0,10,10,0,10,10,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / propped / 45.0,10,10,0,10,10,0,0,0,0,0,0
+object+angle_deg,hemisphere / 30.0,10,10,0,10,10,0,0,0,0,0,0
+object+angle_deg,hemisphere / 45.0,10,10,0,10,10,0,0,0,0,0,0
+object+orientation,hemisphere / 1,20,20,0,20,20,0,0,0,0,0,0
+object+condition,hemisphere / normal,20,20,0,20,20,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 30.0 / normal,10,10,0,10,10,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 45.0 / normal,10,10,0,10,10,0,0,0,0,0,0

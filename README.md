@@ -1,11 +1,19 @@
 # HRC Robotic Disassembly
 
-A containerized ROS 2 framework and 3D perception pipeline for human-robot collaborative disassembly of a gearbox with a UR5e arm and an Intel RealSense RGB-D camera. It was developed in Dr. Hongyue Sun's lab at the University of Georgia.
+A containerized ROS 2 framework and 3D perception pipeline for human-robot collaborative disassembly with a UR5e arm and an Intel RealSense RGB-D camera, developed in Dr. Hongyue Sun's MERIT Lab at the University of Georgia.
 
-![CAD model aligned to the scene point cloud](assets/Point_Cloud_Registration.png)
+## Featured: V-GAP, Visually Gated Active Perception
 
+**V-GAP verifies every pose estimate before the robot uses it, and moves the wrist camera when verification fails.** It projects the CAD model into the image at the estimated pose, checks it against the YOLO mask and the depth (a cross-modal consistency gate), and releases the pose only if every check passes; otherwise a gate-triggered recovery sequence re-views the part, and if no view passes, nothing is released.
 
-![YOLO Object Detection Model Used](assets/YOLO_example.png)
+![V-GAP vs plain RANSAC+ICP](V-GAP/assets/demo_vgap_vs_plain.gif)
+
+- **1,920 real captures** of four parts in three surface finishes (1,440 at 0/30/45 degree views, 480 at 60 degrees): plain RANSAC+ICP would have sent 924 wrong poses to the robot (644 + 280); V-GAP accepted 1,711 poses with 3 wrong (all at 0-45 degrees), and none wrong with the 3D check.
+- **Grasp trials:** parts held after 39 of 40 V-GAP grasps (97.5%) vs 15 of 40 plain RANSAC+ICP grasps (37.5%), exact McNemar p = 1.2e-7.
+- **Occlusion tests** (one or two occluders): recovery produced a correct verified pose in all 40 trials, with no wrong pose accepted.
+- **Gocator 3210 ground-truth check** on 160 captures of the white parts: no wrong accepted pose; operator and Gocator grades agree on 159 of 160.
+
+Code, CAD, results and method: [`V-GAP/`](V-GAP/README.md).
 
 ## What's in this repo
 
@@ -16,6 +24,14 @@ A containerized ROS 2 framework and 3D perception pipeline for human-robot colla
 | 3D registration pipeline | Done (offline) | CAD-to-scene 6D pose estimation from RGB-D data |
 | Foxglove integration | Done | Live point clouds, camera streams, and topic telemetry over WebSocket |
 | Perception, state machine, and motion nodes | In progress | Being built on top of this framework |
+| V-GAP (Visually Gated Active Perception) | Done (tested on UR5e) | Pose estimation with a cross-modal consistency gate before every grasp, gate-triggered recovery, calibration and full evaluation. See [`V-GAP/`](V-GAP/README.md) |
+
+## Earlier work: ROS 2 framework and gearbox registration
+
+![CAD model aligned to the scene point cloud](assets/Point_Cloud_Registration.png)
+
+
+![YOLO Object Detection Model Used](assets/YOLO_example.png)
 
 ## 3D registration pipeline
 
@@ -28,7 +44,7 @@ The pipeline estimates the gearbox's 6D pose by aligning its CAD model to RealSe
 5. **Global registration:** normals oriented toward the camera, FPFH features, then RANSAC for an initial pose.
 6. **Local refinement:** multi-scale ICP over 5 stages with a shrinking correspondence distance.
 
-**Tech:** ROS 2 Humble, Docker, Python, Open3D, NumPy, OpenCV, YOLO, Intel RealSense SDK, Foxglove Studio
+**Tech:** ROS 2 Humble, Docker, Python, Open3D, NumPy, OpenCV, YOLO (Ultralytics), Intel RealSense SDK, UR RTDE, Gocator SDK, Foxglove Studio
 
 ## Repository structure
  
@@ -42,10 +58,13 @@ The pipeline estimates the gearbox's 6D pose by aligning its CAD model to RealSe
 │   └── ros2_ws/src/
 │       ├── gearbox_interfaces/ # custom action and service definitions
 │       └── gearbox_perception/ # nodes, utils, resources, launch files
+├── V-GAP/                      # Visually Gated Active Perception: code/vgap, cad, results, docs (see V-GAP/README.md)
 └── assets/                     # images used in this README
 ```
 
-## Quickstart
+> **Hardware-specific files are not included.** V-GAP ran on the lab's Jetson with a UR5e, a wrist RealSense, a Gocator 3210 and a Robotiq 2F-140. The hand-eye matrices (specific to that robot and mount), the Gocator SDK and its wrapper scripts (`Gocator.py`, `GoSdk_MsgHandler.py`, licensed by LMI), and the YOLO weights stay on the lab machine, which is what paths like `../Python Files Disassembly/...` in `V-GAP/` point to. With your own setup, recalibrate with `code/vgap/calibrate_hand_eye_ur5e.py` and pass `--hand-eye`. Without any hardware, `python code/vgap/test_vgap_pipeline_sim.py` runs the pipeline on simulated scans.
+
+## ROS 2 quickstart
 
 **Requirements:** Docker Desktop, plus Foxglove Studio for visualization.
 
@@ -87,12 +106,18 @@ wsl --shutdown
 
 ## Contributions
 
-- **Zach Smith:** designed the system architecture and node design (perception, 3D registration, state management, motion execution), built the Docker environment, ROS 2 workspace (package structure, launch files, custom interfaces), the Foxglove integration, and the 3D registration pipeline (data collection, YOLO training, depth filtering, FPFH + RANSAC + ICP).
+- **Zach Smith:** for V-GAP, designed the original RANSAC + ICP pose pipeline and its design choices, designed the new adaptive recovery, trained the YOLO model, and did all of the physical work (robot and sensor setup, calibration, and every test and experiment on the UR5e). For the framework, designed the system architecture and node design (perception, 3D registration, state management, motion execution), built the Docker environment, ROS 2 workspace (package structure, launch files, custom interfaces), the Foxglove integration, and the 3D registration pipeline (data collection, YOLO training, depth filtering, FPFH + RANSAC + ICP).
 - **Minh "Arthur" Nguyen:** implementing the ROS 2 nodes from that design, including the perception node and the path planning and motion execution components (MoveIt and the UR5e driver).
+- **Nitesh Silwal** (PhD student, MERIT Lab): came up with the original V-GAP idea of gating poses with a 2D YOLO mask check and adaptive viewpoint recovery, first aimed at depth holes and missing pixel depth.
 
 
-Advisor: Dr. Hongyue Sun, University of Georgia.
+Advisor: Dr. Hongyue Sun, MERIT Lab, University of Georgia.
+
+## Acknowledgments
+
+Thanks to Dr. Hongyue Sun and Nitesh Silwal (PhD student, College of Engineering) of the MERIT Lab at the University of Georgia for their guidance, insight and help throughout V-GAP and with the paper.
 
 ## Release history
 
 - `v1.0-registration-framework`: Docker + ROS 2 framework and the offline 3D registration pipeline.
+- V-GAP: Visually Gated Active Perception, evaluation and results (`V-GAP/`).

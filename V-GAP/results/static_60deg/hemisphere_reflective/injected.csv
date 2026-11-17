@@ -1,0 +1,36 @@
+object,color,tau_c,angle_deg,placement,orientation,view,perturbation,inject_kind,inject_group,C,IB,IM,rot_err_deg,trans_err_mm,grade,gate,fitness_3mm,rmse_mm,within_3mm,within_5mm,median_dist_mm,n_scan_points
+hemisphere,reflective,0.85,60.0,flat,1,a60_flat_o1_normal,flip 180,raw,in_plane,0.4757,0.5394,0.4484,179.95,50.0,wrong,Conflict,0.1861,1.829,0.1861,0.3071,8.3,2429
+hemisphere,reflective,0.85,60.0,flat,1,a60_flat_o1_normal,shift x 12mm,raw,in_plane,0.6931,0.7109,0.6854,0.0,12.0,wrong,Conflict,0.3755,1.828,0.3755,0.6665,3.89,2429
+hemisphere,reflective,0.85,60.0,flat,1,a60_flat_o1_normal,shift y 20mm,raw,in_plane,0.5661,0.6236,0.5414,0.0,20.0,wrong,Conflict,0.1276,1.876,0.1276,0.238,7.413,2429
+hemisphere,reflective,0.85,60.0,flat,1,a60_flat_o1_normal,tilt 15,raw,out_of_plane,0.8145,0.8114,0.8158,15.0,6.53,wrong,Conflict,0.4734,1.75,0.4734,0.7184,3.207,2429
+hemisphere,reflective,0.85,60.0,flat,1,a60_flat_o1_normal,shift z 15mm,raw,out_of_plane,0.9074,0.9074,0.9075,0.0,15.0,wrong,Valid,0.1305,1.975,0.1305,0.2322,11.157,2429
+hemisphere,reflective,0.85,60.0,flat,2,a60_flat_o2_normal,flip 180,raw,in_plane,0.4768,0.5394,0.45,179.95,50.0,wrong,Conflict,0.1891,1.844,0.1891,0.3128,8.239,2449
+hemisphere,reflective,0.85,60.0,flat,2,a60_flat_o2_normal,shift x 12mm,raw,in_plane,0.6915,0.7109,0.6831,0.0,12.0,wrong,Conflict,0.381,1.83,0.381,0.6721,3.818,2449
+hemisphere,reflective,0.85,60.0,flat,2,a60_flat_o2_normal,shift y 20mm,raw,in_plane,0.5664,0.6236,0.5419,0.0,20.0,wrong,Conflict,0.1221,1.838,0.1221,0.2274,7.511,2449
+hemisphere,reflective,0.85,60.0,flat,2,a60_flat_o2_normal,tilt 15,raw,out_of_plane,0.8132,0.8051,0.8167,15.0,6.53,wrong,Conflict,0.4712,1.749,0.4712,0.7125,3.203,2449
+hemisphere,reflective,0.85,60.0,flat,2,a60_flat_o2_normal,shift z 15mm,raw,out_of_plane,0.9067,0.9074,0.9065,0.0,15.0,wrong,Valid,0.1437,1.969,0.1437,0.2389,11.108,2449
+hemisphere,reflective,0.85,60.0,flat,3,a60_flat_o3_normal,flip 180,raw,in_plane,0.4757,0.5395,0.4483,179.95,50.0,wrong,Conflict,0.1934,1.845,0.1934,0.3178,8.13,2451
+hemisphere,reflective,0.85,60.0,flat,3,a60_flat_o3_normal,shift x 12mm,raw,in_plane,0.6928,0.7108,0.685,0.0,12.0,wrong,Conflict,0.3794,1.822,0.3794,0.6785,3.843,2451
+hemisphere,reflective,0.85,60.0,flat,3,a60_flat_o3_normal,shift y 20mm,raw,in_plane,0.5648,0.6195,0.5413,0.0,20.0,wrong,Conflict,0.1277,1.87,0.1277,0.2428,7.382,2451
+hemisphere,reflective,0.85,60.0,flat,3,a60_flat_o3_normal,tilt 15,raw,out_of_plane,0.8163,0.8175,0.8158,15.0,6.53,wrong,Conflict,0.4769,1.754,0.4769,0.7152,3.164,2451
+hemisphere,reflective,0.85,60.0,flat,3,a60_flat_o3_normal,shift z 15mm,raw,out_of_plane,0.9044,0.9,0.9062,0.0,15.0,wrong,Valid,0.1457,1.844,0.1457,0.2297,11.219,2451
+hemisphere,reflective,0.85,60.0,flat,4,a60_flat_o4_normal,flip 180,raw,in_plane,0.4757,0.5362,0.4497,179.95,50.0,wrong,Conflict,0.1869,1.84,0.1869,0.3094,8.263,2450
+hemisphere,reflective,0.85,60.0,flat,4,a60_flat_o4_normal,shift x 12mm,raw,in_plane,0.692,0.7109,0.6839,0.0,12.0,wrong,Conflict,0.3882,1.838,0.3882,0.6763,3.773,2450
+hemisphere,reflective,0.85,60.0,flat,4,a60_flat_o4_normal,shift y 20mm,raw,in_plane,0.5664,0.6236,0.5419,0.0,20.0,wrong,Conflict,0.1224,1.871,0.1224,0.231,7.451,2450
+hemisphere,reflective,0.85,60.0,flat,4,a60_flat_o4_normal,tilt 15,raw,out_of_plane,0.8148,0.8114,0.8162,15.0,6.53,wrong,Conflict,0.4673,1.746,0.4673,0.7078,3.23,2450
+hemisphere,reflective,0.85,60.0,flat,4,a60_flat_o4_normal,shift z 15mm,raw,out_of_plane,0.9069,0.9074,0.9067,0.0,15.0,wrong,Valid,0.1392,1.908,0.1392,0.24,10.989,2450
+hemisphere,reflective,0.85,60.0,propped,2,a60_propped_o2_normal,flip 180,raw,in_plane,0.4588,0.5226,0.4314,179.95,50.0,wrong,Conflict,0.1825,1.765,0.1825,0.3077,8.346,2701
+hemisphere,reflective,0.85,60.0,propped,2,a60_propped_o2_normal,shift x 12mm,raw,in_plane,0.7392,0.7576,0.7314,0.0,12.0,wrong,Conflict,0.3813,1.837,0.3813,0.6953,3.831,2701
+hemisphere,reflective,0.85,60.0,propped,2,a60_propped_o2_normal,shift y 20mm,raw,in_plane,0.554,0.5967,0.5357,0.0,20.0,wrong,Conflict,0.1474,1.944,0.1474,0.281,7.492,2701
+hemisphere,reflective,0.85,60.0,propped,2,a60_propped_o2_normal,tilt 15,raw,out_of_plane,0.7806,0.7708,0.7848,15.0,6.53,wrong,Conflict,0.4565,1.769,0.4565,0.6735,3.339,2701
+hemisphere,reflective,0.85,60.0,propped,2,a60_propped_o2_normal,shift z 15mm,raw,out_of_plane,0.8887,0.8841,0.8907,0.0,15.0,wrong,Valid,0.1696,1.773,0.1696,0.2525,10.716,2701
+hemisphere,reflective,0.85,60.0,propped,3,a60_propped_o3_normal,flip 180,raw,in_plane,0.4742,0.5338,0.4486,179.95,50.0,wrong,Conflict,0.1918,1.886,0.1918,0.316,8.213,2503
+hemisphere,reflective,0.85,60.0,propped,3,a60_propped_o3_normal,shift x 12mm,raw,in_plane,0.7066,0.7273,0.6978,0.0,12.0,wrong,Conflict,0.3959,1.831,0.3959,0.7115,3.624,2503
+hemisphere,reflective,0.85,60.0,propped,3,a60_propped_o3_normal,shift y 20mm,raw,in_plane,0.5618,0.609,0.5415,0.0,20.0,wrong,Conflict,0.1434,1.837,0.1434,0.2601,7.732,2503
+hemisphere,reflective,0.85,60.0,propped,3,a60_propped_o3_normal,tilt 15,raw,out_of_plane,0.7848,0.773,0.7899,15.0,6.53,wrong,Conflict,0.511,1.785,0.511,0.7415,2.935,2503
+hemisphere,reflective,0.85,60.0,propped,3,a60_propped_o3_normal,shift z 15mm,raw,out_of_plane,0.8927,0.891,0.8934,0.0,15.0,wrong,Valid,0.1051,1.717,0.1051,0.1842,11.565,2503
+hemisphere,reflective,0.85,60.0,propped,4,a60_propped_o4_normal,flip 180,raw,in_plane,0.4969,0.5603,0.4698,179.95,50.0,wrong,Conflict,0.2074,1.727,0.2074,0.3341,7.706,2661
+hemisphere,reflective,0.85,60.0,propped,4,a60_propped_o4_normal,shift x 12mm,raw,in_plane,0.6947,0.7039,0.6907,0.0,12.0,wrong,Conflict,0.354,1.886,0.354,0.6385,4.076,2661
+hemisphere,reflective,0.85,60.0,propped,4,a60_propped_o4_normal,shift y 20mm,raw,in_plane,0.5655,0.6086,0.547,0.0,20.0,wrong,Conflict,0.1263,1.786,0.1263,0.2563,7.454,2661
+hemisphere,reflective,0.85,60.0,propped,4,a60_propped_o4_normal,tilt 15,raw,out_of_plane,0.8355,0.8306,0.8376,15.0,6.53,wrong,Conflict,0.4679,1.763,0.4679,0.6956,3.269,2661
+hemisphere,reflective,0.85,60.0,propped,4,a60_propped_o4_normal,shift z 15mm,raw,out_of_plane,0.878,0.8644,0.8839,0.0,15.0,wrong,Valid,0.1638,1.884,0.1638,0.2691,10.772,2661

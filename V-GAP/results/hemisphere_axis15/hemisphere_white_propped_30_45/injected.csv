@@ -1,0 +1,11 @@
+object,color,tau_c,angle_deg,placement,orientation,view,perturbation,inject_kind,inject_group,C,IB,IM,rot_err_deg,trans_err_mm,grade,gate,fitness_3mm,rmse_mm,within_3mm,within_5mm,median_dist_mm,n_scan_points
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,flip 180,raw,in_plane,0.6186,0.6216,0.6173,179.9,50.0,wrong,Conflict,0.1955,1.92,0.1955,0.3376,7.183,2793
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,shift x 12mm,raw,in_plane,0.7549,0.7767,0.7456,0.0,12.0,wrong,Conflict,0.3068,1.846,0.3068,0.5166,4.876,2793
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,shift y 20mm,raw,in_plane,0.5831,0.6202,0.5671,0.0,20.0,wrong,Conflict,0.1812,1.764,0.1812,0.3018,8.477,2793
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,tilt 15,raw,out_of_plane,0.8666,0.8626,0.8684,15.0,6.53,wrong,Valid,0.5861,1.782,0.5861,0.8869,2.533,2793
+hemisphere,white,0.85,30.0,propped,1,a30_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.9024,0.8968,0.9049,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0007,11.794,2793
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,flip 180,raw,in_plane,0.4805,0.5279,0.4602,179.9,50.0,wrong,Conflict,0.207,1.844,0.207,0.338,7.54,2488
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,shift x 12mm,raw,in_plane,0.744,0.76,0.7372,0.0,12.0,wrong,Conflict,0.2797,1.807,0.2797,0.4763,5.232,2488
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,shift y 20mm,raw,in_plane,0.5273,0.5599,0.5133,0.0,20.0,wrong,Conflict,0.1889,1.858,0.1889,0.3139,7.53,2488
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,tilt 15,raw,out_of_plane,0.8263,0.8159,0.8307,15.0,6.53,wrong,Conflict,0.5518,1.753,0.5518,0.8424,2.668,2488
+hemisphere,white,0.85,45.0,propped,1,a45_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.8774,0.8702,0.8805,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0,12.033,2488

@@ -1,0 +1,9 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,hemisphere,5,0,0,0,0,0,0,0,0,0,5
+object+color,hemisphere / white,5,0,0,0,0,0,0,0,0,0,5
+object+placement,hemisphere / flat,5,0,0,0,0,0,0,0,0,0,5
+object+placement+angle_deg,hemisphere / flat / 45.0,5,0,0,0,0,0,0,0,0,0,5
+object+angle_deg,hemisphere / 45.0,5,0,0,0,0,0,0,0,0,0,5
+object+orientation,hemisphere / 1,5,0,0,0,0,0,0,0,0,0,5
+object+condition,hemisphere / occluded,5,0,0,0,0,0,0,0,0,0,5
+object+color+placement+angle_deg+condition,hemisphere / white / flat / 45.0 / occluded,5,0,0,0,0,0,0,0,0,0,5

@@ -1,0 +1,6 @@
+object,color,tau_c,angle_deg,placement,orientation,view,perturbation,inject_kind,inject_group,C,IB,IM,rot_err_deg,trans_err_mm,grade,gate,fitness_3mm,rmse_mm,within_3mm,within_5mm,median_dist_mm,n_scan_points
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,flip 180,raw,in_plane,0.7673,0.7683,0.7669,180.0,49.99,wrong,Conflict,0.2348,1.788,0.2348,0.4114,6.201,2985
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift x 12mm,raw,in_plane,0.7557,0.7685,0.7502,0.0,12.0,wrong,Conflict,0.2854,1.804,0.2854,0.4757,5.301,2985
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift y 20mm,raw,in_plane,0.5852,0.6262,0.5676,0.0,20.0,wrong,Conflict,0.1618,1.796,0.1618,0.2714,9.049,2985
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,tilt 15,raw,out_of_plane,0.8238,0.8124,0.8286,15.0,6.53,wrong,Conflict,0.5447,1.787,0.5447,0.8784,2.729,2985
+hemisphere,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.9521,0.9525,0.9519,0.0,15.0,wrong,Valid,0.0,0.0,0.0,0.0121,11.386,2985

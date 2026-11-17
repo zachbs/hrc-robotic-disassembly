@@ -1,0 +1,158 @@
+V-GAP gate evaluation
+runs: 1   bursts: 30   objects: ['t_block']
+tau_c used: t_block 0.81
+TA accepted+correct, FA accepted+WRONG, AO accepted+a bit off, TR rejected+wrong,
+FR rejected+correct, RO rejected+a bit off. Rates show 95% Wilson intervals.
+FA rate = FA / all wrong poses (how often a wrong pose gets through).
+Precision = TA / accepted (how often an accepted pose is right).
+FR rate = FR / all correct poses (good poses thrown away).
+
+A. Gate confusion
+
+  by object
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block                              30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x color
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / white                      30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x placement
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / flat                       15   15   0   0    0   0   0   0     -              100.0% [80-100]     0.0% [0-20]    
+  t_block / propped                    15   15   0   0    0   0   0   0     -              100.0% [80-100]     0.0% [0-20]    
+
+  by object x placement x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / flat / 0.0                  5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / flat / 30.0                 5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / flat / 45.0                 5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / propped / 0.0               5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / propped / 30.0              5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / propped / 45.0              5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / 0.0                        10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+  t_block / 30.0                       10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+  t_block / 45.0                       10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+
+  by object x orientation
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / 1                          30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / normal                     30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x color x placement x angle_deg x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / white / flat / 0.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / white / flat / 30.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / white / flat / 45.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / white / propped / 0.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / white / propped / 30.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  t_block / white / propped / 45.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+B. Rejections by reason (what the rejected poses really were)
+
+C. Accuracy of ACCEPTED poses (mean +/- std)
+  t_block: 30 accepted -> correct 30, a bit off 0, wrong 0
+    offset from your confirmed pose, mm : 1.79 +/- 2.03 (max 7.63, n 30)
+    offset from your confirmed pose, deg: 0.84 +/- 0.97 (max 2.83, n 30)
+    repeat spread (10 bursts), mm       : 1.61 +/- 2.01 (max 6.88, n 30)
+    repeat spread (10 bursts), deg      : 0.73 +/- 0.95 (max 3.08, n 30)
+    scan points within 3 mm of CAD      : 0.97 +/- 0.03 (max 1.00, n 30)
+    ICP RMSE at 3 mm, mm                : 1.14 +/- 0.11 (max 1.33, n 30)
+    C                                   : 0.90 +/- 0.04 (max 0.95, n 30)
+    angle 0.0: offset mm 1.61 +/- 1.02 (max 2.78, n 10)
+    angle 30.0: offset mm 1.69 +/- 2.14 (max 5.59, n 10)
+    angle 45.0: offset mm 2.07 +/- 2.57 (max 7.63, n 10)
+
+D. Gate on vs off (bursts with a pose)
+  t_block    gate OFF: 0/30 wrong poses sent on (0.0% [0-11]); gate ON: 0/30 (0.0% [0-11]); good poses lost to the gate: 0
+
+E. Adversarial wrong poses: share REJECTED by C (raw = no ICP, icp = after ICP)
+   only poses that are really wrong (> 10 deg or > 10 mm) count; ICP often fixes small errors, those are listed as 'fixed by ICP'
+  t_block    flat flip 180          icp  wrong   0  rejected by C    -               fixed by ICP 2
+  t_block    flat flip 180          raw  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    flat shift x 12mm      icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    flat shift x 12mm      raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat shift y 20mm      icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    flat shift y 20mm      raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat shift z 15mm      icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    flat shift z 15mm      raw  wrong   3  rejected by C   0.0% [0-56]      fixed by ICP 0
+  t_block    flat tilt 15           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    flat tilt 15           raw  wrong   3  rejected by C   0.0% [0-56]      fixed by ICP 0
+  t_block    flat yaw +15           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    flat yaw +15           raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat yaw +30           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    flat yaw +30           raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat yaw -15           icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    flat yaw -15           raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat yaw 180           icp  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat yaw 180           raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat yaw 90            icp  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    flat yaw 90            raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped flip 180       icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    propped flip 180       raw  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    propped shift x 12mm   icp  wrong   0  rejected by C    -               fixed by ICP 2
+  t_block    propped shift x 12mm   raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped shift y 20mm   icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    propped shift y 20mm   raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped shift z 15mm   icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    propped shift z 15mm   raw  wrong   3  rejected by C   0.0% [0-56]      fixed by ICP 0
+  t_block    propped tilt 15        icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    propped tilt 15        raw  wrong   3  rejected by C  33.3% [6-79]      fixed by ICP 0
+  t_block    propped yaw +15        icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    propped yaw +15        raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped yaw +30        icp  wrong   0  rejected by C    -               fixed by ICP 3
+  t_block    propped yaw +30        raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped yaw -15        icp  wrong   0  rejected by C    -               fixed by ICP 2
+  t_block    propped yaw -15        raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped yaw 180        icp  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped yaw 180        raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped yaw 90         icp  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  t_block    propped yaw 90         raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+
+F. Proposed 3D check: also require 'scan points within 3 mm' >= thr
+  t_block: within_3mm on correct poses 0.97 +/- 0.03 (max 1.00, n 30)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0       0      11/66               11/12          
+       0.3        0       0       5/66                5/12          
+       0.4        0       0       5/66                5/12          
+       0.5        0       0       5/66                5/12          
+       0.6        0       0       3/66                3/12          
+       0.7        0       0       0/66                0/12          
+       0.8        0       0       0/66                0/12          
+       0.9        0       0       0/66                0/12          
+
+J. Class and runtime
+  t_block    YOLO class right 100.0% [89-100], after class check 100.0% [89-100], swaps 0 (right 0), no detection 0
+             runtime s 3.56 +/- 0.60 (max 4.78, n 30)
+
+K. V-GAP vs plain RANSAC+ICP (same captures)
+   plain = RANSAC+ICP pose for YOLO's class, sent to the gripper with no gate;
+   V-GAP = after hypothesis check, table fallback, class check, then the gate.
+  t_block: 30 captures
+    plain RANSAC+ICP pose correct    13.3% [5-30]   wrong poses sent to the gripper: 26
+    V-GAP final pose correct        100.0% [89-100]
+    V-GAP after the gate: sent 30, correct 30, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 26/30 vs V-GAP 0/30
+                            used    n  rescued  harmed  same
+           90/180 deg hypothesis   17       17       0     0
+        table yaw-sweep fallback    9        9       0     0
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 0
+
+L. Gocator 3210 reference (objective grading: correct <= 5 deg & 5 mm, wrong > 10; propped hemisphere = center only)
+  t_block: 30 bursts at 6 views
+    reference quality: scan points within 1 mm 1.00 +/- 0.00 (max 1.00, n 6)
+                       RMSE mm 0.36 +/- 0.05 (max 0.39, n 6)
+                       margin to next pose 0.70 +/- 0.35 (max 1.00, n 6)
+                       repeat scans, mm 0.08 +/- 0.08 (max 0.26, n 6); deg 0.01 +/- 0.01 (max 0.02, n 6)
+    accepted poses vs reference: rot deg 1.42 +/- 0.65 (max 2.98, n 30)
+                                 trans mm 6.90 +/- 0.66 (max 8.34, n 30)
+    gate outcomes graded by the Gocator: AO 30
+    FA rate    -     precision   0.0% [0-11]   FR rate    -  
+    your grade = Gocator grade:   0.0% [0-11]
+      you correct    Gocator borderline 30

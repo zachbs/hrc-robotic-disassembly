@@ -1,0 +1,21 @@
+object,color,tau_c,angle_deg,placement,orientation,view,perturbation,inject_kind,inject_group,C,IB,IM,rot_err_deg,trans_err_mm,grade,gate,fitness_3mm,rmse_mm,within_3mm,within_5mm,median_dist_mm,n_scan_points
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw +15,raw,in_plane,0.681,0.7058,0.6704,15.0,0.0,wrong,Conflict,0.7482,1.342,0.7482,0.8568,1.313,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw +15,icp,in_plane,0.9017,0.922,0.893,1.52,0.66,correct,Valid,0.9322,1.349,0.9322,0.999,1.141,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw -15,raw,in_plane,0.7065,0.7201,0.7007,15.0,0.0,wrong,Conflict,0.7558,1.326,0.7558,0.8658,1.288,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw -15,icp,in_plane,0.8347,0.8764,0.8168,2.01,3.41,correct,Conflict,0.9231,1.214,0.9231,0.9935,0.988,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw +30,raw,in_plane,0.5326,0.5638,0.5193,30.0,0.0,wrong,Conflict,0.6276,1.358,0.6276,0.7201,1.576,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw +30,icp,in_plane,0.9015,0.922,0.8927,1.51,0.67,correct,Valid,0.9317,1.347,0.9317,0.999,1.139,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw 90,raw,in_plane,0.5743,0.9506,0.4131,90.0,0.0,wrong,Conflict,0.5749,1.26,0.5749,0.6,1.737,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw 90,icp,in_plane,0.5604,0.915,0.4085,88.4,2.19,wrong,Conflict,0.5925,1.125,0.5925,0.6176,1.53,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw 180,raw,in_plane,0.4568,0.9214,0.2577,179.73,0.0,wrong,Conflict,0.3538,1.363,0.3538,0.4166,9.777,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,yaw 180,icp,in_plane,0.4094,0.6988,0.2853,173.82,19.15,wrong,Conflict,0.4146,1.383,0.4146,0.498,5.04,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,flip 180,raw,in_plane,0.4568,0.9214,0.2577,180.0,0.0,wrong,Conflict,0.3568,1.377,0.3568,0.4191,9.764,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,flip 180,icp,in_plane,0.4101,0.6995,0.2861,172.77,20.18,wrong,Conflict,0.4176,1.373,0.4176,0.5035,4.938,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift x 12mm,raw,in_plane,0.7049,0.7774,0.6739,0.0,12.0,wrong,Conflict,0.7482,1.927,0.7482,0.8558,2.179,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift x 12mm,icp,in_plane,0.9052,0.9218,0.8981,0.83,0.75,correct,Valid,0.9387,1.354,0.9387,0.9995,1.15,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift y 20mm,raw,in_plane,0.5279,0.6715,0.4664,0.0,20.0,wrong,Conflict,0.5482,2.021,0.5482,0.6794,2.779,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift y 20mm,icp,in_plane,0.832,0.8612,0.8196,3.48,3.76,correct,Conflict,0.9131,1.267,0.9131,0.9799,1.092,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,tilt 15,raw,out_of_plane,0.8741,0.8944,0.8655,15.0,0.0,wrong,Valid,0.5412,1.769,0.5412,0.7412,2.641,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,tilt 15,icp,out_of_plane,0.902,0.9271,0.8913,0.48,1.32,correct,Valid,0.9402,1.293,0.9402,0.9985,1.056,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift z 15mm,raw,out_of_plane,0.951,0.9808,0.9383,0.0,15.0,wrong,Valid,0.0548,1.626,0.0548,0.0784,14.501,1990
+l_block,white,0.85,0.0,propped,1,a0_propped_o1_normal,shift z 15mm,icp,out_of_plane,0.9022,0.9271,0.8916,0.48,1.31,correct,Valid,0.9412,1.295,0.9412,0.998,1.057,1990

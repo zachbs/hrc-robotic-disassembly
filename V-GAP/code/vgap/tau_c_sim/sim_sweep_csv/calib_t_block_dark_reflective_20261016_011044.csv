@@ -1,0 +1,414 @@
+object,color,view,tilt_deg,azimuth_deg,rep,sample,perturbation,yolo_object,final_object,C,IB,IM,margin,class_margin,axis_ambiguity_deg,state,reason,used_fallback,chosen,UD,rot_err_deg,trans_err_mm,inject_kind,inject_group,label,label_source,caught_by_other_check,true_rot_err_deg,true_trans_err_mm,trial_dir,timestamp
+t_block,dark_reflective,0,0.0,0.0,0,real,,t_block,t_block,0.9281,0.984,0.9042,0.2269,0.2614,,Valid,,False,as registered,0.1571,1.76,1.04,,,correct,reference,False,1.91,1.17,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7348,0.8835,0.6711,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.9262,0.984,0.9014,,,,,,,,,2.01,0.95,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7282,0.8538,0.6743,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9268,0.9838,0.9023,,,,,,,,,2.23,1.43,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.5814,0.7948,0.4899,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.927,0.984,0.9026,,,,,,,,,1.88,1.02,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.4071,0.6682,0.2952,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7012,0.783,0.6662,,,,,,,,,119.77,24.92,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4334,0.4809,0.4131,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4314,0.4743,0.413,,,,,,,,,179.18,0.28,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9327,0.9786,0.913,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9343,0.984,0.913,,,,,,,,,0.24,0.16,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6397,0.801,0.5706,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.923,0.963,0.9059,,,,,,,,,0.69,1.11,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5021,0.7045,0.4154,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.9231,0.9683,0.9037,,,,,,,,,0.74,1.58,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.9376,0.9681,0.9245,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.9229,0.9683,0.9035,,,,,,,,,1.24,1.2,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.8676,0.9158,0.847,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,0,0.0,0.0,0,injected,shift z 15mm icp,t_block,t_block,0.9339,0.984,0.9125,,,,,,,,,0.31,0.11,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:13
+t_block,dark_reflective,1,0.0,90.0,0,real,,t_block,t_block,0.861,0.9012,0.8438,0.1785,0.2218,,Valid,,False,as registered,0.1166,1.48,3.92,,,correct,reference,False,1.62,3.85,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.7296,0.8922,0.66,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.8491,0.9361,0.8118,,,,,,,,,6.4,1.22,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7305,0.8913,0.6616,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.8415,0.9367,0.8008,,,,,,,,,7.34,1.72,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.5806,0.8284,0.4743,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.8485,0.926,0.8153,,,,,,,,,6.08,1.76,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.3618,0.6348,0.2448,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.6808,0.7642,0.6451,,,,,,,,,119.05,27.61,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.4247,0.4712,0.4048,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.4234,0.4684,0.4041,,,,,,,,,179.65,0.14,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9162,0.9258,0.9121,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9165,0.9258,0.9125,,,,,,,,,0.08,0.08,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6258,0.7871,0.5566,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.7979,0.8772,0.7639,,,,,,,,,0.23,5.3,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.4693,0.6721,0.3824,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.7965,0.8721,0.7641,,,,,,,,,0.04,4.83,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.8922,0.9411,0.8713,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.8504,0.9108,0.8244,,,,,,,,,0.43,3.46,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,1,0.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9626,0.9888,0.9514,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:33
+t_block,dark_reflective,2,0.0,180.0,0,real,,t_block,t_block,0.879,0.9369,0.8542,0.1791,0.2186,,Valid,,False,height 90 deg,0.1661,0.14,3.33,,,correct,reference,False,0.07,3.8,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.7347,0.8837,0.6709,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9026,0.9683,0.8745,,,,,,,,,4.19,0.99,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.7312,0.863,0.6747,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9128,0.9735,0.8867,,,,,,,,,4.11,0.81,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.5793,0.7946,0.4871,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9086,0.9734,0.8808,,,,,,,,,3.84,1.16,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.3921,0.6577,0.2783,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.6979,0.779,0.6632,,,,,,,,,119.09,26.31,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4336,0.4677,0.4189,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4345,0.4705,0.4191,,,,,,,,,179.9,0.13,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.9718,0.9892,0.9643,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9716,0.9892,0.964,,,,,,,,,0.07,0.06,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6475,0.8049,0.58,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.87,0.932,0.8435,,,,,,,,,0.56,3.67,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.4938,0.7031,0.4041,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.8784,0.9425,0.8509,,,,,,,,,0.78,3.18,icp,in_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.949,0.9733,0.9386,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9055,0.9425,0.8897,,,,,,,,,0.72,2.58,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,2,0.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9101,0.9411,0.8968,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:11:51
+t_block,dark_reflective,3,0.0,270.0,0,real,,t_block,t_block,0.9226,0.9581,0.9074,0.2218,0.2552,,Valid,,False,as registered,0.1557,1.36,1.61,,,correct,reference,False,1.21,1.7,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.7306,0.8696,0.671,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.918,0.9788,0.892,,,,,,,,,2.7,1.24,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7291,0.8538,0.6757,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9184,0.9786,0.8926,,,,,,,,,3.0,0.72,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.576,0.7785,0.4892,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9198,0.984,0.8923,,,,,,,,,2.52,1.37,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.405,0.6652,0.2935,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.7008,0.783,0.6656,,,,,,,,,119.49,25.01,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.431,0.4723,0.4132,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.4316,0.4742,0.4133,,,,,,,,,179.79,0.14,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9379,0.9947,0.9136,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.936,0.9893,0.9132,,,,,,,,,0.08,0.1,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.6469,0.8067,0.5785,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9072,0.958,0.8853,,,,,,,,,0.68,2.3,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5031,0.7051,0.4165,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.901,0.9428,0.883,,,,,,,,,1.47,2.56,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.9387,0.9629,0.9283,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9237,0.9632,0.9068,,,,,,,,,0.43,1.77,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.8691,0.921,0.8468,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,3,0.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.9364,0.9893,0.9138,,,,,,,,,0.3,0.26,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:06
+t_block,dark_reflective,4,15.0,270.0,0,real,,t_block,t_block,0.9194,0.9464,0.9079,0.1989,0.2563,,Valid,,True,as registered,0.1061,1.18,1.86,,,correct,reference,False,1.04,2.27,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.749,0.8969,0.6856,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.8832,0.9408,0.8585,,,,,,,,,4.69,1.59,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7501,0.8962,0.6876,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.8788,0.9364,0.8541,,,,,,,,,4.69,2.59,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.5924,0.7879,0.5086,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.8808,0.9309,0.8593,,,,,,,,,4.58,1.74,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.4134,0.6449,0.3142,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.7196,0.8028,0.6839,,,,,,,,,120.2,26.66,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.4418,0.4723,0.4288,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.4435,0.4741,0.4304,,,,,,,,,178.85,0.36,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9282,0.9411,0.9227,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9267,0.936,0.9228,,,,,,,,,0.12,0.12,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.6563,0.7962,0.5963,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.8055,0.8765,0.7751,,,,,,,,,0.86,6.1,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.507,0.6817,0.4322,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.8476,0.8972,0.8264,,,,,,,,,1.1,4.45,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.887,0.9205,0.8726,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9144,0.941,0.903,,,,,,,,,1.3,1.64,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,4,15.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.9645,0.9834,0.9563,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:27
+t_block,dark_reflective,5,15.0,180.0,0,real,,t_block,t_block,0.9213,0.947,0.9103,0.2011,0.2466,,Valid,,False,height 270 deg,0.1357,0.29,2.48,,,correct,reference,False,0.16,2.59,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.7546,0.9022,0.6914,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.8967,0.9578,0.8705,,,,,,,,,4.49,1.68,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.7457,0.8676,0.6935,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9213,0.9679,0.9013,,,,,,,,,3.82,1.54,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.6107,0.8296,0.517,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.8948,0.9474,0.8722,,,,,,,,,4.07,2.14,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.4264,0.6727,0.3209,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.7141,0.7882,0.6823,,,,,,,,,120.77,25.74,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4497,0.4799,0.4368,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4498,0.477,0.4381,,,,,,,,,179.48,0.31,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.968,0.9731,0.9658,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9674,0.9731,0.9649,,,,,,,,,0.06,0.05,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6582,0.8039,0.5958,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.8485,0.9118,0.8213,,,,,,,,,0.68,4.63,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5093,0.6939,0.4301,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.8843,0.9421,0.8595,,,,,,,,,0.16,2.86,icp,in_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.9284,0.9784,0.907,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.901,0.932,0.8878,,,,,,,,,0.33,2.73,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,5,15.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9471,0.9565,0.9431,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:12:50
+t_block,dark_reflective,6,15.0,90.0,0,real,,t_block,t_block,0.8573,0.9056,0.8366,0.1555,0.1956,,Valid,,True,as registered,0.0941,0.28,3.62,,,correct,reference,False,0.12,4.03,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.7391,0.8911,0.6739,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.8762,0.9358,0.8506,,,,,,,,,4.56,2.24,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.742,0.891,0.6782,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.8597,0.9206,0.8336,,,,,,,,,6.32,0.76,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.5938,0.8462,0.4856,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.8652,0.9358,0.835,,,,,,,,,5.1,2.75,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.4034,0.632,0.3054,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.7018,0.7721,0.6717,,,,,,,,,118.55,26.91,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.4414,0.4782,0.4256,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.4414,0.4782,0.4256,,,,,,,,,179.78,0.11,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.927,0.9408,0.921,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.927,0.9408,0.921,,,,,,,,,0.14,0.04,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6343,0.7808,0.5716,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.7991,0.8719,0.768,,,,,,,,,0.13,5.36,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.4978,0.6841,0.418,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.8534,0.9106,0.8288,,,,,,,,,1.38,3.8,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.921,0.9408,0.9125,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.8684,0.9155,0.8481,,,,,,,,,0.16,3.7,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,6,15.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.968,0.9888,0.9591,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:10
+t_block,dark_reflective,7,15.0,0.0,0,real,,t_block,t_block,0.8844,0.9368,0.862,0.1681,0.2072,,Valid,,False,height 90 deg,0.1245,1.13,3.54,,,correct,reference,False,1.27,3.99,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7418,0.8732,0.6855,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.9125,0.9784,0.8843,,,,,,,,,4.23,1.14,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7428,0.8715,0.6876,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9248,0.9732,0.904,,,,,,,,,3.28,1.4,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.5898,0.7847,0.5063,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.912,0.9784,0.8836,,,,,,,,,4.28,1.19,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.4422,0.6652,0.3466,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7121,0.7805,0.6827,,,,,,,,,121.83,26.12,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4465,0.4752,0.4341,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.446,0.475,0.4336,,,,,,,,,179.38,0.34,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9695,0.9838,0.9634,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9699,0.9838,0.964,,,,,,,,,0.11,0.08,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.66,0.8136,0.5942,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.8963,0.9472,0.8745,,,,,,,,,0.25,2.97,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5197,0.6977,0.4433,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.8968,0.9363,0.8799,,,,,,,,,0.84,3.0,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.9465,0.9784,0.9328,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.9346,0.9731,0.918,,,,,,,,,1.64,2.1,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,7,15.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.9117,0.9404,0.8993,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:31
+t_block,dark_reflective,8,30.0,0.0,0,real,,t_block,t_block,0.8679,0.9041,0.8524,0.1386,0.1835,,Valid,,False,height 90 deg,0.2121,0.58,4.18,,,correct,reference,False,0.45,4.59,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7542,0.8847,0.6983,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.8915,0.9346,0.873,,,,,,,,,4.77,0.95,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7651,0.9085,0.7036,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.8888,0.9611,0.8577,,,,,,,,,5.16,2.46,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.5983,0.7793,0.5207,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.9016,0.9399,0.8852,,,,,,,,,4.1,0.8,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.4678,0.6619,0.3846,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7209,0.7775,0.6967,,,,,,,,,117.87,28.81,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4509,0.4851,0.4362,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4507,0.4847,0.4362,,,,,,,,,178.01,0.44,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9373,0.9503,0.9318,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9372,0.9503,0.9316,,,,,,,,,0.1,0.07,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6607,0.7887,0.6059,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.8267,0.8885,0.8002,,,,,,,,,0.89,5.74,icp,in_plane,borderline,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5326,0.685,0.4673,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.8681,0.9041,0.8526,,,,,,,,,1.12,4.37,icp,in_plane,correct,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.9103,0.9718,0.8839,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.9347,0.9503,0.928,,,,,,,,,0.7,1.22,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,8,30.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.966,0.9716,0.9636,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:13:52
+t_block,dark_reflective,9,30.0,90.0,0,real,,t_block,t_block,0.9374,0.9781,0.92,0.3083,0.238,,Valid,,False,height 90 deg,0.2075,0.5,0.88,,,correct,reference,False,0.64,0.86,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.755,0.8756,0.7034,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9363,0.9727,0.9207,,,,,,,,,0.56,0.83,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7568,0.86,0.7125,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.9348,0.978,0.9163,,,,,,,,,1.45,1.03,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.6185,0.8259,0.5297,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9376,0.9781,0.9202,,,,,,,,,0.63,0.88,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.4845,0.6515,0.4129,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.7439,0.7829,0.7272,,,,,,,,,119.66,25.05,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.4616,0.4957,0.447,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.4625,0.4957,0.4482,,,,,,,,,179.84,0.18,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9415,0.9891,0.9211,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9397,0.9837,0.9208,,,,,,,,,0.08,0.16,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6763,0.8033,0.6219,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.9417,0.9891,0.9214,,,,,,,,,0.34,0.18,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.5452,0.707,0.4759,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.9389,0.9835,0.9198,,,,,,,,,0.84,0.34,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.9045,0.9782,0.873,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.936,0.9727,0.9202,,,,,,,,,0.37,0.88,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.8733,0.9135,0.856,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,9,30.0,90.0,0,injected,shift z 15mm icp,t_block,t_block,0.9343,0.9725,0.918,,,,,,,,,0.42,1.53,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:11
+t_block,dark_reflective,10,30.0,180.0,0,real,,t_block,t_block,0.9658,0.9723,0.963,0.2248,0.2846,,Valid,,True,as registered,0.1906,0.05,0.73,,,correct,reference,False,0.12,1.0,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.7749,0.905,0.7191,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9385,0.9511,0.9331,,,,,,,,,0.06,1.73,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.7572,0.8561,0.7148,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9737,0.9779,0.9719,,,,,,,,,0.47,1.28,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.641,0.8542,0.5496,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9317,0.9461,0.9255,,,,,,,,,0.13,2.0,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.4744,0.6766,0.3877,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.7415,0.8146,0.7102,,,,,,,,,119.56,24.33,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4605,0.4865,0.4494,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.6785,0.7886,0.6314,,,,,,,,,133.22,13.81,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.9722,0.9723,0.9721,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9795,0.9779,0.9802,,,,,,,,,0.1,0.55,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6711,0.7994,0.6161,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9321,0.9461,0.9261,,,,,,,,,0.13,1.98,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5359,0.6949,0.4677,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.9337,0.9461,0.9284,,,,,,,,,0.14,1.93,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.9031,0.9455,0.8849,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9384,0.9511,0.9329,,,,,,,,,0.07,1.75,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9459,0.9503,0.944,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,10,30.0,180.0,0,injected,shift z 15mm icp,t_block,t_block,0.973,0.9779,0.971,,,,,,,,,0.38,1.3,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:31
+t_block,dark_reflective,11,30.0,270.0,0,real,,t_block,t_block,0.9346,0.9449,0.9301,0.1871,0.2595,,Valid,,False,as registered,0.1793,1.09,0.9,,,correct,reference,False,1.23,0.85,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.7652,0.8904,0.7116,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.9335,0.9449,0.9287,,,,,,,,,1.2,0.93,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7728,0.9078,0.715,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9342,0.9509,0.9271,,,,,,,,,0.89,1.58,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.6051,0.7753,0.5322,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9337,0.9449,0.9289,,,,,,,,,1.19,0.92,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.4574,0.6599,0.3707,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.7475,0.8065,0.7222,,,,,,,,,119.01,26.41,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.4577,0.4865,0.4453,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.6939,0.8378,0.6322,,,,,,,,,131.47,14.83,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9391,0.9504,0.9343,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9382,0.9504,0.933,,,,,,,,,0.14,0.14,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.6691,0.7927,0.6161,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9347,0.9454,0.9302,,,,,,,,,0.71,1.53,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5363,0.6903,0.4704,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.9337,0.9449,0.9288,,,,,,,,,1.2,0.92,icp,in_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.8842,0.9118,0.8724,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9374,0.9504,0.9319,,,,,,,,,0.81,0.58,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.9646,0.972,0.9615,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,11,30.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.9374,0.9504,0.9318,,,,,,,,,0.8,0.58,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:14:55
+t_block,dark_reflective,12,45.0,270.0,0,real,,t_block,t_block,0.9377,0.9767,0.921,0.1473,0.1955,,Valid,,False,height 270 deg,0.0578,0.14,0.6,,,correct,reference,False,0.07,0.7,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.7719,0.8583,0.7348,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.9375,0.9767,0.9207,,,,,,,,,0.15,0.57,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.7958,0.8767,0.7611,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9383,0.9767,0.9218,,,,,,,,,0.16,0.63,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.617,0.7378,0.5653,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.9375,0.9767,0.9207,,,,,,,,,0.15,0.57,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.5214,0.6919,0.4484,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.7918,0.8396,0.7713,,,,,,,,,122.95,21.19,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.4808,0.5043,0.4707,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.4912,0.513,0.4819,,,,,,,,,175.18,0.66,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9372,0.9767,0.9203,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9382,0.9767,0.9217,,,,,,,,,0.08,0.53,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.685,0.7788,0.6448,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9383,0.9767,0.9219,,,,,,,,,0.16,0.64,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5722,0.7019,0.5166,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.9376,0.9767,0.9208,,,,,,,,,0.14,0.62,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.8345,0.8745,0.8174,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.9374,0.9767,0.9205,,,,,,,,,0.17,0.55,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.8692,0.9036,0.8544,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,12,45.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.9378,0.9767,0.9211,,,,,,,,,0.11,0.58,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:07
+t_block,dark_reflective,13,45.0,180.0,0,real,,t_block,t_block,0.937,0.9716,0.9222,0.1484,0.2053,,Valid,,False,as registered,0.0538,0.21,0.81,,,correct,reference,False,0.1,0.7,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.7993,0.8993,0.7565,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9388,0.9768,0.9225,,,,,,,,,0.11,0.79,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.7698,0.8529,0.7341,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9364,0.9716,0.9213,,,,,,,,,0.34,0.77,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.6746,0.8543,0.5976,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.939,0.9768,0.9228,,,,,,,,,0.09,0.79,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.5403,0.6928,0.475,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.5395,0.688,0.4758,,,,,,,,,89.97,0.79,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.4767,0.5052,0.4645,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.4763,0.5029,0.4649,,,,,,,,,179.68,0.48,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.9384,0.9768,0.9219,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.9385,0.9768,0.9221,,,,,,,,,0.14,0.68,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6843,0.7913,0.6384,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9393,0.9768,0.9233,,,,,,,,,0.12,0.8,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5695,0.6936,0.5163,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.9383,0.9768,0.9218,,,,,,,,,0.15,0.76,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.8732,0.9199,0.8532,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9394,0.9768,0.9234,,,,,,,,,0.11,0.79,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.8728,0.9099,0.8569,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,13,45.0,180.0,0,injected,shift z 15mm icp,t_block,t_block,0.9367,0.9716,0.9217,,,,,,,,,0.27,0.74,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:25
+t_block,dark_reflective,14,45.0,90.0,0,real,,t_block,t_block,0.9831,0.9825,0.9833,0.2014,0.3064,,Valid,,False,height 180 deg,0.0571,0.31,0.48,,,correct,reference,False,0.15,0.68,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.7783,0.8893,0.7307,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9805,0.9763,0.9824,,,,,,,,,0.15,0.5,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7731,0.8687,0.7321,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.9831,0.9825,0.9834,,,,,,,,,0.31,0.48,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.6512,0.862,0.5608,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9805,0.9763,0.9824,,,,,,,,,0.15,0.5,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.5137,0.6302,0.4638,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.7802,0.8166,0.7646,,,,,,,,,117.42,25.07,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.4789,0.5027,0.4687,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.4764,0.4972,0.4675,,,,,,,,,179.32,0.41,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.977,0.9763,0.9773,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9811,0.9763,0.9832,,,,,,,,,0.18,0.43,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6701,0.7829,0.6217,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.9806,0.9763,0.9825,,,,,,,,,0.15,0.49,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.5604,0.7004,0.5003,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.9833,0.9825,0.9836,,,,,,,,,0.31,0.47,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.8897,0.9135,0.8795,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.9806,0.9763,0.9824,,,,,,,,,0.15,0.5,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9467,0.9523,0.9443,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,14,45.0,90.0,0,injected,shift z 15mm icp,t_block,t_block,0.9834,0.9825,0.9837,,,,,,,,,0.31,0.52,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:39
+t_block,dark_reflective,15,45.0,0.0,0,real,,t_block,t_block,0.9794,0.9701,0.9834,0.2411,0.3335,,Valid,,False,as registered,0.0442,0.14,0.13,,,correct,reference,False,0.1,0.64,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7763,0.8858,0.7294,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.9796,0.9701,0.9836,,,,,,,,,0.07,0.1,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.7926,0.9196,0.7381,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9799,0.9756,0.9817,,,,,,,,,0.41,0.21,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.6233,0.772,0.5596,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.9796,0.9701,0.9836,,,,,,,,,0.07,0.1,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.5318,0.6798,0.4684,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7361,0.7734,0.7201,,,,,,,,,118.03,29.73,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.4707,0.4973,0.4593,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4688,0.4962,0.457,,,,,,,,,176.36,0.62,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.9812,0.9756,0.9836,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9795,0.9701,0.9835,,,,,,,,,0.13,0.1,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6723,0.7785,0.6268,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.9799,0.9756,0.9817,,,,,,,,,0.43,0.2,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5656,0.6973,0.5092,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.9799,0.9756,0.9817,,,,,,,,,0.43,0.22,icp,in_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.8767,0.9183,0.8588,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.9797,0.9701,0.9839,,,,,,,,,0.07,0.1,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.9451,0.9529,0.9417,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,15,45.0,0.0,0,injected,shift z 15mm icp,t_block,t_block,0.9796,0.9701,0.9837,,,,,,,,,0.08,0.1,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:15:53
+t_block,dark_reflective,16,60.0,0.0,0,real,,t_block,t_block,0.9421,0.9736,0.9287,0.1156,0.2071,,Valid,,False,height 270 deg,0.0389,0.26,0.26,,,correct,reference,False,0.12,0.67,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw +15 raw,t_block,t_block,0.7882,0.8533,0.7602,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw +15 icp,t_block,t_block,0.9408,0.9736,0.9268,,,,,,,,,0.14,0.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw -15 raw,t_block,t_block,0.8142,0.9136,0.7716,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw -15 icp,t_block,t_block,0.9419,0.9736,0.9283,,,,,,,,,0.31,0.3,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw +30 raw,t_block,t_block,0.6533,0.7494,0.6121,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw +30 icp,t_block,t_block,0.9408,0.9736,0.9268,,,,,,,,,0.14,0.15,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw 90 raw,t_block,t_block,0.6022,0.7127,0.5548,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw 90 icp,t_block,t_block,0.7645,0.7829,0.7567,,,,,,,,,116.33,28.47,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw 180 raw,t_block,t_block,0.493,0.5124,0.4847,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,yaw 180 icp,t_block,t_block,0.4939,0.5162,0.4844,,,,,,,,,179.13,0.62,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,flip 180 raw,t_block,t_block,0.94,0.9736,0.9256,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,flip 180 icp,t_block,t_block,0.9388,0.9661,0.9272,,,,,,,,,0.08,0.14,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,shift x 12mm raw,t_block,t_block,0.6696,0.741,0.639,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,shift x 12mm icp,t_block,t_block,0.9417,0.9736,0.928,,,,,,,,,0.3,0.29,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,shift y 20mm raw,t_block,t_block,0.5928,0.698,0.5478,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,shift y 20mm icp,t_block,t_block,0.9418,0.9736,0.9282,,,,,,,,,0.31,0.3,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,tilt 15 raw,t_block,t_block,0.7742,0.8122,0.7579,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,tilt 15 icp,t_block,t_block,0.9379,0.9661,0.9258,,,,,,,,,0.13,0.12,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,shift z 15mm raw,t_block,t_block,0.8733,0.9038,0.8602,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,16,60.0,0.0,0,injected,shift z 15mm icp,t_block,t_block,0.9407,0.9736,0.9266,,,,,,,,,0.14,0.15,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:09
+t_block,dark_reflective,17,60.0,90.0,0,real,,t_block,t_block,0.9787,1.0,0.9696,0.1547,0.246,,Valid,,True,height 270 deg,0.0405,0.16,0.43,,,correct,reference,False,0.16,0.7,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw +15 raw,t_block,t_block,0.8055,0.8894,0.7695,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw +15 icp,t_block,t_block,0.9788,1.0,0.9697,,,,,,,,,0.16,0.43,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw -15 raw,t_block,t_block,0.7978,0.8687,0.7674,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw -15 icp,t_block,t_block,0.9761,0.9922,0.9692,,,,,,,,,0.23,0.4,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw +30 raw,t_block,t_block,0.7019,0.8793,0.6259,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw +30 icp,t_block,t_block,0.9787,1.0,0.9696,,,,,,,,,0.16,0.44,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw 90 raw,t_block,t_block,0.5614,0.6419,0.5269,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw 90 icp,t_block,t_block,0.5619,0.6419,0.5276,,,,,,,,,89.83,0.11,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw 180 raw,t_block,t_block,0.5071,0.5247,0.4996,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,yaw 180 icp,t_block,t_block,0.5044,0.5193,0.4981,,,,,,,,,179.84,0.53,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,flip 180 raw,t_block,t_block,0.9756,0.9888,0.97,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,flip 180 icp,t_block,t_block,0.9785,1.0,0.9693,,,,,,,,,0.19,0.4,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,shift x 12mm raw,t_block,t_block,0.6624,0.7443,0.6273,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,shift x 12mm icp,t_block,t_block,0.9788,1.0,0.9697,,,,,,,,,0.17,0.44,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,shift y 20mm raw,t_block,t_block,0.5913,0.7021,0.5438,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,shift y 20mm icp,t_block,t_block,0.9761,0.9922,0.9692,,,,,,,,,0.23,0.4,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,tilt 15 raw,t_block,t_block,0.8543,0.8748,0.8456,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,tilt 15 icp,t_block,t_block,0.9789,1.0,0.9698,,,,,,,,,0.17,0.44,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,shift z 15mm raw,t_block,t_block,0.9057,0.9158,0.9013,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,17,60.0,90.0,0,injected,shift z 15mm icp,t_block,t_block,0.9759,0.9922,0.9689,,,,,,,,,0.24,0.4,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:24
+t_block,dark_reflective,18,60.0,180.0,0,real,,t_block,t_block,0.9723,0.984,0.9672,0.1519,0.2522,,Valid,,False,as registered,0.0417,0.29,0.75,,,correct,reference,False,0.18,0.67,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw +15 raw,t_block,t_block,0.8297,0.9084,0.796,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw +15 icp,t_block,t_block,0.9734,0.984,0.9689,,,,,,,,,0.18,0.79,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw -15 raw,t_block,t_block,0.8004,0.8677,0.7715,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw -15 icp,t_block,t_block,0.9727,0.984,0.9679,,,,,,,,,0.27,0.74,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw +30 raw,t_block,t_block,0.729,0.882,0.6634,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw +30 icp,t_block,t_block,0.9734,0.984,0.9688,,,,,,,,,0.18,0.8,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw 90 raw,t_block,t_block,0.6037,0.7243,0.552,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw 90 icp,t_block,t_block,0.6083,0.7343,0.5543,,,,,,,,,89.83,0.57,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw 180 raw,t_block,t_block,0.5067,0.5299,0.4967,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,yaw 180 icp,t_block,t_block,0.5034,0.5245,0.4944,,,,,,,,,179.87,0.62,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,flip 180 raw,t_block,t_block,0.9661,0.9737,0.9629,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,flip 180 icp,t_block,t_block,0.972,0.984,0.9669,,,,,,,,,0.24,0.72,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,shift x 12mm raw,t_block,t_block,0.6526,0.7551,0.6087,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,shift x 12mm icp,t_block,t_block,0.9759,0.992,0.9689,,,,,,,,,0.19,0.8,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,shift y 20mm raw,t_block,t_block,0.5906,0.6905,0.5477,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,shift y 20mm icp,t_block,t_block,0.9732,0.984,0.9686,,,,,,,,,0.22,0.74,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,tilt 15 raw,t_block,t_block,0.8598,0.8769,0.8525,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,tilt 15 icp,t_block,t_block,0.9733,0.984,0.9687,,,,,,,,,0.21,0.76,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,shift z 15mm raw,t_block,t_block,0.9045,0.9188,0.8984,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,18,60.0,180.0,0,injected,shift z 15mm icp,t_block,t_block,0.9721,0.984,0.967,,,,,,,,,0.24,0.71,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:41
+t_block,dark_reflective,19,60.0,270.0,0,real,,t_block,t_block,0.9424,0.9519,0.9383,0.1195,0.247,,Valid,,False,height 270 deg,0.0249,0.12,0.68,,,correct,reference,False,0.11,0.7,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw +15 raw,t_block,t_block,0.8035,0.8753,0.7727,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw +15 icp,t_block,t_block,0.9409,0.9519,0.9362,,,,,,,,,0.14,0.72,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw -15 raw,t_block,t_block,0.8256,0.9166,0.7865,,,,,,,,,15.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw -15 icp,t_block,t_block,0.9381,0.9442,0.9355,,,,,,,,,0.27,0.78,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw +30 raw,t_block,t_block,0.6514,0.7602,0.6048,,,,,,,,,30.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw +30 icp,t_block,t_block,0.941,0.9519,0.9363,,,,,,,,,0.12,0.73,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw 90 raw,t_block,t_block,0.5353,0.6757,0.4752,,,,,,,,,90.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw 90 icp,t_block,t_block,0.8261,0.9277,0.7826,,,,,,,,,125.82,18.59,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw 180 raw,t_block,t_block,0.5011,0.5182,0.4937,,,,,,,,,180.0,0.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,yaw 180 icp,t_block,t_block,0.5115,0.5295,0.5038,,,,,,,,,175.79,0.75,icp,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,flip 180 raw,t_block,t_block,0.9448,0.9519,0.9417,,,,,,,,,0.0,0.0,raw,in_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,flip 180 icp,t_block,t_block,0.9426,0.9519,0.9385,,,,,,,,,0.08,0.65,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,shift x 12mm raw,t_block,t_block,0.636,0.7323,0.5947,,,,,,,,,0.0,12.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,shift x 12mm icp,t_block,t_block,0.9381,0.9442,0.9355,,,,,,,,,0.26,0.79,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,shift y 20mm raw,t_block,t_block,0.5889,0.6871,0.5469,,,,,,,,,0.0,20.0,raw,in_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,shift y 20mm icp,t_block,t_block,0.9371,0.9393,0.9362,,,,,,,,,0.17,0.75,icp,in_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,tilt 15 raw,t_block,t_block,0.8167,0.8411,0.8062,,,,,,,,,15.0,0.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,tilt 15 icp,t_block,t_block,0.941,0.9519,0.9363,,,,,,,,,0.11,0.72,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,shift z 15mm raw,t_block,t_block,0.9662,0.9703,0.9645,,,,,,,,,0.0,15.0,raw,out_of_plane,wrong,injected,False,,,,2026-10-16 01:16:57
+t_block,dark_reflective,19,60.0,270.0,0,injected,shift z 15mm icp,t_block,t_block,0.9413,0.9519,0.9367,,,,,,,,,0.13,0.69,icp,out_of_plane,correct,injected,False,,,,2026-10-16 01:16:57

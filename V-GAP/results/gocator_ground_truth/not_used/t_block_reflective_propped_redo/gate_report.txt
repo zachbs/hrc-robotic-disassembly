@@ -1,0 +1,124 @@
+V-GAP gate evaluation
+runs: 1   bursts: 5   objects: ['t_block']
+tau_c used: t_block 0.81
+TA accepted+correct, FA accepted+WRONG, AO accepted+a bit off, TR rejected+wrong,
+FR rejected+correct, RO rejected+a bit off. Rates show 95% Wilson intervals.
+FA rate = FA / all wrong poses (how often a wrong pose gets through).
+Precision = TA / accepted (how often an accepted pose is right).
+FR rate = FR / all correct poses (good poses thrown away).
+
+A. Gate confusion
+
+  by object
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block                               5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x color
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / reflective                  5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x placement
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / propped                     5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x placement x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / propped / 60.0              5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / 60.0                        5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x orientation
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / 1                           5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / normal                      5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x color x placement x angle_deg x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  t_block / reflective / propped / 60.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+B. Rejections by reason (what the rejected poses really were)
+
+C. Accuracy of ACCEPTED poses (mean +/- std)
+  t_block: 5 accepted -> correct 5, a bit off 0, wrong 0
+    offset from your confirmed pose, mm : 0.91 +/- 1.61 (max 4.13, n 5)
+    offset from your confirmed pose, deg: 0.35 +/- 0.60 (max 1.54, n 5)
+    repeat spread (10 bursts), mm       : 0.88 +/- 1.64 (max 4.17, n 5)
+    repeat spread (10 bursts), deg      : 0.33 +/- 0.57 (max 1.46, n 5)
+    scan points within 3 mm of CAD      : 0.96 +/- 0.00 (max 0.96, n 5)
+    ICP RMSE at 3 mm, mm                : 1.29 +/- 0.02 (max 1.33, n 5)
+    C                                   : 0.91 +/- 0.02 (max 0.93, n 5)
+    angle 60.0: offset mm 0.91 +/- 1.61 (max 4.13, n 5)
+
+D. Gate on vs off (bursts with a pose)
+  t_block    gate OFF: 0/5 wrong poses sent on (0.0% [0-43]); gate ON: 0/5 (0.0% [0-43]); good poses lost to the gate: 0
+
+E. Adversarial wrong poses: share REJECTED by C (raw = no ICP, icp = after ICP)
+   only poses that are really wrong (> 10 deg or > 10 mm) count; ICP often fixes small errors, those are listed as 'fixed by ICP'
+  t_block    propped flip 180       icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped flip 180       raw  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped shift x 12mm   icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped shift x 12mm   raw  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped shift y 20mm   icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped shift y 20mm   raw  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped shift z 15mm   icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped shift z 15mm   raw  wrong   1  rejected by C   0.0% [0-79]      fixed by ICP 0
+  t_block    propped tilt 15        icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped tilt 15        raw  wrong   1  rejected by C   0.0% [0-79]      fixed by ICP 0
+  t_block    propped yaw +15        icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped yaw +15        raw  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped yaw +30        icp  wrong   0  rejected by C    -               fixed by ICP 1
+  t_block    propped yaw +30        raw  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped yaw -15        icp  wrong   0  rejected by C    -               fixed by ICP 0
+  t_block    propped yaw -15        raw  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped yaw 180        icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped yaw 180        raw  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped yaw 90         icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+  t_block    propped yaw 90         raw  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 0
+
+F. Proposed 3D check: also require 'scan points within 3 mm' >= thr
+  t_block: within_3mm on correct poses 0.96 +/- 0.00 (max 0.96, n 5)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0       0       2/11                2/2           
+       0.3        0       0       1/11                1/2           
+       0.4        0       0       1/11                1/2           
+       0.5        0       0       1/11                1/2           
+       0.6        0       0       1/11                1/2           
+       0.7        0       0       1/11                1/2           
+       0.8        0       0       0/11                0/2           
+       0.9        0       0       0/11                0/2           
+
+J. Class and runtime
+  t_block    YOLO class right 100.0% [57-100], after class check 100.0% [57-100], swaps 0 (right 0), no detection 0
+             runtime s 4.43 +/- 0.66 (max 5.09, n 5)
+
+K. V-GAP vs plain RANSAC+ICP (same captures)
+   plain = RANSAC+ICP pose for YOLO's class, sent to the gripper with no gate;
+   V-GAP = after hypothesis check, table fallback, class check, then the gate.
+  t_block: 5 captures
+    plain RANSAC+ICP pose correct     0.0% [0-43]   wrong poses sent to the gripper: 5
+    V-GAP final pose correct        100.0% [57-100]
+    V-GAP after the gate: sent 5, correct 5, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 5/5 vs V-GAP 0/5
+                            used    n  rescued  harmed  same
+           90/180 deg hypothesis    1        1       0     0
+        table yaw-sweep fallback    4        4       0     0
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 0
+
+L. Gocator 3210 reference (objective grading: correct <= 5 deg & 5 mm, wrong > 10; propped hemisphere = center only)
+  t_block: 5 bursts at 1 views
+    reference quality: scan points within 1 mm 1.00 +/- 0.00 (max 1.00, n 1)
+                       RMSE mm 0.41 +/- 0.00 (max 0.41, n 1)
+                       margin to next pose 0.10 +/- 0.00 (max 0.10, n 1)
+                       repeat scans, mm 0.13 +/- 0.00 (max 0.13, n 1); deg 0.04 +/- 0.00 (max 0.04, n 1)
+    accepted poses vs reference: rot deg 90.24 +/- 0.60 (max 91.43, n 5)
+                                 trans mm 33.89 +/- 0.25 (max 34.38, n 5)
+    gate outcomes graded by the Gocator: FA 5
+    FA rate 100.0% [57-100]   precision   0.0% [0-43]   FR rate    -  
+    your grade = Gocator grade:   0.0% [0-43]
+      you correct    Gocator wrong      5
+    wrong poses reaching the gripper (Gocator-graded): plain RANSAC+ICP 5/5 vs V-GAP 5/5

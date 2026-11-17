@@ -1,0 +1,47 @@
+V-GAP grasp trials: 80 trials from 1 file(s)
+success = part lifted and still held after the 5 s hold (operator)
+attempted = the robot went in (closed, collided, aborted, protective stop)
+
+== l_block ==
+  vgap  success per trial 10/10 = 100.0% [72-100]   per attempt 10/10 = 100.0% [72-100]   failed attempts 0
+        success 10
+  plain success per trial 2/10 =  20.0% [6-51]   per attempt 2/2 = 100.0% [34-100]   failed attempts 0
+        success 2, no_grasp_unsafe 8
+  paired 10: only V-GAP succeeded 8, only plain 0, McNemar exact p = 0.00781
+  plain grasps the gate would REJECT: 0/4 succeeded
+
+== t_block ==
+  vgap  success per trial 10/10 = 100.0% [72-100]   per attempt 10/10 = 100.0% [72-100]   failed attempts 0
+        success 10
+  plain success per trial 1/10 =  10.0% [2-40]   per attempt 1/10 =  10.0% [2-40]   failed attempts 9
+        success 1, fail_dropped 1, aborted_safety 8
+  paired 10: only V-GAP succeeded 9, only plain 0, McNemar exact p = 0.00391
+  plain grasps the gate would ACCEPT: 1/1 succeeded
+  plain grasps the gate would REJECT: 0/9 succeeded
+
+== gearbox ==
+  vgap  success per trial 9/10 =  90.0% [60-98]   per attempt 9/9 = 100.0% [70-100]   failed attempts 0
+        success 9, no_grasp_gate 1
+  plain success per trial 2/10 =  20.0% [6-51]   per attempt 2/2 = 100.0% [34-100]   failed attempts 0
+        success 2, no_grasp_unsafe 8
+  paired 10: only V-GAP succeeded 7, only plain 0, McNemar exact p = 0.0156
+  plain grasps the gate would ACCEPT: 2/2 succeeded
+  plain grasps the gate would REJECT: 0/8 succeeded
+
+== hemisphere ==
+  vgap  success per trial 10/10 = 100.0% [72-100]   per attempt 10/10 = 100.0% [72-100]   failed attempts 0
+        success 10
+  plain success per trial 10/10 = 100.0% [72-100]   per attempt 10/10 = 100.0% [72-100]   failed attempts 0
+        success 10
+  paired 10: only V-GAP succeeded 0, only plain 0, McNemar exact p = 1
+  plain grasps the gate would ACCEPT: 10/10 succeeded
+
+== ALL ==
+  vgap  success per trial 39/40 =  97.5% [87-100]   per attempt 39/39 = 100.0% [91-100]   failed attempts 0
+        success 39, no_grasp_gate 1
+  plain success per trial 15/40 =  37.5% [24-53]   per attempt 15/24 =  62.5% [43-79]   failed attempts 9
+        success 15, fail_dropped 1, no_grasp_unsafe 16, aborted_safety 8
+  paired 40: only V-GAP succeeded 24, only plain 0, McNemar exact p = 1.19e-07
+  plain grasps the gate would ACCEPT: 13/13 succeeded
+  plain grasps the gate would REJECT: 0/21 succeeded
+

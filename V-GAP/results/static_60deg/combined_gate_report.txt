@@ -1,0 +1,388 @@
+V-GAP gate evaluation
+runs: 12   bursts: 480   objects: ['gearbox', 'hemisphere', 'l_block', 't_block']
+tau_c used: gearbox 0.9, hemisphere 0.85, l_block 0.85, t_block 0.81
+TA accepted+correct, FA accepted+WRONG, AO accepted+a bit off, TR rejected+wrong,
+FR rejected+correct, RO rejected+a bit off. Rates show 95% Wilson intervals.
+FA rate = FA / all wrong poses (how often a wrong pose gets through).
+Precision = TA / accepted (how often an accepted pose is right).
+FR rate = FR / all correct poses (good poses thrown away).
+
+A. Gate confusion
+
+  by object
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox                             120  106   0   0    1  12   0   1    0.0% [0-79]     100.0% [97-100]    10.2% [6-17]    
+  hemisphere                          120  115   0   5    0   0   0   0     -               95.8% [91-98]      0.0% [0-3]     
+  l_block                             120   85   0   3    4  17  11   0    0.0% [0-49]      96.6% [90-99]     16.7% [11-25]   
+  t_block                             120  103   0   7    1   9   0   0    0.0% [0-79]      93.6% [87-97]      8.0% [4-15]    
+
+  by object x color
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / grey                       40   40   0   0    0   0   0   0     -              100.0% [91-100]     0.0% [0-9]     
+  gearbox / reflective                 40   26   0   0    1  12   0   1    0.0% [0-79]     100.0% [87-100]    31.6% [19-47]   
+  gearbox / white                      40   40   0   0    0   0   0   0     -              100.0% [91-100]     0.0% [0-9]     
+  hemisphere / grey                    40   40   0   0    0   0   0   0     -              100.0% [91-100]     0.0% [0-9]     
+  hemisphere / reflective              40   35   0   5    0   0   0   0     -               87.5% [74-95]      0.0% [0-10]    
+  hemisphere / white                   40   40   0   0    0   0   0   0     -              100.0% [91-100]     0.0% [0-9]     
+  l_block / grey                       40   29   0   0    4   3   4   0    0.0% [0-49]     100.0% [88-100]     9.4% [3-24]    
+  l_block / reflective                 40   20   0   1    0  12   7   0     -               95.2% [77-99]     37.5% [23-55]   
+  l_block / white                      40   36   0   2    0   2   0   0     -               94.7% [83-99]      5.3% [1-17]    
+  t_block / grey                       40   33   0   5    0   2   0   0     -               86.8% [73-94]      5.7% [2-19]    
+  t_block / reflective                 40   34   0   0    1   5   0   0    0.0% [0-79]     100.0% [90-100]    12.8% [6-27]    
+  t_block / white                      40   36   0   2    0   2   0   0     -               94.7% [83-99]      5.3% [1-17]    
+
+  by object x placement
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / flat                       60   55   0   0    1   3   0   1    0.0% [0-79]     100.0% [93-100]     5.2% [2-14]    
+  gearbox / propped                    60   51   0   0    0   9   0   0     -              100.0% [93-100]    15.0% [8-26]    
+  hemisphere / flat                    60   60   0   0    0   0   0   0     -              100.0% [94-100]     0.0% [0-6]     
+  hemisphere / propped                 60   55   0   5    0   0   0   0     -               91.7% [82-96]      0.0% [0-7]     
+  l_block / flat                       60   41   0   0    4   8   7   0    0.0% [0-49]     100.0% [91-100]    16.3% [9-29]    
+  l_block / propped                    60   44   0   3    0   9   4   0     -               93.6% [83-98]     17.0% [9-29]    
+  t_block / flat                       60   54   0   3    1   2   0   0    0.0% [0-79]      94.7% [86-98]      3.6% [1-12]    
+  t_block / propped                    60   49   0   4    0   7   0   0     -               92.5% [82-97]     12.5% [6-24]    
+
+  by object x placement x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / flat / 60.0                60   55   0   0    1   3   0   1    0.0% [0-79]     100.0% [93-100]     5.2% [2-14]    
+  gearbox / propped / 60.0             60   51   0   0    0   9   0   0     -              100.0% [93-100]    15.0% [8-26]    
+  hemisphere / flat / 60.0             60   60   0   0    0   0   0   0     -              100.0% [94-100]     0.0% [0-6]     
+  hemisphere / propped / 60.0          60   55   0   5    0   0   0   0     -               91.7% [82-96]      0.0% [0-7]     
+  l_block / flat / 60.0                60   41   0   0    4   8   7   0    0.0% [0-49]     100.0% [91-100]    16.3% [9-29]    
+  l_block / propped / 60.0             60   44   0   3    0   9   4   0     -               93.6% [83-98]     17.0% [9-29]    
+  t_block / flat / 60.0                60   54   0   3    1   2   0   0    0.0% [0-79]      94.7% [86-98]      3.6% [1-12]    
+  t_block / propped / 60.0             60   49   0   4    0   7   0   0     -               92.5% [82-97]     12.5% [6-24]    
+
+  by object x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / 60.0                      120  106   0   0    1  12   0   1    0.0% [0-79]     100.0% [97-100]    10.2% [6-17]    
+  hemisphere / 60.0                   120  115   0   5    0   0   0   0     -               95.8% [91-98]      0.0% [0-3]     
+  l_block / 60.0                      120   85   0   3    4  17  11   0    0.0% [0-49]      96.6% [90-99]     16.7% [11-25]   
+  t_block / 60.0                      120  103   0   7    1   9   0   0    0.0% [0-79]      93.6% [87-97]      8.0% [4-15]    
+
+  by object x orientation
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / 1                          30   25   0   0    1   3   0   1    0.0% [0-79]     100.0% [87-100]    10.7% [4-27]    
+  gearbox / 2                          30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+  gearbox / 3                          30   25   0   0    0   5   0   0     -              100.0% [87-100]    16.7% [7-34]    
+  gearbox / 4                          30   26   0   0    0   4   0   0     -              100.0% [87-100]    13.3% [5-30]    
+  hemisphere / 1                       30   25   0   5    0   0   0   0     -               83.3% [66-93]      0.0% [0-13]    
+  hemisphere / 2                       30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+  hemisphere / 3                       30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+  hemisphere / 4                       30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+  l_block / 1                          30   24   0   1    0   5   0   0     -               96.0% [80-99]     17.2% [8-35]    
+  l_block / 2                          30   18   0   1    0   4   7   0     -               94.7% [75-99]     18.2% [7-39]    
+  l_block / 3                          30   23   0   0    4   3   0   0    0.0% [0-49]     100.0% [86-100]    11.5% [4-29]    
+  l_block / 4                          30   20   0   1    0   5   4   0     -               95.2% [77-99]     20.0% [9-39]    
+  t_block / 1                          30   21   0   2    1   6   0   0    0.0% [0-79]      91.3% [73-98]     22.2% [11-41]   
+  t_block / 2                          30   26   0   2    0   2   0   0     -               92.9% [77-98]      7.1% [2-23]    
+  t_block / 3                          30   27   0   2    0   1   0   0     -               93.1% [78-98]      3.6% [1-18]    
+  t_block / 4                          30   29   0   1    0   0   0   0     -               96.7% [83-99]      0.0% [0-12]    
+
+  by object x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / normal                    120  106   0   0    1  12   0   1    0.0% [0-79]     100.0% [97-100]    10.2% [6-17]    
+  hemisphere / normal                 120  115   0   5    0   0   0   0     -               95.8% [91-98]      0.0% [0-3]     
+  l_block / normal                    120   85   0   3    4  17  11   0    0.0% [0-49]      96.6% [90-99]     16.7% [11-25]   
+  t_block / normal                    120  103   0   7    1   9   0   0    0.0% [0-79]      93.6% [87-97]      8.0% [4-15]    
+
+  by object x color x placement x angle_deg x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  gearbox / grey / flat / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  gearbox / grey / propped / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  gearbox / reflective / flat / 60.0 / normal   20   15   0   0    1   3   0   1    0.0% [0-79]     100.0% [80-100]    16.7% [6-39]    
+  gearbox / reflective / propped / 60.0 / normal   20   11   0   0    0   9   0   0     -              100.0% [74-100]    45.0% [26-66]   
+  gearbox / white / flat / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  gearbox / white / propped / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  hemisphere / grey / flat / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  hemisphere / grey / propped / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  hemisphere / reflective / flat / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  hemisphere / reflective / propped / 60.0 / normal   20   15   0   5    0   0   0   0     -               75.0% [53-89]      0.0% [0-20]    
+  hemisphere / white / flat / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  hemisphere / white / propped / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  l_block / grey / flat / 60.0 / normal   20   12   0   0    4   0   4   0    0.0% [0-49]     100.0% [76-100]     0.0% [0-24]    
+  l_block / grey / propped / 60.0 / normal   20   17   0   0    0   3   0   0     -              100.0% [82-100]    15.0% [5-36]    
+  l_block / reflective / flat / 60.0 / normal   20    9   0   0    0   8   3   0     -              100.0% [70-100]    47.1% [26-69]   
+  l_block / reflective / propped / 60.0 / normal   20   11   0   1    0   4   4   0     -               91.7% [65-99]     26.7% [11-52]   
+  l_block / white / flat / 60.0 / normal   20   20   0   0    0   0   0   0     -              100.0% [84-100]     0.0% [0-16]    
+  l_block / white / propped / 60.0 / normal   20   16   0   2    0   2   0   0     -               88.9% [67-97]     11.1% [3-33]    
+  t_block / grey / flat / 60.0 / normal   20   18   0   2    0   0   0   0     -               90.0% [70-97]      0.0% [0-18]    
+  t_block / grey / propped / 60.0 / normal   20   15   0   3    0   2   0   0     -               83.3% [61-94]     11.8% [3-34]    
+  t_block / reflective / flat / 60.0 / normal   20   19   0   0    1   0   0   0    0.0% [0-79]     100.0% [83-100]     0.0% [0-17]    
+  t_block / reflective / propped / 60.0 / normal   20   15   0   0    0   5   0   0     -              100.0% [80-100]    25.0% [11-47]   
+  t_block / white / flat / 60.0 / normal   20   17   0   1    0   2   0   0     -               94.4% [74-99]     10.5% [3-31]    
+  t_block / white / propped / 60.0 / normal   20   19   0   1    0   0   0   0     -               95.0% [76-99]      0.0% [0-17]    
+
+B. Rejections by reason (what the rejected poses really were)
+  gearbox    geometry                   total   13: wrong 1, correct 12 (FR), a bit off 0
+  l_block    geometry                   total   32: wrong 4, correct 17 (FR), a bit off 11
+  t_block    ambiguous orientation      total    4: wrong 0, correct 4 (FR), a bit off 0
+  t_block    geometry                   total    6: wrong 1, correct 5 (FR), a bit off 0
+
+C. Accuracy of ACCEPTED poses (mean +/- std)
+  gearbox: 106 accepted -> correct 106, a bit off 0, wrong 0
+    offset from your confirmed pose, mm : 0.19 +/- 0.27 (max 1.35, n 106)
+    offset from your confirmed pose, deg: 0.19 +/- 0.21 (max 0.94, n 106)
+    repeat spread (10 bursts), mm       : 0.13 +/- 0.18 (max 1.08, n 106)
+    repeat spread (10 bursts), deg      : 0.15 +/- 0.17 (max 0.94, n 106)
+    scan points within 3 mm of CAD      : 0.96 +/- 0.02 (max 0.99, n 106)
+    ICP RMSE at 3 mm, mm                : 1.43 +/- 0.07 (max 1.60, n 106)
+    C                                   : 0.94 +/- 0.01 (max 0.96, n 106)
+    angle 60.0: offset mm 0.19 +/- 0.27 (max 1.35, n 106)
+  hemisphere: 120 accepted -> correct 115, a bit off 5, wrong 0
+    offset from your confirmed pose, mm : 0.12 +/- 0.11 (max 0.57, n 115)
+    offset from your confirmed pose, deg: 0.09 +/- 0.23 (max 1.04, n 115)
+    repeat spread (10 bursts), mm       : 0.09 +/- 0.08 (max 0.45, n 120)
+    repeat spread (10 bursts), deg      : 0.07 +/- 0.18 (max 1.09, n 120)
+    scan points within 3 mm of CAD      : 0.88 +/- 0.15 (max 1.00, n 120)
+    ICP RMSE at 3 mm, mm                : 1.16 +/- 0.19 (max 1.44, n 120)
+    C                                   : 0.92 +/- 0.02 (max 0.96, n 120)
+    angle 60.0: offset mm 0.12 +/- 0.11 (max 0.57, n 115)
+  l_block: 88 accepted -> correct 85, a bit off 3, wrong 0
+    offset from your confirmed pose, mm : 0.86 +/- 1.41 (max 8.21, n 88)
+    offset from your confirmed pose, deg: 0.51 +/- 0.96 (max 8.45, n 88)
+    repeat spread (10 bursts), mm       : 1.54 +/- 4.06 (max 29.60, n 88)
+    repeat spread (10 bursts), deg      : 1.54 +/- 8.74 (max 82.42, n 88)
+    scan points within 3 mm of CAD      : 0.95 +/- 0.06 (max 1.00, n 88)
+    ICP RMSE at 3 mm, mm                : 1.33 +/- 0.13 (max 1.55, n 88)
+    C                                   : 0.89 +/- 0.02 (max 0.94, n 88)
+    angle 60.0: offset mm 0.86 +/- 1.41 (max 8.21, n 88)
+  t_block: 110 accepted -> correct 103, a bit off 7, wrong 0
+    offset from your confirmed pose, mm : 1.32 +/- 1.81 (max 7.83, n 110)
+    offset from your confirmed pose, deg: 0.53 +/- 0.56 (max 2.57, n 110)
+    repeat spread (10 bursts), mm       : 0.95 +/- 1.48 (max 7.43, n 110)
+    repeat spread (10 bursts), deg      : 0.45 +/- 0.45 (max 2.10, n 110)
+    scan points within 3 mm of CAD      : 0.95 +/- 0.03 (max 1.00, n 110)
+    ICP RMSE at 3 mm, mm                : 1.40 +/- 0.11 (max 1.63, n 110)
+    C                                   : 0.90 +/- 0.03 (max 0.96, n 110)
+    angle 60.0: offset mm 1.32 +/- 1.81 (max 7.83, n 110)
+
+D. Gate on vs off (bursts with a pose)
+  gearbox    gate OFF: 1/119 wrong poses sent on (0.8% [0-5]); gate ON: 0/106 (0.0% [0-3]); good poses lost to the gate: 12
+  hemisphere gate OFF: 0/120 wrong poses sent on (0.0% [0-3]); gate ON: 0/120 (0.0% [0-3]); good poses lost to the gate: 0
+  l_block    gate OFF: 4/120 wrong poses sent on (3.3% [1-8]); gate ON: 0/88 (0.0% [0-4]); good poses lost to the gate: 17
+  t_block    gate OFF: 1/120 wrong poses sent on (0.8% [0-5]); gate ON: 0/110 (0.0% [0-3]); good poses lost to the gate: 9
+
+E. Adversarial wrong poses: share REJECTED by C (raw = no ICP, icp = after ICP)
+   only poses that are really wrong (> 10 deg or > 10 mm) count; ICP often fixes small errors, those are listed as 'fixed by ICP'
+  gearbox    flat flip 180          icp  wrong   0  rejected by C    -               fixed by ICP 10
+  gearbox    flat flip 180          raw  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    flat shift x 12mm      icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 11
+  gearbox    flat shift x 12mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    flat shift y 20mm      icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    flat shift y 20mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    flat shift z 15mm      icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    flat shift z 15mm      raw  wrong  12  rejected by C   8.3% [1-35]      fixed by ICP 0
+  gearbox    flat tilt 15           icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    flat tilt 15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    flat yaw +15           icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    flat yaw +15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    flat yaw +30           icp  wrong   0  rejected by C    -               fixed by ICP 11
+  gearbox    flat yaw +30           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    flat yaw -15           icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    flat yaw -15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    flat yaw 180           icp  wrong   0  rejected by C    -               fixed by ICP 11
+  gearbox    flat yaw 180           raw  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    flat yaw 90            icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    flat yaw 90            raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    propped flip 180       icp  wrong   0  rejected by C    -               fixed by ICP 10
+  gearbox    propped flip 180       raw  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped shift x 12mm   icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped shift x 12mm   raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    propped shift y 20mm   icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped shift y 20mm   raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    propped shift z 15mm   icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped shift z 15mm   raw  wrong  12  rejected by C   0.0% [0-24]      fixed by ICP 0
+  gearbox    propped tilt 15        icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped tilt 15        raw  wrong  12  rejected by C  91.7% [65-99]     fixed by ICP 0
+  gearbox    propped yaw +15        icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped yaw +15        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    propped yaw +30        icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 11
+  gearbox    propped yaw +30        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    propped yaw -15        icp  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped yaw -15        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    propped yaw 180        icp  wrong   0  rejected by C    -               fixed by ICP 9
+  gearbox    propped yaw 180        raw  wrong   0  rejected by C    -               fixed by ICP 12
+  gearbox    propped yaw 90         icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  gearbox    propped yaw 90         raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  hemisphere flat flip 180          raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  hemisphere flat shift x 12mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  hemisphere flat shift y 20mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  hemisphere flat shift z 15mm      raw  wrong  12  rejected by C   0.0% [0-24]      fixed by ICP 0
+  hemisphere flat tilt 15           raw  wrong  12  rejected by C  33.3% [14-61]     fixed by ICP 0
+  hemisphere propped flip 180       raw  wrong  11  rejected by C 100.0% [74-100]    fixed by ICP 0
+  hemisphere propped shift x 12mm   raw  wrong  11  rejected by C 100.0% [74-100]    fixed by ICP 0
+  hemisphere propped shift y 20mm   raw  wrong  11  rejected by C 100.0% [74-100]    fixed by ICP 0
+  hemisphere propped shift z 15mm   raw  wrong  11  rejected by C   0.0% [0-26]      fixed by ICP 0
+  hemisphere propped tilt 15        raw  wrong  11  rejected by C  63.6% [35-85]     fixed by ICP 0
+  l_block    flat flip 180          icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat flip 180          raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat shift x 12mm      icp  wrong   0  rejected by C    -               fixed by ICP 12
+  l_block    flat shift x 12mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat shift y 20mm      icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 7
+  l_block    flat shift y 20mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat shift z 15mm      icp  wrong   0  rejected by C    -               fixed by ICP 12
+  l_block    flat shift z 15mm      raw  wrong  12  rejected by C  16.7% [5-45]      fixed by ICP 0
+  l_block    flat tilt 15           icp  wrong   0  rejected by C    -               fixed by ICP 12
+  l_block    flat tilt 15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat yaw +15           icp  wrong   0  rejected by C    -               fixed by ICP 10
+  l_block    flat yaw +15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat yaw +30           icp  wrong   0  rejected by C    -               fixed by ICP 8
+  l_block    flat yaw +30           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat yaw -15           icp  wrong   0  rejected by C    -               fixed by ICP 10
+  l_block    flat yaw -15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat yaw 180           icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat yaw 180           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat yaw 90            icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    flat yaw 90            raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped flip 180       icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped flip 180       raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped shift x 12mm   icp  wrong   0  rejected by C    -               fixed by ICP 11
+  l_block    propped shift x 12mm   raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped shift y 20mm   icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 8
+  l_block    propped shift y 20mm   raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped shift z 15mm   icp  wrong   0  rejected by C    -               fixed by ICP 11
+  l_block    propped shift z 15mm   raw  wrong  12  rejected by C  16.7% [5-45]      fixed by ICP 0
+  l_block    propped tilt 15        icp  wrong   0  rejected by C    -               fixed by ICP 12
+  l_block    propped tilt 15        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped yaw +15        icp  wrong   0  rejected by C    -               fixed by ICP 10
+  l_block    propped yaw +15        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped yaw +30        icp  wrong   1  rejected by C 100.0% [21-100]    fixed by ICP 8
+  l_block    propped yaw +30        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped yaw -15        icp  wrong   0  rejected by C    -               fixed by ICP 9
+  l_block    propped yaw -15        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped yaw 180        icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped yaw 180        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped yaw 90         icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  l_block    propped yaw 90         raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat flip 180          icp  wrong   0  rejected by C    -               fixed by ICP 11
+  t_block    flat flip 180          raw  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    flat shift x 12mm      icp  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    flat shift x 12mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat shift y 20mm      icp  wrong   0  rejected by C    -               fixed by ICP 8
+  t_block    flat shift y 20mm      raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat shift z 15mm      icp  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    flat shift z 15mm      raw  wrong  12  rejected by C   0.0% [0-24]      fixed by ICP 0
+  t_block    flat tilt 15           icp  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    flat tilt 15           raw  wrong  12  rejected by C  75.0% [47-91]     fixed by ICP 0
+  t_block    flat yaw +15           icp  wrong   0  rejected by C    -               fixed by ICP 11
+  t_block    flat yaw +15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat yaw +30           icp  wrong   0  rejected by C    -               fixed by ICP 10
+  t_block    flat yaw +30           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat yaw -15           icp  wrong   0  rejected by C    -               fixed by ICP 11
+  t_block    flat yaw -15           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat yaw 180           icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat yaw 180           raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat yaw 90            icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    flat yaw 90            raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped flip 180       icp  wrong   0  rejected by C    -               fixed by ICP 11
+  t_block    propped flip 180       raw  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    propped shift x 12mm   icp  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    propped shift x 12mm   raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped shift y 20mm   icp  wrong   0  rejected by C    -               fixed by ICP 10
+  t_block    propped shift y 20mm   raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped shift z 15mm   icp  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    propped shift z 15mm   raw  wrong  12  rejected by C   0.0% [0-24]      fixed by ICP 0
+  t_block    propped tilt 15        icp  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    propped tilt 15        raw  wrong  12  rejected by C  58.3% [32-81]     fixed by ICP 0
+  t_block    propped yaw +15        icp  wrong   0  rejected by C    -               fixed by ICP 10
+  t_block    propped yaw +15        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped yaw +30        icp  wrong   0  rejected by C    -               fixed by ICP 9
+  t_block    propped yaw +30        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped yaw -15        icp  wrong   0  rejected by C    -               fixed by ICP 12
+  t_block    propped yaw -15        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped yaw 180        icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped yaw 180        raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped yaw 90         icp  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+  t_block    propped yaw 90         raw  wrong  12  rejected by C 100.0% [76-100]    fixed by ICP 0
+
+F. Proposed 3D check: also require 'scan points within 3 mm' >= thr
+  gearbox: within_3mm on correct poses 0.96 +/- 0.02 (max 1.00, n 118)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0      12      24/218              24/48          
+       0.3        0      12       1/218               1/48          
+       0.4        0      12       1/218               1/48          
+       0.5        0      12       1/218               1/48          
+       0.6        0      12       0/218               0/48          
+       0.7        0      12       0/218               0/48          
+       0.8        0      12       0/218               0/48          
+       0.9        0      12       0/218               0/48          
+  hemisphere: within_3mm on correct poses 0.89 +/- 0.15 (max 1.00, n 115)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0       0      35/115              35/46          
+       0.3        0       0      12/115              12/46          
+       0.4        0       0      12/115              12/46          
+       0.5        0       0       8/115               8/46          
+       0.6        0       0       0/115               0/46          
+       0.7        0      30       0/115               0/46          
+       0.8        0      35       0/115               0/46          
+       0.9        0      35       0/115               0/46          
+  l_block: within_3mm on correct poses 0.95 +/- 0.05 (max 1.00, n 102)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0      17      20/315              20/48          
+       0.3        0      17       0/315               0/48          
+       0.4        0      17       0/315               0/48          
+       0.5        0      17       0/315               0/48          
+       0.6        0      17       0/315               0/48          
+       0.7        0      17       0/315               0/48          
+       0.8        0      21       0/315               0/48          
+       0.9        0      26       0/315               0/48          
+  t_block: within_3mm on correct poses 0.95 +/- 0.03 (max 1.00, n 112)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0       9      32/264              32/48          
+       0.3        0       9       8/264               8/48          
+       0.4        0       9       8/264               8/48          
+       0.5        0       9       8/264               8/48          
+       0.6        0       9       7/264               7/48          
+       0.7        0       9       1/264               1/48          
+       0.8        0       9       0/264               0/48          
+       0.9        0      20       0/264               0/48          
+
+J. Class and runtime
+  gearbox    YOLO class right 100.0% [97-100], after class check 100.0% [97-100], swaps 0 (right 0), no detection 1
+             runtime s 3.29 +/- 0.23 (max 3.94, n 119)
+  hemisphere YOLO class right 100.0% [97-100], after class check 100.0% [97-100], swaps 0 (right 0), no detection 0
+             runtime s 1.74 +/- 0.97 (max 4.48, n 120)
+  l_block    YOLO class right 70.0% [61-77], after class check 97.5% [93-99], swaps 39 (right 36), no detection 0
+             runtime s 4.34 +/- 0.50 (max 5.29, n 120)
+  t_block    YOLO class right 100.0% [97-100], after class check 100.0% [97-100], swaps 0 (right 0), no detection 0
+             runtime s 3.93 +/- 0.65 (max 5.01, n 120)
+
+K. V-GAP vs plain RANSAC+ICP (same captures)
+   plain = RANSAC+ICP pose for YOLO's class, sent to the gripper with no gate;
+   V-GAP = after hypothesis check, table fallback, class check, then the gate.
+  gearbox: 119 captures
+    plain RANSAC+ICP pose correct    31.9% [24-41]   wrong poses sent to the gripper: 81
+    V-GAP final pose correct         99.2% [95-100]
+    V-GAP after the gate: sent 106, correct 106, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 81/119 vs V-GAP 0/119
+                            used    n  rescued  harmed  same
+           90/180 deg hypothesis   11       10       0     1
+        table yaw-sweep fallback   73       70       0     3
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 1
+  hemisphere: 120 captures
+    plain RANSAC+ICP pose correct    95.8% [91-98]   wrong poses sent to the gripper: 0
+    V-GAP final pose correct         95.8% [91-98]
+    V-GAP after the gate: sent 120, correct 115, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 0/120 vs V-GAP 0/120
+                            used    n  rescued  harmed  same
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 0
+  l_block: 120 captures
+    plain RANSAC+ICP pose correct     7.5% [4-14]   wrong poses sent to the gripper: 108
+    V-GAP final pose correct         85.0% [78-90]
+    V-GAP after the gate: sent 88, correct 85, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 108/120 vs V-GAP 0/120
+                            used    n  rescued  harmed  same
+           90/180 deg hypothesis    7        7       0     0
+        table yaw-sweep fallback   69       56       0    13
+                 L/T class check   39       33       0     6
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 14
+  t_block: 120 captures
+    plain RANSAC+ICP pose correct    20.0% [14-28]   wrong poses sent to the gripper: 91
+    V-GAP final pose correct         93.3% [87-97]
+    V-GAP after the gate: sent 110, correct 103, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 91/120 vs V-GAP 0/120
+                            used    n  rescued  harmed  same
+           90/180 deg hypothesis   34       34       0     0
+        table yaw-sweep fallback   65       61       0     4
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 1

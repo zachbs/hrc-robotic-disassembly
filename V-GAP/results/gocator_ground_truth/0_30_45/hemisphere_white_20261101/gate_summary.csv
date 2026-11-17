@@ -1,0 +1,22 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,hemisphere,30,30,0,30,30,0,0,0,0,0,0
+object+color,hemisphere / white,30,30,0,30,30,0,0,0,0,0,0
+object+placement,hemisphere / flat,15,15,0,15,15,0,0,0,0,0,0
+object+placement,hemisphere / propped,15,15,0,15,15,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / flat / 0.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / flat / 30.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / flat / 45.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / propped / 0.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / propped / 30.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,hemisphere / propped / 45.0,5,5,0,5,5,0,0,0,0,0,0
+object+angle_deg,hemisphere / 0.0,10,10,0,10,10,0,0,0,0,0,0
+object+angle_deg,hemisphere / 30.0,10,10,0,10,10,0,0,0,0,0,0
+object+angle_deg,hemisphere / 45.0,10,10,0,10,10,0,0,0,0,0,0
+object+orientation,hemisphere / 1,30,30,0,30,30,0,0,0,0,0,0
+object+condition,hemisphere / normal,30,30,0,30,30,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / flat / 0.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / flat / 30.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / flat / 45.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 0.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 30.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,hemisphere / white / propped / 45.0 / normal,5,5,0,5,5,0,0,0,0,0,0

@@ -1,0 +1,2 @@
+object,color,view,scans,gt_status,gt_fitness_1mm,gt_rmse_mm,gt_margin,gt_n_points,gt_repeat_deg,gt_repeat_mm,gt_rot_valid,gt_base
+l_block,white,a0_propped_o1_normal,3,ok,0.9987,0.469,0.9987,5239,0.252,0.139,True,"[[-0.004781, -0.994121, -0.108171, 0.254805], [0.994149, -0.016398, 0.106762, -0.492064], [-0.107908, -0.107028, 0.988383, 0.021496], [0.0, 0.0, 0.0, 1.0]]"

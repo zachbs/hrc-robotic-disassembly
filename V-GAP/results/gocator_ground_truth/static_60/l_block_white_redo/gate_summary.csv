@@ -1,0 +1,12 @@
+level,group,n,accepted,wrong,good,TA,FA,AO,TR,FR,RO,no detection
+object,l_block,10,10,0,10,10,0,0,0,0,0,0
+object+color,l_block / white,10,10,0,10,10,0,0,0,0,0,0
+object+placement,l_block / flat,5,5,0,5,5,0,0,0,0,0,0
+object+placement,l_block / propped,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,l_block / flat / 60.0,5,5,0,5,5,0,0,0,0,0,0
+object+placement+angle_deg,l_block / propped / 60.0,5,5,0,5,5,0,0,0,0,0,0
+object+angle_deg,l_block / 60.0,10,10,0,10,10,0,0,0,0,0,0
+object+orientation,l_block / 1,10,10,0,10,10,0,0,0,0,0,0
+object+condition,l_block / normal,10,10,0,10,10,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / white / flat / 60.0 / normal,5,5,0,5,5,0,0,0,0,0,0
+object+color+placement+angle_deg+condition,l_block / white / propped / 60.0 / normal,5,5,0,5,5,0,0,0,0,0,0

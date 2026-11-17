@@ -1,0 +1,126 @@
+V-GAP gate evaluation
+runs: 1   bursts: 30   objects: ['hemisphere']
+tau_c used: hemisphere 0.85
+TA accepted+correct, FA accepted+WRONG, AO accepted+a bit off, TR rejected+wrong,
+FR rejected+correct, RO rejected+a bit off. Rates show 95% Wilson intervals.
+FA rate = FA / all wrong poses (how often a wrong pose gets through).
+Precision = TA / accepted (how often an accepted pose is right).
+FR rate = FR / all correct poses (good poses thrown away).
+
+A. Gate confusion
+
+  by object
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere                           30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x color
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere / white                   30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x placement
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere / flat                    15   15   0   0    0   0   0   0     -              100.0% [80-100]     0.0% [0-20]    
+  hemisphere / propped                 15   15   0   0    0   0   0   0     -              100.0% [80-100]     0.0% [0-20]    
+
+  by object x placement x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere / flat / 0.0               5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / flat / 30.0              5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / flat / 45.0              5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / propped / 0.0            5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / propped / 30.0           5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / propped / 45.0           5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+  by object x angle_deg
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere / 0.0                     10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+  hemisphere / 30.0                    10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+  hemisphere / 45.0                    10   10   0   0    0   0   0   0     -              100.0% [72-100]     0.0% [0-28]    
+
+  by object x orientation
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere / 1                       30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere / normal                  30   30   0   0    0   0   0   0     -              100.0% [89-100]     0.0% [0-11]    
+
+  by object x color x placement x angle_deg x condition
+  group                                 n   TA  FA  AO   TR  FR  RO  nd  FA rate           precision         FR rate          
+  hemisphere / white / flat / 0.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / white / flat / 30.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / white / flat / 45.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / white / propped / 0.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / white / propped / 30.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+  hemisphere / white / propped / 45.0 / normal    5    5   0   0    0   0   0   0     -              100.0% [57-100]     0.0% [0-43]    
+
+B. Rejections by reason (what the rejected poses really were)
+
+C. Accuracy of ACCEPTED poses (mean +/- std)
+  hemisphere: 30 accepted -> correct 30, a bit off 0, wrong 0
+    offset from your confirmed pose, mm : 0.04 +/- 0.03 (max 0.08, n 30)
+    offset from your confirmed pose, deg: 0.03 +/- 0.02 (max 0.07, n 30)
+    repeat spread (10 bursts), mm       : 0.03 +/- 0.02 (max 0.08, n 30)
+    repeat spread (10 bursts), deg      : 0.03 +/- 0.02 (max 0.07, n 30)
+    scan points within 3 mm of CAD      : 1.00 +/- 0.00 (max 1.00, n 30)
+    ICP RMSE at 3 mm, mm                : 0.95 +/- 0.04 (max 1.02, n 30)
+    C                                   : 0.96 +/- 0.00 (max 0.96, n 30)
+    angle 0.0: offset mm 0.03 +/- 0.02 (max 0.06, n 10)
+    angle 30.0: offset mm 0.04 +/- 0.03 (max 0.08, n 10)
+    angle 45.0: offset mm 0.04 +/- 0.03 (max 0.08, n 10)
+
+D. Gate on vs off (bursts with a pose)
+  hemisphere gate OFF: 0/30 wrong poses sent on (0.0% [0-11]); gate ON: 0/30 (0.0% [0-11]); good poses lost to the gate: 0
+
+E. Adversarial wrong poses: share REJECTED by C (raw = no ICP, icp = after ICP)
+   only poses that are really wrong (> 10 deg or > 10 mm) count; ICP often fixes small errors, those are listed as 'fixed by ICP'
+  hemisphere flat flip 180          raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  hemisphere flat shift x 12mm      raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  hemisphere flat shift y 20mm      raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  hemisphere flat shift z 15mm      raw  wrong   3  rejected by C   0.0% [0-56]      fixed by ICP 0
+  hemisphere flat tilt 15           raw  wrong   3  rejected by C  33.3% [6-79]      fixed by ICP 0
+  hemisphere propped flip 180       raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  hemisphere propped shift x 12mm   raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  hemisphere propped shift y 20mm   raw  wrong   3  rejected by C 100.0% [44-100]    fixed by ICP 0
+  hemisphere propped shift z 15mm   raw  wrong   3  rejected by C   0.0% [0-56]      fixed by ICP 0
+  hemisphere propped tilt 15        raw  wrong   3  rejected by C  66.7% [21-94]     fixed by ICP 0
+
+F. Proposed 3D check: also require 'scan points within 3 mm' >= thr
+  hemisphere: within_3mm on correct poses 1.00 +/- 0.00 (max 1.00, n 30)
+     thr  real FA real FR  adv wrong passed  adv depth/tilt passed
+    C only        0       0       9/30                9/12          
+       0.3        0       0       3/30                3/12          
+       0.4        0       0       3/30                3/12          
+       0.5        0       0       3/30                3/12          
+       0.6        0       0       0/30                0/12          
+       0.7        0       0       0/30                0/12          
+       0.8        0       0       0/30                0/12          
+       0.9        0       0       0/30                0/12          
+
+J. Class and runtime
+  hemisphere YOLO class right 100.0% [89-100], after class check 100.0% [89-100], swaps 0 (right 0), no detection 0
+             runtime s 1.43 +/- 0.68 (max 3.58, n 30)
+
+K. V-GAP vs plain RANSAC+ICP (same captures)
+   plain = RANSAC+ICP pose for YOLO's class, sent to the gripper with no gate;
+   V-GAP = after hypothesis check, table fallback, class check, then the gate.
+  hemisphere: 30 captures
+    plain RANSAC+ICP pose correct   100.0% [89-100]   wrong poses sent to the gripper: 0
+    V-GAP final pose correct        100.0% [89-100]
+    V-GAP after the gate: sent 30, correct 30, wrong poses sent: 0
+    wrong poses reaching the gripper: plain 0/30 vs V-GAP 0/30
+                            used    n  rescued  harmed  same
+    plain-wrong poses that V-GAP could not fix but the gate rejected: 0
+
+L. Gocator 3210 reference (objective grading: correct <= 5 deg & 5 mm, wrong > 10; propped hemisphere = center only)
+  hemisphere: 30 bursts at 6 views
+    reference quality: scan points within 1 mm 1.00 +/- 0.00 (max 1.00, n 6)
+                       RMSE mm 0.45 +/- 0.00 (max 0.46, n 6)
+                       margin to next pose -
+                       repeat scans, mm 0.05 +/- 0.01 (max 0.08, n 6); deg 0.00 +/- 0.00 (max 0.00, n 6)
+    accepted poses vs reference: rot deg 0.91 +/- 0.06 (max 1.00, n 15)
+                                 trans mm 1.61 +/- 0.20 (max 2.10, n 30)
+    gate outcomes graded by the Gocator: TA 30
+    FA rate    -     precision 100.0% [89-100]   FR rate   0.0% [0-11]
+    your grade = Gocator grade: 100.0% [89-100]
+    wrong poses reaching the gripper (Gocator-graded): plain RANSAC+ICP 0/30 vs V-GAP 0/30
