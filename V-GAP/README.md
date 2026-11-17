@@ -99,11 +99,10 @@ V-GAP/
 | `gocator_cam.py`, `gocator_handeye.py`, `gocator_gt.py`, `gocator_regrade.py` | Gocator capture, its hand-eye, independent CAD fit for ground truth, and re-grading of finished runs. |
 | `train_seg.py`, `collect_hard_examples.py` | YOLO segmentation training (split by video clip, label checks) and hard-example capture. |
 | `apply_3d_check_offline.py`, `make_fig*.py` | Re-analysis and figures. |
-| `depth_settings_sweep.py`, `exposure_sweep.py` | RealSense laser/exposure sweeps. |
+| `depth_settings_sweep.py` | RealSense laser power / exposure sweep used to choose the camera settings. |
 | `demo_recorder.py` | Split-screen demo video (live YOLO, 2D gate, 3D check) for the eval and grasp scripts (`--demo-video`). |
-| `sim_stress_test.py`, `sim_method_compare.py`, `test_*.py` | Simulated RealSense scans: stress test, method comparison, unit tests (no hardware needed). |
+| `test_vgap_pipeline_sim.py`, `sim_stress_test.py` | Run the pipeline on simulated RealSense scans (no hardware needed). `sim_stress_test.py` also holds shared helpers that the robot scripts import. |
 | `vgap_trials_ur5e.py` | Earlier trial runner; shared helpers used by the eval and grasp scripts. |
-| `vgap_gate.py`, `sim_gearbox_gate.py`, `shift_hand_eye.py` | Early gearbox gate prototype and a small hand-eye utility. |
 
 ## Model and dataset
 

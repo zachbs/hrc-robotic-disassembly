@@ -1,6 +1,6 @@
 # vgap_pipeline.py: per-object parameters and offline test
 
-Code: `code/vgap/vgap_pipeline.py` (new file; `IOU_pipeline.py` is untouched). Offline test: `code/vgap/test_vgap_pipeline_sim.py`, results in `test_vgap_pipeline_sim_results.txt`.
+Code: `code/vgap/vgap_pipeline.py`. Offline test: `code/vgap/test_vgap_pipeline_sim.py`.
 
 ## Object sizes used
 

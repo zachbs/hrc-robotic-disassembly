@@ -1,7 +1,6 @@
 # Calibrating tau_c per object (2026-10-16)
 
 Scripts: `code/vgap/calibrate_tau_c_ur5e.py` (collects data), `code/vgap/recommend_tau_c.py` (picks tau_c).
-Sim results: `code/vgap/tau_c_sim/tau_c_report.txt` + `C_hist_<object>.png`.
 
 ## Method
 1. Per object and color, the UR5e moves the wrist camera to tilts 0/15/30/45/60 deg x azimuths 0/90/180/270 at 0.40 m (20 views) and runs the normal pipeline at each view. C, state, margin, class, fallback, etc. go to a CSV.

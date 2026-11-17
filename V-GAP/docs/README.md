@@ -5,8 +5,6 @@ Working notes written during the experiments (Oct-Nov 2026). Each file records w
 | File | Topic |
 |---|---|
 | `pipeline-parameters.md` | Per-object pipeline settings and the first offline test |
-| `sim-stress-test-findings.md` | Simulated stress test of the pipeline (views, colors, clutter) |
-| `sim-method-comparison.md` | PCA, plain RANSAC+ICP, SolvePnP and feature methods vs V-GAP in simulation |
 | `tau-c-calibration.md` | How the gate threshold tau_c was calibrated per object on the UR5e |
 | `gate-evaluation.md` | Design of the gate evaluation runs (outcomes, injected wrong poses, report sections) |
 | `static-60deg-commands.md` | 60 degree static-arm test |
